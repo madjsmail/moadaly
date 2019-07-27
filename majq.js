@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 function moyennemodule(td, tp, exam, momodule, crmodule, Credmodule) {
     var cred = $(Credmodule).html();
     $(exam).css("background-color", "#0000");
