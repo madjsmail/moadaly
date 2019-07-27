@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -719,3 +720,760 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="bootstrap.css">
+
+
+
+<body>
+    <img src="http://dpinfo.univ-bouira.dz/wp-content/uploads/2016/01/cropped-cropped-dept-info-logo.png" width="100%" height="240" alt="Département Informatique قسم الإعلام الآلي">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item ">
+                    <a class="nav-link" href="../index.html" target="">Math info </a>
+                </li>
+                <li class="nav-item active ">
+                    <a class="nav-link" href="index2.html">2em annee <span class="sr-only">(current)</span></a>
+                </li>
+                <li id="" class="nav-item">
+                    <a class="nav-link" href="../3emAnneeInfo/index3.html" target="">3em annee</a>
+
+                </li>
+            </ul>
+            <span class="navbar-text">
+                <h3 id="titre">simulation calcul moyenne </h3>
+          </span>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ligne 1 et 2 -->
+
+    <table id="table1">
+        <thead>
+            <tr>
+                <th colspan="11">
+                    <h2>Semestre 1</h2>
+                </th>
+
+            </tr>
+        </thead>
+        <tr>
+            <th>
+                <h6>Unités</h6>
+            </th>
+            <th>
+                <h6>Modules</h6>
+            </th>
+            <th>
+                <h6>Note TD</h6>
+            </th>
+            <th>
+                <h6>Note TP</h6>
+            </th>
+            <th>
+                <h6>Note Exam</h6>
+            </th>
+            <th class="noneed">
+                <h6>Coef</h6>
+            </th>
+            <th class="noneed">
+                <h6>Créd</h6>
+            </th>
+
+
+            <th>
+                <h6>Moyenne Mod</h6>
+            </th>
+            <th>
+                <h6>Créd Mod</h6>
+            </th>
+            <th>
+                <h6>Moyenne Unités</h6>
+            </th>
+            <th>
+                <h6>Créd Unités</h6>
+            </th>
+
+        </tr>
+        <!--ligne 3-->
+        <tr>
+            <td rowspan="3">
+                <h6>U fondamentale 1</h6>
+            </td>
+            <td>
+                <h6>Architecture</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="tdArchi" id="tdArchi" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="tpArchi" id="tpArchi"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="exArchi" id="exArchi"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefArchi">2</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredArchi">5</h6>
+            </td>
+            <td>
+                <h6 id="moArchi">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crArchi">Créd Mod</h6>
+            </td>
+            <td rowspan="3">
+                <h6 id="MoynneU1">Moyenne Unités f 1</h6>
+            </td>
+            <td id="CU1" rowspan="3">
+                <h6>Créd Unités</h6>
+            </td>
+
+        </tr>
+        <!--ligne 4-->
+        <tr>
+
+            <td>
+                <h6>Algo et SD</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdAsd"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tpAsd"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exAsd"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefAsd">3</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredAsd">6</h6>
+            </td>
+            <td>
+                <h6 id="moAsd">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crAsd">Créd Mod</h6>
+            </td>
+
+        </tr>
+        <!--ligne 5-->
+        <tr>
+
+            <td>
+                <h6>Logique math</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdLog"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tpLog" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exLog"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefLog">2</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredLog">4</h6>
+            </td>
+            <td>
+                <h6 id="moLog">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crLog">Créd Mod</h6>
+            </td>
+
+        </tr>
+        <!--ligne 6-->
+        <tr>
+            <td rowspan="3">
+                <h6>U fondamentale 2</h6>
+            </td>
+            <td>
+                <h6>POO</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdPoo"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tpPoo"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exPoo"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefPoo">3</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredPoo">5</h6>
+            </td>
+            <td>
+                <h6 id="moPoo">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crPoo">Créd Mod</h6>
+            </td>
+            <td rowspan="3">
+                <h6 id="MoynneU2">Moyenne Unités</h6>
+            </td>
+            <td id="CU2" rowspan="3">
+                <h6>Créd Unités</h6>
+            </td>
+
+        </tr>
+        <!--ligne 7-->
+        <tr>
+
+            <td>
+                <h6>Syst d'info</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdSi"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exSi"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefSi">3</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredSi">4</h6>
+            </td>
+            <td>
+                <h6 id="moSi">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crSi">Créd Mod</h6>
+            </td>
+
+        </tr>
+        <!--ligne 8-->
+        <tr>
+
+            <td>
+                <h6>Théorie des Lang</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdThl"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exThl"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefThl">2</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredThl">4</h6>
+            </td>
+            <td>
+                <h6 id="moThl">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crThl">Créd Mod</h6>
+            </td>
+
+        </tr>
+
+
+        <!--ligne 9-->
+        <tr>
+            <td rowspan="">
+                <h6>U Méthodologie</h6>
+            </td>
+            <td>
+                <h6>Anglais</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdAng1" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exAng1"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefAng1">1</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredAng1">2</h6>
+            </td>
+            <td>
+                <h6 id="moAng1">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crAng1">Créd Mod</h6>
+            </td>
+            <td rowspan="">
+                <h6 id="MU3">Moyenne Unités</h6>
+            </td>
+            <td rowspan="">
+                <h6 id="CU3">Créd Unités</h6>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+
+
+
+
+
+    <!----------------------------------------2em Semstre -------------------------------------------------->
+    <table id="table3">
+        <thead>
+            <tr>
+                <th colspan="11">
+                    <h2>Semestre 2</h2>
+                </th>
+
+            </tr>
+        </thead>
+        <tr>
+            <th>
+                <h6>Unités</h6>
+            </th>
+            <th>
+                <h6>Modules</h6>
+            </th>
+            <th>
+                <h6>Note TD</h6>
+            </th>
+            <th>
+                <h6>Note TP</h6>
+            </th>
+            <th>
+                <h6>Note Exam</h6>
+            </th>
+            <th class="noneed">
+                <h6>Coef</h6>
+            </th>
+            <th class="noneed">
+                <h6>Créd</h6>
+            </th>
+
+
+            <th>
+                <h6>Moyenne Mod</h6>
+            </th>
+            <th>
+                <h6>Créd Mod</h6>
+            </th>
+            <th>
+                <h6>Moyenne Unités</h6>
+            </th>
+            <th>
+                <h6>Créd Unités</h6>
+            </th>
+
+        </tr>
+        <!--ligne 3-->
+        <tr>
+            <td rowspan="3">
+                <h6>U fondamentale 1</h6>
+            </td>
+            <td>
+                <h6>Base de données</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="tdBDD" id="tdBDD"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="tpBDD" id="tpBDD"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="exBDD" id="exBDD"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefBDD">2</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredBDD">4</h6>
+            </td>
+            <td>
+                <h6 id="moBDD">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crBDD">Créd Mod</h6>
+            </td>
+            <td rowspan="3">
+                <h6 id="MoynneU1S2">Moyenne Unités f 1</h6>
+            </td>
+            <td id="CU1_S2" rowspan="3">
+                <h6>Créd Unités</h6>
+            </td>
+
+        </tr>
+        <!--ligne 4-->
+        <tr>
+
+            <td>
+                <h6>Syst d'exploitation</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdSe"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tpSe"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exSe"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefSe">3</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredSe">5</h6>
+            </td>
+            <td>
+                <h6 id="moSe">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crSe">Créd Mod</h6>
+            </td>
+
+        </tr>
+        <!--ligne 5-->
+        <tr>
+
+            <td>
+                <h6>Génie logiciel</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdGl"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tpGl" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exGl"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefGl">2</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredGl">4</h6>
+            </td>
+            <td>
+                <h6 id="moGl">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crGl">Créd Mod</h6>
+            </td>
+
+        </tr>
+        <!--ligne 6-->
+        <tr>
+            <td rowspan="3">
+                <h6>U fondamentale 2</h6>
+            </td>
+            <td>
+                <h6>Théorie des graphes</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdTg"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tpTg" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exTg"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefTg">2</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredTg">4</h6>
+            </td>
+            <td>
+                <h6 id="moTg">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crTg">Créd Mod</h6>
+            </td>
+            <td rowspan="3">
+                <h6 id="MoynneU2S2">Moyenne Unités</h6>
+            </td>
+            <td id="CU2_S2" rowspan="3">
+                <h6>Créd Unités</h6>
+            </td>
+
+        </tr>
+        <!--ligne 7-->
+        <tr>
+
+            <td>
+                <h6>Réseaux</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdRes"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tpRes"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exRes"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefRes">3</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredRes">5</h6>
+            </td>
+            <td>
+                <h6 id="moRes">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crRes">Créd Mod</h6>
+            </td>
+
+        </tr>
+        <!--ligne 8-->
+        <tr>
+
+            <td>
+                <h6>dev, web</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdWeb" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tpWeb"></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exWeb"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefWeb">2</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredWeb">4</h6>
+            </td>
+            <td>
+                <h6 id="moWeb">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crWeb">Créd Mod</h6>
+            </td>
+
+        </tr>
+
+
+        <!--ligne9-->
+        <tr>
+            <td rowspan="2">
+                <h6>U Méthodologie</h6>
+            </td>
+            <td>
+                <h6>Anglais</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdAng2" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exAng2"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefAng2">2</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredAng2">4</h6>
+            </td>
+            <td>
+                <h6 id="moAng2">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crAng2">Créd Mod</h6>
+            </td>
+            <td rowspan="2">
+                <h6 id="MoynneU3S2">Moyenne Unités</h6>
+            </td>
+            <td rowspan="2">
+                <h6 id="CU3_S2">Créd Unités</h6>
+            </td>
+        </tr>
+        <!--ligne10-->
+        <tr>
+
+            <td>
+                <h6>Aspects juridiques</h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdAjel" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
+            </td>
+            <td>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exAjel"></h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CoefAjel">2</h6>
+            </td>
+            <td class="noneed">
+                <h6 id="CredAjel">4</h6>
+            </td>
+            <td>
+                <h6 id="moAjel">Moyenne Mod</h6>
+            </td>
+            <td>
+                <h6 id="crAjel">Créd Mod</h6>
+            </td>
+
+        </tr>
+
+    </table>
+
+    <!----------------------------------------------------------------------------------------->
+
+
+    <table id="table2">
+
+        <tr>
+            <td>
+                <h5>moyenne semestre 1</h5>
+            </td>
+            <td>
+                <h5 id="moyenneS1">//</h5>
+            </td>
+        </tr>
+        <td>
+            <h5>moyenne semestre 2</h5>
+        </td>
+        <td>
+            <h5 id="moyenneS2">//</h5>
+        </td>
+
+
+
+        </tr>
+
+
+        <tr>
+            <tr>
+                <td>
+                    <h5>crédit obtenu S1</h5>
+                </td>
+                <td>
+                    <h5 id="creditS1">//</h5>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>crédit obtenu S2</h5>
+                </td>
+                <td>
+                    <h5 id="creditS2">//</h5>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    <h5>moyenne Gen</h5>
+                </td>
+                <td>
+                    <h5 id="moyenneGen">//</h5>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h5>crédit obtenu</h5>
+                </td>
+                <td>
+                    <h5 id="creditGen">//</h5>
+                </td>
+
+
+            </tr>
+
+
+
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js "></script>
+    <script type="text/javascript " src="https://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js "></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+
+
+
+
+
+    <script src="http://code.jquery.com/jquery-latest.min.js " type="text/javascript "></script>
+    <script src="majq2.js " type="text/javascript "></script>
+</body>
+
+</html>
+>>>>>>> 18f6ad9ee1b34b50fa374641b3d89ed73bdf197c
