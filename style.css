@@ -56,4 +56,10 @@ h6 {
     #table2 {
         margin-left: 2%;
     }
+        table {
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 0;
+        
+    }
 }
