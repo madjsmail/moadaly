@@ -1,10 +1,3 @@
-$("#table1").click(function() {
-    window.scrollTo(0, 300);
-});
-$("#table3").click(function() {
-    window.scrollTo(0, 800);
-});
-
 function moyennemodule(td, tp, exam, momodule, crmodule, Credmodule) {
     var cred = $(Credmodule).html();
     $(exam).css("background-color", "#0000");
@@ -175,6 +168,7 @@ function main() {
 
 
 
+
     // Semstre 1 
     var moyenne_Analyse1 = moyennemodule("#tdAnalyse1", "undefined", "#exAnalyse1", "#moAnalyse1", "#crAnalyse1", "#CredAnalyse1");
     var moyenne_Algebre1 = moyennemodule("#tdAlgebre1", "undefined", "#exAlgebre1", "#moAlgebre1", "#crAlgebre1", "#CredAlgebre1");
@@ -254,6 +248,7 @@ function main() {
         $("#creditGen").html(+CredGen);
 
     }
+
 }
 
 

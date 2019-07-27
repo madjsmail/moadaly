@@ -25,10 +25,10 @@
                     <a class="nav-link" href="index.html">Math info <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="\2emAanneeInfo\index2.html">2em annee</a>
+                    <a class="nav-link" href="2emAanneeInfo\index2.html">2em annee</a>
                 </li>
                 <li id="3em" class="nav-item">
-                    <a class="nav-link" href="\3emAnneeInfo\index3.html">3em annee</a>
+                    <a class="nav-link" href="3emAnneeInfo\index3.html">3em annee</a>
                 </li>
             </ul>
             <span class="navbar-text">
@@ -65,19 +65,17 @@
         </thead>
         <tr>
             <th>
-                <h6>Unités</h6>
+                <h6 id='uname'>Unités</h6>
             </th>
             <th>
                 <h6>Modules</h6>
             </th>
             <th>
                 <h6>Note TD</h6>
-            </th>
-            <th>
-                <h6>Note TP</h6>
-            </th>
-            <th>
-                <h6>Note Exam</h6>
+
+                <h6>TP</h6>
+
+                <h6> Exam</h6>
             </th>
             <th class="noneed">
                 <h6>Coef</h6>
@@ -104,19 +102,17 @@
         <!--ligne 3-->
         <tr>
             <td rowspan="2">
-                <h6>U fondamentale 1</h6>
+                <h6 id='uname'> fondamentale1 </h6>
             </td>
             <td>
                 <h6>Analyse 1</h6>
             </td>
             <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="tdAnalyse1" id="tdAnalyse1"></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="exAnalyse1" id="exAnalyse1"></h6>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="tdAnalyse1" placeholder="TD" id="tdAnalyse1"></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="exAnalyse1" placeholder="EXAM" id="exAnalyse1"></h6>
             </td>
             <td class="noneed">
                 <h6 id="CoefAnalyse1">4</h6>
@@ -145,13 +141,11 @@
                 <h6>Algebre 1</h6>
             </td>
             <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdAlgebre1"></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exAlgebre1"></h6>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="TD" id="tdAlgebre1"></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exAlgebre1"></h6>
             </td>
             <td class="noneed">
                 <h6 id="CoefAlgebre1">3</h6>
@@ -170,19 +164,17 @@
         <!--ligne 5-->
         <tr>
             <td rowspan="2">
-                <h6>U fondamentale 2</h6>
+                <h6 id='uname'> fondamentale2</h6>
             </td>
             <td>
                 <h6>Algorithmiques et structure de données</h6>
             </td>
             <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdAlgo1"></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tpAlgo1"></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exAlgo1"></h6>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="TD" id="tdAlgo1"></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="TP" id="tpAlgo1"></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exAlgo1"></h6>
             </td>
             <td class="noneed">
                 <h6 id="CoefAlgo1">4</h6>
@@ -211,13 +203,11 @@
                 <h6>Structure Machine 1</h6>
             </td>
             <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdStrm1"></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exStrm1"></h6>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="TD" id="tdStrm1"></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exStrm1"></h6>
             </td>
             <td class="noneed">
                 <h6 id="CoefStrm1">3</h6>
@@ -236,19 +226,17 @@
         <!--ligne 7-->
         <tr>
             <td rowspan="2">
-                <h6>U Méthodologie</h6>
+                <h6 id='uname'> Méthodologie</h6>
             </td>
             <td>
                 <h6>Terminologie Scient</h6>
             </td>
             <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exTe"></h6>
+                <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exTe"></h6>
             </td>
             <td class="noneed">
                 <h6 id="CoefTe">1</h6>
@@ -277,13 +265,12 @@
                 <h6>Langue Etrangere</h6>
             </td>
             <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exLe"></h6>
+                <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exLe"></h6>
             </td>
             <td class="noneed">
                 <h6 id="CoefLe">1</h6>
@@ -302,19 +289,17 @@
         <!--ligne 7-->
         <tr>
             <td rowspan="">
-                <h6>U Découverte</h6>
+                <h6 id='uname'> Découverte</h6>
             </td>
             <td>
                 <h6>Physique1</h6>
             </td>
             <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdPhy1"></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-            </td>
-            <td>
-                <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exPhy1"></h6>
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="TD" id="tdPhy1"></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exPhy1"></h6>
             </td>
             <td class="noneed">
                 <h6 id="CoefPhy1">2</h6>
@@ -358,19 +343,17 @@
             </thead>
             <tr>
                 <th>
-                    <h6>Unités</h6>
+                    <h6 id='uname'>Unités</h6>
                 </th>
                 <th>
                     <h6>Modules</h6>
                 </th>
                 <th>
                     <h6>Note TD</h6>
-                </th>
-                <th>
-                    <h6>Note TP</h6>
-                </th>
-                <th>
-                    <h6>Note Exam</h6>
+
+                    <h6> TP</h6>
+
+                    <h6> Exam</h6>
                 </th>
                 <th class="noneed">
                     <h6>Coef</h6>
@@ -397,19 +380,17 @@
             <!--ligne 3-->
             <tr>
                 <td rowspan="2">
-                    <h6>U fondamentale 1</h6>
+                    <h6 id='uname'> fondamentale1</h6>
                 </td>
                 <td>
                     <h6>Analyse 2</h6>
                 </td>
                 <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="tdAnalyse2" id="tdAnalyse2"></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="exAnalyse2" id="exAnalyse2"></h6>
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="tdAnalyse2" placeholder="TD" id="tdAnalyse2"></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="exAnalyse2" placeholder="EXAM" id="exAnalyse2"></h6>
                 </td>
                 <td class="noneed">
                     <h6 id="CoefAnalyse2">4</h6>
@@ -438,13 +419,11 @@
                     <h6>Algebre 2</h6>
                 </td>
                 <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdAlgebre2"></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exAlgebre2"></h6>
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="TD" id="tdAlgebre2"></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exAlgebre2"></h6>
                 </td>
                 <td class="noneed">
                     <h6 id="CoefAlgebre2">2</h6>
@@ -463,19 +442,17 @@
             <!--ligne 5-->
             <tr>
                 <td rowspan="2">
-                    <h6>U fondamentale 2</h6>
+                    <h6 id='uname'> fondamentale2</h6>
                 </td>
                 <td>
                     <h6>Algorithmiques et structure de données2</h6>
                 </td>
                 <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdAlgo2"></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tpAlgo2"></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exAlgo2"></h6>
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="TD" id="tdAlgo2"></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="TP" id="tpAlgo2"></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exAlgo2"></h6>
                 </td>
                 <td class="noneed">
                     <h6 id="CoefAlgo2">4</h6>
@@ -504,13 +481,11 @@
                     <h6>Structure Machine 2</h6>
                 </td>
                 <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdStrm2"></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exStrm2"></h6>
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="TD" id="tdStrm2"></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exStrm2"></h6>
                 </td>
                 <td class="noneed">
                     <h6 id="CoefStrm2">2</h6>
@@ -529,19 +504,17 @@
             <!--ligne 7-->
             <tr>
                 <td rowspan="3">
-                    <h6>U Méthodologie</h6>
+                    <h6 id='uname'> Méthodologie</h6>
                 </td>
                 <td>
                     <h6>Introduction Proba</h6>
                 </td>
                 <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdProba"></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exProba"></h6>
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="TD" id="tdProba"></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exProba"></h6>
                 </td>
                 <td class="noneed">
                     <h6 id="CoefProba">2</h6>
@@ -570,13 +543,11 @@
                     <h6>TIC</h6>
                 </td>
                 <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exTic"></h6>
+                    <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" id="" disabled></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exTic"></h6>
                 </td>
                 <td class="noneed">
                     <h6 id="CoefTic">1</h6>
@@ -599,13 +570,11 @@
                     <h6>Module Opt</h6>
                 </td>
                 <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdOpt"></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tpOpt"></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exOpt"></h6>
+                    <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" placeholder="TD" id="tdOpt"></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="hidden" name="" placeholder="TP" id="tpOpt"></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exOpt"></h6>
                 </td>
                 <td class="noneed">
                     <h6 id="CoefOpt">1</h6>
@@ -624,19 +593,18 @@
             <!--ligne 8-->
             <tr>
                 <td rowspan="">
-                    <h6>U Découverte</h6>
+                    <h6 id='uname'> Découverte</h6>
                 </td>
                 <td>
                     <h6>Physique2</h6>
                 </td>
                 <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="tdPhy2"></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="" disabled></h6>
-                </td>
-                <td>
-                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" id="exPhy2"></h6>
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="TD" id="tdPhy2"></h6>
+
+
+                    <h6><input class="input-group input-group-sm mb-3" type="hidden" id="" disabled></h6>
+
+                    <h6><input class="input-group input-group-sm mb-3" type="text" name="" placeholder="EXAM" id="exPhy2"></h6>
                 </td>
                 <td class="noneed">
                     <h6 id="CoefPhy2">2</h6>

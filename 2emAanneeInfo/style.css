@@ -17,18 +17,21 @@ input {
 }
 
 table {
+    position: inherit;
     width: 40%;
+    height: 30%;
     margin-top: 10px;
     margin-right: 20px;
+    margin-left: 5%;
     float: left;
 }
 
 #table1 {
-    height: 510px;
+    height: 900px;
 }
 
 #table3 {
-    height: 510px;
+    height: 900px;
 }
 
 #table2 {
@@ -36,17 +39,25 @@ table {
 }
 
 h6 {
-    display: block;
-    font-size: 5px;
-    margin: auto auto auto auto;
+    margin: 1;
     font-weight: normal;
 }
 
 @media only screen and (max-width: 900px) {
+    #uname {
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+    }
     .noneed {
         display: none;
     }
     #table2 {
         margin-left: 2%;
+    }
+    table {
+        margin-top: 10px;
+        margin-right: 20px;
+        margin-left: 0;
+        ;
     }
 }
