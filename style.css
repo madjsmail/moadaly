@@ -34,7 +34,6 @@ table {
     height: 900px;
 }
 
-
 #table2 {
     margin-left: 25%;
 }
@@ -45,7 +44,7 @@ h6 {
     font-weight: normal;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 500px) {
     #uname {
         writing-mode: vertical-rl;
         text-orientation: mixed;
@@ -56,10 +55,12 @@ h6 {
     #table2 {
         margin-left: 2%;
     }
-        table {
+    table {
         margin-top: 10px;
         margin-right: 20px;
         margin-left: 0;
-        
+    }
+    #cover {
+        width: 482px;
     }
 }
