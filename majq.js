@@ -1,4 +1,3 @@
-
 function moyennemodule(td, tp, exam, momodule, crmodule, Credmodule) {
     var cred = $(Credmodule).html();
     $(exam).css("background-color", "#0000");
@@ -256,5 +255,7 @@ function main() {
 
 
 
-
-$('body').click(main);
+$(document).click(main);
+$(document).keypress(function(e) {
+    if (e.keyCode == 13) { main() }
+});
