@@ -196,7 +196,7 @@ function main() {
 
     // Semstre 2 
     var moyenne_BDD = moyennemodule("#tdBDD", "#tpBDD", "#exBDD", "#moBDD", "#crBDD", "#CredBDD");
-    var moyenne_Poo = moyennemodule("#tdPoo", "undefined", "#exPoo", "#moPoo", "#crPoo", "#CredPoo");
+    var moyenne_Poo = moyennemodule("undefined", "#tpPoo", "#exPoo", "#moPoo", "#crPoo", "#CredPoo");
     var moyenne_Se = moyennemodule("#tdSe", "#tpSe", "#exSe", "#moSe", "#crSe", "#CredSe");
     var moyenne_Thl = moyennemodule("#tdThl", "#tpThl", "#exThl", "#moThl", "#crThl", "#CredThl");
     var moyenne_Res = moyennemodule("#tdRes", "#tpRes", "#exRes", "#moRes", "#crRes", "#CredRes");
@@ -206,19 +206,19 @@ function main() {
     var moyenne_Unites_fondamentale1_S2 = moyenneUnites(moyenne_BDD, moyenne_Res, "undefined", "#CoefBDD", "#CoefRes", "undefined", "#MoynneU1S2");
     var moyenne_Unites_fondamentale2_S2 = moyenneUnites(moyenne_Thl, moyenne_Se, "undefined", "#CoefThl", "#CoefSe", "undefined", "#MoynneU2S2");
     var moyenne_Unites_Méthodologie2 = moyenneUnites(moyenne_Poo, moyenne_Web, "undefined", "#CoefPoo", "#CoefWeb", "undefined", "#MoynneU3S2");
-    var moyenne_Unites_Transversale2 = moyenneUnites(moyenne_Ang2, "undefined", "undefined", "#CoefAng2", "undefined", "undefined", "#MoynneU3S2");
+    var moyenne_Unites_Transversale2 = moyenneUnites(moyenne_Ang2, "undefined", "undefined", "#CoefAng2", "undefined", "undefined", "#MoynneU4S2");
 
     var Cred_Unites_fondamentale1_S2 = credUnites(moyenne_Unites_fondamentale1_S2, "#CredBDD", "#CredRes", "undefined", "#crBDD", "#crRes", "undefined", "#CU1_S2");
     var Cred_Unites_fondamentale2_S2 = credUnites(moyenne_Unites_fondamentale2_S2, "#CredThl", "#CredSe", "undefined", "#crThl", "#crSe", "undefined", "#CU2_S2");
     var Cred_Unites_Méthodologie2 = credUnites(moyenne_Unites_Méthodologie2, "#CredPoo", "#CredWeb", "undefined", "#crPoo", "#crWeb", "undefined", "#CU3_S2");
-    var Cred_Unites_Transversale2 = credUnites(moyenne_Unites_Transversale2, "#CredAng2", "undefined", "undefined", "#crAng2", "undefined", "undefined", "#CU3_S2");
+    var Cred_Unites_Transversale2 = credUnites(moyenne_Unites_Transversale2, "#CredAng2", "undefined", "undefined", "#crAng2", "undefined", "undefined", "#CU4_S2");
 
 
     //Genral 
     //-----------------------
     //Semstre1
-    var lasomme_des_moyennemodule_S1 = moyenne_Archi * parseInt($('#CoefArchi').html()) + moyenne_Asd * parseInt($('#CoefAsd').html()) + moyenne_Si * parseInt($('#CoefSi').html()) + moyenne_Log * parseInt($('#CoefLog').html()) + moyenne_Ang1 * parseInt($('#CoefAng1').html());
-    moyenne_Tg * parseInt($('#CoefTg').html()) + moyenne_Mn * parseInt($('#CoefMn').html())
+    var lasomme_des_moyennemodule_S1 = moyenne_Archi * parseInt($('#CoefArchi').html()) + moyenne_Asd * parseInt($('#CoefAsd').html()) + moyenne_Si * parseInt($('#CoefSi').html()) + moyenne_Log * parseInt($('#CoefLog').html()) + moyenne_Ang1 * parseInt($('#CoefAng1').html()) +
+        moyenne_Tg * parseInt($('#CoefTg').html()) + moyenne_Mn * parseInt($('#CoefMn').html());
     var lasomme_des_Coef_S1 = parseInt($('#CoefArchi').html()) + parseInt($('#CoefAsd').html()) + parseInt($('#CoefLog').html()) + parseInt($('#CoefSi').html()) + parseInt($('#CoefAng1').html()) + parseInt($('#CoefMn').html()) + parseInt($('#CoefTg').html());
     var moyenne_Semstre1 = lasomme_des_moyennemodule_S1 / lasomme_des_Coef_S1;
     $("#moyenneS1").html(+moyenne_Semstre1.toFixed(2));
@@ -229,8 +229,7 @@ function main() {
         $("#creditS1").html(+CredS1);
 
     } else {
-        //var CredS1 = parseInt($('#crArchi').html()) + parseInt($('#crAsd').html()) + parseInt($('#crPoo').html()) + parseInt($('#crLog').html()) + parseInt($('#crSi').html()) + parseInt($('#crThl').html()) + parseInt($('#crAng1').html());
-        var CredS1 = Cred_Unites_fondamentale1_S1 + Cred_Unites_fondamentale2_S1 + Cred_Unites_Méthodologie1 + Cred_Unites_Transversale1;
+        var CredS1 = parseInt($('#crArchi').html()) + parseInt($('#crAsd').html()) + parseInt($('#crLog').html()) + parseInt($('#crSi').html()) + parseInt($('#crAng1').html()) + parseInt($('#crMn').html()) + parseInt($('#crTg').html());
         $("#creditS1").html(+CredS1);;
     }
 
@@ -246,8 +245,7 @@ function main() {
         $("#creditS2").html(+CredS2);
 
     } else {
-        // var CredS2 = parseInt($('#crBDD').html()) + parseInt($('#crSe').html()) + parseInt($('#crTg').html()) + parseInt($('#crGl').html()) + parseInt($('#crRes').html()) + parseInt($('#crWeb').html()) + parseInt($('#crAng2').html()) + parseInt($('#crAjel').html());
-        var CredS1 = Cred_Unites_fondamentale1_S2 + Cred_Unites_fondamentale2_S2 + Cred_Unites_Méthodologie2 + Cred_Unites_Transversale2;
+        var CredS2 = parseInt($('#crBDD').html()) + parseInt($('#crSe').html()) + parseInt($('#crRes').html()) + parseInt($('#crWeb').html()) + parseInt($('#crAng2').html()) + parseInt($('#crThl').html()) + parseInt($('#crPoo').html());
 
         $("#creditS2").html(+CredS2);;
     }
