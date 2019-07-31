@@ -79,6 +79,10 @@ h6 {
     font-weight: normal;
 }
 
+.hidden {
+    display: none;
+}
+
 @media only screen and (max-width: 500px) {
     #uname {
         writing-mode: vertical-rl;

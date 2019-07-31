@@ -154,6 +154,76 @@ function credUnites(moyenUnites1, Cred1, Cred2, Cred3, cr1, cr2, cr3, creditmodu
 
 }
 
+function ratraper(module1, module2, module3, moyenne_module1, moyenne_module2, moyenne_module3, moyenne_unit, moyennesemstre, moyenneGen) {
+
+    if (moyenneGen < 10 && moyennesemstre < 10) {
+        if (module3 != "undefined") {
+            if (moyenne_unit < 10) {
+                if (moyenne_module1 < 10) $('span', module1).removeClass('hidden');
+                else $('span', module1).addClass('hidden');
+                if (moyenne_module2 < 10) $('span', module2).removeClass('hidden');
+                else $('span', module2).addClass('hidden');
+                if (moyenne_module3 < 10) $('span', module3).removeClass('hidden');
+                else $('span', module3).addClass('hidden');
+            }
+        } else {
+            $('span', module1).addClass('hidden');
+            $('span', module2).addClass('hidden');
+            $('span', module3).addClass('hidden');
+
+        }
+
+
+
+        if (module3 == "undefined") {
+            if (moyenne_unit < 10) {
+                if (moyenne_module1 < 10) $('span', module1).removeClass('hidden');
+                else $('span', module1).addClass('hidden');
+                if (moyenne_module2 < 10) $('span', module2).removeClass('hidden');
+                else $('span', module2).addClass('hidden');
+
+            } else {
+                $('span', module1).addClass('hidden');
+                $('span', module2).addClass('hidden');
+            }
+
+        }
+        if (module2 == "undefined") {
+            if (moyenne_unit < 10) {
+                if (moyenne_module1 < 10) $('span', module1).removeClass('hidden');
+                else $('span', module1).addClass('hidden');
+
+
+            }
+
+        }
+
+
+
+
+    } else {
+        $('span').addClass('hidden');
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -248,6 +318,24 @@ function main() {
         $("#creditGen").html(+CredGen);
 
     }
+
+
+
+    ratraper("#Analyse1", "#Algebre1", "undefined", moyenne_Analyse1, moyenne_Algebre1, "undefined", moyenne_Unites_fondamentale1_S1, moyenne_Semstre1, moyenne_genral);
+    ratraper("#Algo1", "#Strm1", "undefined", moyenne_Algo1, moyenne_Strm1, "undefined", moyenne_Unites_fondamentale2_S1, moyenne_Semstre1, moyenne_genral);
+    ratraper("#Te", "#Le", "undefined", moyenne_Te, moyenne_Le, "undefined", moyenne_Unites_Méthodologie1, moyenne_Semstre1, moyenne_genral);
+    ratraper("#Phy1", "undefined", "undefined", moyenne_Phy1, "undefined", "undefined", moyenne_Unites_Découverte1, moyenne_Semstre1, moyenne_genral);
+
+    ratraper("#Analyse2", "#Algebre2", "undefined", moyenne_Analyse2, moyenne_Algebre2, "undefined", moyenne_Unites_fondamentale1_S2, moyenne_Semstre2, moyenne_genral);
+    ratraper("#Algo2", "#Strm2", "undefined", moyenne_Algo2, moyenne_Strm2, "undefined", moyenne_Unites_fondamentale2_S2, moyenne_Semstre2, moyenne_genral);
+    ratraper("#Proba", "#Opm", "#Tic", moyenne_Proba, moyenne_Opt, moyenne_Tic, moyenne_Unites_Méthodologie2, moyenne_Semstre2, moyenne_genral);
+    ratraper("#Phy2", "undefined", "undefined", moyenne_Phy2, "undefined", "undefined", moyenne_Unites_Découverte2, moyenne_Semstre2, moyenne_genral);
+
+
+
+
+
+
 
 }
 
