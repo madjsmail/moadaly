@@ -83,6 +83,10 @@ h6 {
     display: none;
 }
 
+.light {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
 @media only screen and (max-width: 500px) {
     #uname {
         writing-mode: vertical-rl;
