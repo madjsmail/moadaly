@@ -13,9 +13,9 @@ the app is for first and second year computer science student " LMD "
 [LMD] الجزائر 
 
 ## Project Implementation by 
-**Taha Zarouki**
- **Smail Abd El Madjid**
- **Aouf Ali**  *design* - [https://github.com/Sho-Oter](https://github.com/PurpleBooth)
+* **Taha Zarouki**
+* **Smail Abd El Madjid**
+* **Aouf Ali**(https://github.com/Sho-Oter)  *design* 
 
 ## Built With
 
