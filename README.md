@@ -1,6 +1,6 @@
 #  معدلي moadaly
 محاكي حساب المعدل لطلبة
-
+designed by : github.com/Sho-Oter
 
 
 
