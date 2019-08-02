@@ -1,0 +1,46 @@
+{
+    "s1": {
+        "u1": {
+            "name": "Fondamentale 1",
+            "modules": {
+                "analy1": {
+                    "name": "Analyse 1",
+                    "coef": 4,
+                    "cred": 6,
+                    "td": true,
+                    "tp": false
+                },
+                "algeb1" : {
+                    "name": "Algebre 1",
+                    "coef": 3,
+                    "cred": 5,
+                    "td": true,
+                    "tp": false
+                }
+            }
+        },
+        "u2": {
+            "name": "Fondamentale 2",
+            "modules": {
+                "analy2": {
+                    "name": "Analyse 2",
+                    "coef": 4,
+                    "cred": 6,
+                    "td": true,
+                    "tp": false
+                },
+                "algeb1" : {
+                    "name": "Algebre 2",
+                    "coef": 2,
+                    "cred": 4,
+                    "td": true,
+                    "tp": false
+                }
+            }
+        }
+
+    },
+    "s2": [
+
+    ]
+}

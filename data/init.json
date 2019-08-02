@@ -1,0 +1,20 @@
+{
+    "default-lang-index" : 0,
+    "languages" : [
+        {
+            "name" : "Français",
+            "short" : "fr",
+            "file" : "fr.json"
+        }
+    ],
+
+    "default-year-index" : 0,
+    "years" : [
+        {
+            "page-title" : "First year grades calculator",
+            "name" : "First year MI",
+            "short" : "MI",
+            "file" : "y1.json"
+        }
+    ]
+}

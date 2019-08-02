@@ -1,0 +1,11 @@
+{
+    "unit" : "unité",
+    "units" : "unités",
+    "module" : "module",
+    "modules" : "modules",
+    "grade" : "note",
+    "DT" : "TD",
+    "PT" : "TP",
+    "Exam" : "Examen"
+    
+}
