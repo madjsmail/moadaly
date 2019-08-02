@@ -128,7 +128,7 @@ function init_lang() {
 function lang(key) {
     return
 }
-$(document).redy(function() {
+/*$(document).redy(function() {
     load_config();
     //document.title = "Hello World!";  
-});
+});*/

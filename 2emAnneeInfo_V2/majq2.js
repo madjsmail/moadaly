@@ -160,7 +160,7 @@ function credUnites(moyenUnites1, Cred1, Cred2, Cred3, cr1, cr2, cr3, creditmodu
 
 function ratraper(module1, module2, module3, moyenne_module1, moyenne_module2, moyenne_module3, moyenne_unit, moyennesemstre, moyenneGen) {
 
-    if (moyenneGen < 10 && moyennesemstre < 10) {
+    if (moyennesemstre < 10) {
         if (module3 != "undefined") {
             if (moyenne_unit < 10) {
                 if (moyenne_module1 < 10) $('span', module1).removeClass('hidden');
