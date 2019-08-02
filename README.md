@@ -10,11 +10,11 @@ A web based app that can students calculate their pass mark's , easy to edit and
 the app is for first and second year computer science student " LMD "   
 
 نطبيق ويب لحساب المعدل الفصلي و السنوي للسنة الاولى  و الثانية اعلام الى   نضام
-[LMD] الجزائر 
+* [LMD] الجزائر 
 
 ## Project Implementation by 
-* **Taha Zarouki**
-* **Smail Abd El Madjid**
+* [**Taha Zarouki**](github.com/linuxscout)
+* [**Smail Abd El Madjid**]()
 * [**Aouf Ali**](https://github.com/Sho-Oter)  *design* 
 
 ## Built With
