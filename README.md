@@ -5,20 +5,26 @@
 try it : https://abdelmadjidsmail.github.io/moadaly/ 
 
 
-A web based app that can students calculate their grades average, easy to edit and adjust and doe not require an internet connection.
+A web based app that can students calculate their pass mark's , easy to edit and adjust and doe not require an internet connection.
 
+the app is for first and second year computer science student " LMD "   
 
+نطبيق ويب لحساب المعدل الفصلي و السنوي للسنة الاولى  و الثانية اعلام الى   نضام
+[LMD] الجزائر 
+
+## Project Implementation by 
+**Taha Zarouki**
+ **Smail Abd El Madjid**
+ **Aouf Ali**  *design* - [https://github.com/Sho-Oter](https://github.com/PurpleBooth)
 
 ## Built With
 
 * [HTML/CSS]
-* [ Java Script /jquery ]
+* [bootstrap/shards] -the  css framework  used 
+* [jquery ]   - java script framework
 
 
 
-## Authors
-
-* **Aouf Ali** - *design* - [https://github.com/Sho-Oter](https://github.com/PurpleBooth)
 
 
 
