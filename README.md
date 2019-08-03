@@ -12,7 +12,7 @@ the app is for first and second year computer science student " LMD "
 تطبيق ويب لحساب المعدل الفصلي و السنوي للسنة الاولى  و الثانية اعلام الى   نضام
 * [LMD] الجزائر 
 
-##treatment
+## treatment
 
 * Please read [Canevas MI 2019](http://dpinfo.univ-bouira.dz/wp-content/uploads/2019/05/Mi2019-canevas.pdf) for details how first year *pass note* has been calculated
 
