@@ -4,6 +4,8 @@
 نظام ل.م.د تخصص رياضيات وإعلام آلي
  
 Try it : https://abdelmadjidsmail.github.io/moadaly/ 
+See Moadaly android app : [moadaly-App](https://github.com/tarekDZ2019/moadaly-App)
+See our design : [design](https://github.com/Sho-Oter/dynamic-grade-average-calculator)
 
 ## Moadaly
  
@@ -38,6 +40,7 @@ Testing is much appreciated. Please post any issue you find in the [Issue tracke
 ## Project Implementation by 
 * [**Smail Abd El Madjid**](https://github.com/Abdelmadjidsmail/)
 * [**Taha Zerrouki**](github.com/linuxscout)
+* [**Tark Berkan**](github.com/tarekDZ2019) *mobile app*
 * [**Aouf Ali**](https://github.com/Sho-Oter)  *design* 
 
 ## Built With
