@@ -4,7 +4,7 @@
 
 try it : https://abdelmadjidsmail.github.io/moadaly/ 
 
-
+###Moadaly is a web application created by Smail Abd El Madjid 
 A web app that allow you to calculate your pass mark , easy to edit and adjust 
 the app is for first and second year computer science student " LMD "   
 
