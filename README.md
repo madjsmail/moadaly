@@ -5,15 +5,11 @@
  
 Try it : https://abdelmadjidsmail.github.io/moadaly/ 
 
-
 &nbsp;
-
 
 See Moadaly android app : [moadaly-App](https://github.com/tarekDZ2019/moadaly-App)
 
-
 &nbsp;
-
 
 See our design : [design](https://github.com/Sho-Oter/dynamic-grade-average-calculator)
 
