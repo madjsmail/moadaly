@@ -19,7 +19,7 @@ the app is for first and second year computer science student " LMD "
 * Please read [Canevas-2info-2019-2020](http://dpinfo.univ-bouira.dz/wp-content/uploads/2019/07/2info-new.pdf) for details how second year  *pass note* has been calculated
 
 ```
-( Note_TD40µ +Note_Exam60% || (( Note_TD+Note_TP)/2)40%+ Note_Exam60%
+( Note_TD 40% +Note_Exam 60% || (( Note_TD+Note_TP)/2) 40%+ Note_Exam 60%
 ```
 * Please read [Canevas INFO 2018-2019](http://dpinfo.univ-bouira.dz/wp-content/uploads/2016/01/Informatique-L2.pdf) for details how second year *pass note* has been calculated
 
