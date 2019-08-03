@@ -5,8 +5,7 @@
 try it : https://abdelmadjidsmail.github.io/moadaly/ 
 
 
-A web based app that can students calculate their pass mark's , easy to edit and adjust and doe not require an internet connection.
-
+A web app that allow you to calculate pass marks , easy to edit and adjust and does not require an internet connection.
 the app is for first and second year computer science student " LMD "   
 
 نطبيق ويب لحساب المعدل الفصلي و السنوي للسنة الاولى  و الثانية اعلام الى   نضام
