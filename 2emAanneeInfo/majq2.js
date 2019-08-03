@@ -160,76 +160,40 @@ function credUnites(moyenUnites1, Cred1, Cred2, Cred3, cr1, cr2, cr3, creditmodu
 
 function ratraper(module1, module2, module3, moyenne_module1, moyenne_module2, moyenne_module3, moyenne_unit, moyennesemstre, moyenneGen) {
 
-    if (moyennesemstre < 10) {
-
-        if (module3 != "undefined") {
+    if (moyenneGen < 10) {
+        console.log('moyenne gen');
+        if (moyennesemstre < 10) {
+            console.log('moyenne semstre');
             if (moyenne_unit < 10) {
+                console.log('moyenne UNitese');
                 if (moyenne_module1 < 10) $('span', module1).removeClass('hidden');
                 else $('span', module1).addClass('hidden');
                 if (moyenne_module2 < 10) $('span', module2).removeClass('hidden');
                 else $('span', module2).addClass('hidden');
                 if (moyenne_module3 < 10) $('span', module3).removeClass('hidden');
                 else $('span', module3).addClass('hidden');
+            } else {
+                $('span', module1).addClass('hidden');
+                $('span', module2).addClass('hidden');
+                $('span', module3).addClass('hidden');
             }
         } else {
-
             $('span', module1).addClass('hidden');
             $('span', module2).addClass('hidden');
             $('span', module3).addClass('hidden');
 
 
-        }
+        } // moyenne semstre
 
 
+    } else {
 
-        if (module3 == "undefined") {
-            if (moyenne_unit < 10) {
-                if (moyenne_module1 < 10) $('span', module1).removeClass('hidden');
-                else $('span', module1).addClass('hidden');
-                if (moyenne_module2 < 10) $('span', module2).removeClass('hidden');
-                else $('span', module2).addClass('hidden');
-
-            } else {
-                $('span', module1).addClass('hidden');
-                $('span', module2).addClass('hidden');
-            }
-
-        }
-        if (module2 == "undefined") {
-
-            if (moyenne_module1 < 10) $('span', module1).removeClass('hidden');
-
-            else $('span', module1).addClass('hidden');
-
-
-        }
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    if (moyenneGen > 10) $('span').addClass('hidden');
-
+        $('span').addClass('hidden');
+    } // moyenne genral
 
 
 
 }
-
-
-
-
 
 function main() {
 
@@ -321,7 +285,9 @@ function main() {
         $("#creditGen").html(+CredGen);
 
     }
-    $('span').removeClass('hidden');
+
+
+
     ratraper("#Archi", "#Asd", "#Log", moyenne_Archi, moyenne_Asd, moyenne_Log, moyenne_Unites_fondamentale1_S1, moyenne_Semstre1, moyenne_genral);
     ratraper("#Poo", "#Si", "#Thl", moyenne_Poo, moyenne_Si, moyenne_Thl, moyenne_Unites_fondamentale2_S1, moyenne_Semstre1, moyenne_genral);
     ratraper("#Ang1", "undefined", "undefined", moyenne_Ang1, "undefined", "undefined", moyenne_Unites_Méthodologie1, moyenne_Semstre1, moyenne_genral);
