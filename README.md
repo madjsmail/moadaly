@@ -29,7 +29,7 @@ the app is for first and second year computer science student " LMD "
 * you will find forms [her](http://dpinfo.univ-bouira.dz/?page_id=22) 
 
 # Issues
-Testing is much appreciated. Please post any issue you find in the [ssue tracker](github.com/Abdelmadjidsmail/moadaly/issues)
+Testing is much appreciated. Please post any issue you find in the [Issue tracker](https://github.com/Abdelmadjidsmail/moadaly/issues).
 
 
 
