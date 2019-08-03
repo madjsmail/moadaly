@@ -37,7 +37,7 @@ Testing is much appreciated. Please post any issue you find in the [Issue tracke
 
 ## Project Implementation by 
 * [**Smail Abd El Madjid**](https://github.com/Abdelmadjidsmail/)
-* [**Taha Zarouki**](github.com/linuxscout)
+* [**Taha Zerrouki**](github.com/linuxscout)
 * [**Aouf Ali**](https://github.com/Sho-Oter)  *design* 
 
 ## Built With
