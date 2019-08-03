@@ -46,7 +46,7 @@ Testing is much appreciated. Please post any issue you find in the [Issue tracke
 ## Project Implementation by 
 * [**Smail Abd El Madjid**](https://github.com/Abdelmadjidsmail/)
 * [**Taha Zerrouki**](github.com/linuxscout)
-* [**Tark Berkan**](github.com/tarekDZ2019) *mobile app*
+* [**Tarek Berkane**](github.com/tarekDZ2019) *mobile app*
 * [**Aouf Ali**](https://github.com/Sho-Oter)  *design* 
 
 ## Built With
