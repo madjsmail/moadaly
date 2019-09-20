@@ -114,3 +114,6 @@
       padding: 10px; }
       #main-container .page-content #table3 td h5 {
         color: #ffffff; }
+     .hidden {
+          display: none;
+          }
