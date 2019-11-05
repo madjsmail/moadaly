@@ -52,7 +52,6 @@ function moyennemodule(td, tp, exam, momodule, crmodule, Credmodule) {
     }
     if (td == "undefined" && tp !== "undefined") {
         var note_tp = $(tp).val();
-        alert(+note_tp);
         var note_exam = $(exam).val();
         var moyenne = note_tp * 0.4 + note_exam * 0.6;
         if (moyenne >= 10) $(crmodule).html(+cred)
@@ -266,7 +265,7 @@ function main() {
     var moyenne_Strm2 = moyennemodule("#tdStrm2", "undefined", "#exStrm2", "#moStrm2", "#crStrm2", "#CredStrm2");
     var moyenne_Proba = moyennemodule("#tdProba", "undefined", "#exProba", "#moProba", "#crProba", "#CredProba");
     var moyenne_Tic = moyennemodule("undefined", "undefined", "#exTic", "#moTic", "#crTic", "#CredTic");
-    var moyenne_Opt = moyennemodule("#tdOpt", "#tpOpt", "#exOpt", "#moOpt", "#crOpt", "#CredOpt");
+    var moyenne_Opt = moyennemodule("undefined", "#tpOpt", "#exOpt", "#moOpt", "#crOpt", "#CredOpt");
     var moyenne_Phy2 = moyennemodule("#tdPhy2", "undefined", "#exPhy2", "#moPhy2", "#crPhy2", "#CredPhy2");
     var moyenne_Unites_fondamentale1_S2 = moyenneUnites(moyenne_Analyse2, moyenne_Algebre2, "undefined", "#CoefAnalyse2", "#CoefAlgebre2", "undefined", "#MoynneU1S2");
     var moyenne_Unites_fondamentale2_S2 = moyenneUnites(moyenne_Algo2, moyenne_Strm2, "undefined", "#CoefAlgo2", "#CoefStrm2", "undefined", "#MoynneU2S2");
