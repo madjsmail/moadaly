@@ -239,10 +239,10 @@ function main() {
     var moyenne_Web = moyennemodule("undefined", "#tpWeb", "#exWeb", "#moWeb", "#crWeb", "#CredWeb");
     var moyenne_Ang2 = moyennemodule("undefined", "undefined", "#exAng2", "#moAng2", "#crAng2", "#CredAng2");
 
-    var moyenne_Unites_fondamentale1_S2 = moyenneUnites(moyenne_BDD, moyenne_Res, "undefined", "#CoefBDD", "#CoefRes", "undefined", "#MoynneU1S2");
-    var moyenne_Unites_fondamentale2_S2 = moyenneUnites(moyenne_Thl, moyenne_Se, "undefined", "#CoefThl", "#CoefSe", "undefined", "#MoynneU2S2");
-    var moyenne_Unites_Méthodologie2 = moyenneUnites(moyenne_Poo, moyenne_Web, "undefined", "#CoefPoo", "#CoefWeb", "undefined", "#MoynneU3S2");
-    var moyenne_Unites_Transversale2 = moyenneUnites(moyenne_Ang2, "undefined", "undefined", "#CoefAng2", "undefined", "undefined", "#MoynneU4S2");
+    var moyenne_Unites_fondamentale2_S2 = moyenneUnites(moyenne_Thl, moyenne_Se, "undefined", "#CoefThl", "#CoefSe", "undefined", "#MoynneU1S2");
+    var moyenne_Unites_fondamentale1_S2 = moyenneUnites(moyenne_BDD, moyenne_Res, "undefined", "#CoefBDD", "#CoefRes", "undefined", "#MoynneU2S2");
+    var moyenne_Unites_Méthodologie2 = moyenneUnites(moyenne_Poo, moyenne_Web, "undefined", "#CoefPoo", "#CoefWeb", "undefined", "#MU3S2");
+    var moyenne_Unites_Transversale2 = moyenneUnites(moyenne_Ang2, "undefined", "undefined", "#CoefAng2", "undefined", "undefined", "#MU4S2");
 
     var Cred_Unites_fondamentale1_S2 = credUnites(moyenne_Unites_fondamentale1_S2, "#CredBDD", "#CredRes", "undefined", "#crBDD", "#crRes", "undefined", "#CU1_S2");
     var Cred_Unites_fondamentale2_S2 = credUnites(moyenne_Unites_fondamentale2_S2, "#CredThl", "#CredSe", "undefined", "#crThl", "#crSe", "undefined", "#CU2_S2");
@@ -303,9 +303,9 @@ function main() {
     ratraper("#Mn", "#Log", "undefined", moyenne_Mn, moyenne_Log, "undefined", moyenne_Unites_Méthodologie1, moyenne_Semstre1, moyenne_genral);
     ratraper("#Ang1", "undefined", "undefined", moyenne_Ang1, "undefined", "undefined", moyenne_Unites_Transversale, moyenne_Semstre1, moyenne_genral);
 
-    ratraper("#Thl", "#Se", "undefined", moyenne_Thl, moyenne_Se, "undefined", moyenne_Unites_fondamentale1_S2, moyenne_Semstre2, moyenne_genral);
-    ratraper("#Bdd", "#Res", "undefined", moyenne_BDD, moyenne_Res, "undefined", moyenne_Unites_fondamentale2_S2, moyenne_Semstre2, moyenne_genral);
-    ratraper("#Poo", "#Web", "undefined", moyenne_Poo, moyenne_Web, "undefined", moyenne_Unites_fondamentale1_S2, moyenne_Semstre2, moyenne_genral);
+    ratraper("#Thl", "#Se", "undefined", moyenne_Thl, moyenne_Se, "undefined", moyenne_Unites_fondamentale2_S2, moyenne_Semstre2, moyenne_genral);
+    ratraper("#Bdd", "#Res", "undefined", moyenne_BDD, moyenne_Res, "undefined", moyenne_Unites_fondamentale1_S2, moyenne_Semstre2, moyenne_genral);
+    ratraper("#Poo", "#Web", "undefined", moyenne_Poo, moyenne_Web, "undefined", moyenne_Unites_Méthodologie2, moyenne_Semstre2, moyenne_genral);
     ratraper("#Ang2", "undefined", "undefined", moyenne_Ang2, "undefined", "undefined", moyenne_Unites_Transversale2, moyenne_Semstre2, moyenne_genral);
 
 
