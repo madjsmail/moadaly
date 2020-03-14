@@ -35,6 +35,17 @@ The calcul is based on :
 ( control_contibue * 40% + Note_Exam * 60%)
 ```
 
+* [Canevas SI ](http://dpinfo.univ-bouira.dz/wp-content/uploads/2017/12/3-InfoSI.pdf) for details how third year *pass note* has been calculated. 
+* [Canevas SI ](http://dpinfo.univ-bouira.dz/wp-content/uploads/2017/12/3-InfoISIL.pdf) for details how third year *pass note* has been calculated. 
+
+```
+( Control continue * 0.50 + Note_Exam* 0.50  )
+```
+
+
+
+
+
 
 * More details can be found  [here](http://dpinfo.univ-bouira.dz/?page_id=22) 
 
