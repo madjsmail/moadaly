@@ -195,6 +195,11 @@ function ratraper(module1, module2, module3, moyenne_module1, moyenne_module2, m
 
 }
 
+$("document").ready(function() {
+    $('input').val(0);
+    
+});
+
 function main() {
 
 
