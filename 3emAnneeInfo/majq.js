@@ -22,7 +22,7 @@ function moyennemodule(td, tp, exam, momodule, crmodule, Credmodule) {
         var note_td = $(td).val();
         var note_tp = $(tp).val();
         var note_exam = $(exam).val();
-        var moyenne = note_td * 0.2 + note_tp * 0.2 + note_exam * 0.6;
+        var moyenne =( note_td + note_tp) *0.5 + note_exam * 0.5;
         if (moyenne >= 10) $(crmodule).html(+cred)
         else $(crmodule).html("0");
         $(momodule).html(+moyenne.toFixed(2));
@@ -43,7 +43,7 @@ function moyennemodule(td, tp, exam, momodule, crmodule, Credmodule) {
         var note_td = $(td).val();
 
         var note_exam = $(exam).val();
-        var moyenne = note_td * 0.4 + note_exam * 0.6;
+        var moyenne = note_td * 0.5 + note_exam * 0.5;
         if (moyenne >= 10) $(crmodule).html(+cred)
         else $(crmodule).html("0");
         $(momodule).html(+moyenne.toFixed(2));
@@ -53,7 +53,7 @@ function moyennemodule(td, tp, exam, momodule, crmodule, Credmodule) {
     if (td == "undefined" && tp !== "undefined") {
         var note_tp = $(tp).val();
         var note_exam = $(exam).val();
-        var moyenne = note_tp * 0.4 + note_exam * 0.6;
+        var moyenne = note_tp * 0.5 + note_exam * 0.5;
         if (moyenne >= 10) $(crmodule).html(+cred)
         else $(crmodule).html("0");
         $(momodule).html(+moyenne.toFixed(2));
