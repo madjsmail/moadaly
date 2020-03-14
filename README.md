@@ -36,7 +36,7 @@ The calcul is based on :
 ```
 
 * [Canevas SI ](http://dpinfo.univ-bouira.dz/wp-content/uploads/2017/12/3-InfoSI.pdf) for details how third year *pass note* has been calculated. 
-* [Canevas SI ](http://dpinfo.univ-bouira.dz/wp-content/uploads/2017/12/3-InfoISIL.pdf) for details how third year *pass note* has been calculated. 
+* [Canevas ISIL ](http://dpinfo.univ-bouira.dz/wp-content/uploads/2017/12/3-InfoISIL.pdf) for details how third year *pass note* has been calculated. 
 
 ```
 ( Control continue * 0.50 + Note_Exam* 0.50  )
