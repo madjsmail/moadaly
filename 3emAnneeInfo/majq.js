@@ -22,7 +22,7 @@ function moyennemodule(td, tp, exam, momodule, crmodule, Credmodule) {
         var note_td = $(td).val();
         var note_tp = $(tp).val();
         var note_exam = $(exam).val();
-        var moyenne =( note_td + note_tp) *0.5 + note_exam * 0.5;
+        var moyenne =( ((note_td + note_tp)/2) *0.5) + note_exam * 0.5;
         if (moyenne >= 10) $(crmodule).html(+cred)
         else $(crmodule).html("0");
         $(momodule).html(+moyenne.toFixed(2));
