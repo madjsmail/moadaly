@@ -272,8 +272,8 @@ function main() {
     var moyenne_Phy2 = moyennemodule("#tdPhy2", "undefined", "#exPhy2", "#moPhy2", "#crPhy2", "#CredPhy2");
     var moyenne_Unites_fondamentale1_S2 = moyenneUnites(moyenne_Analyse2, moyenne_Algebre2, "undefined", "#CoefAnalyse2", "#CoefAlgebre2", "undefined", "#MoynneU1S2");
     var moyenne_Unites_fondamentale2_S2 = moyenneUnites(moyenne_Algo2, moyenne_Strm2, "undefined", "#CoefAlgo2", "#CoefStrm2", "undefined", "#MoynneU2S2");
-    var moyenne_Unites_Méthodologie2 = moyenneUnites(moyenne_Proba, moyenne_Tic, moyenne_Opt, "#CoefProba", "#CoefTic", "#CoefOpt", "#MU3S2");
-    var moyenne_Unites_Découverte2 = moyenneUnites(moyenne_Phy2, "undefined", "undefined", "#CoefPhy2", "undefined", "undefined", "#MU4S2");
+    var moyenne_Unites_Méthodologie2 = moyenneUnites(moyenne_Proba, moyenne_Tic, moyenne_Opt, "#CoefProba", "#CoefTic", "#CoefOpt", "#MoynneU3S2");
+    var moyenne_Unites_Découverte2 = moyenneUnites(moyenne_Phy2, "undefined", "undefined", "#CoefPhy2", "undefined", "undefined", "#MoynneU4S2");
     var Cred_Unites_fondamentale1_S2 = credUnites(moyenne_Unites_fondamentale1_S2, "#CredAnalyse2", "#CredAlgebre2", "undefined", "#crAnalyse2", "#crAlgebre2", "undefined", "#CU1_S2");
     var Cred_Unites_fondamentale2_S2 = credUnites(moyenne_Unites_fondamentale2_S2, "#CredAlgo2", "#CredStrm2", "undefined", "#crAlgo2", "#crStrm2", "undefined", "#CU2_S2");
     var Cred_Unites_Méthodologie2 = credUnites(moyenne_Unites_Méthodologie2, "#CredProba", "#CredTic", "#CredOpt", "#crProba", "#crTic", "#crOpt", "#CU3_S2");
