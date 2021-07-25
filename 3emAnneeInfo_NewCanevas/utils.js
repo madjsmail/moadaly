@@ -1,10 +1,54 @@
 
+class Year{
+  constructor(name, semestres)
+    {
+        this.name = name;
+        this.semestres = semestres;
+        this.moy = 0;
+    } 
+    calcul_moy()
+    {
+        var moy = 0;
+        var total_notes = 0;
+        var total_coef = 0;
+        for(let i =0; i < this.semestres.length;i++)
+        {
+            total_coef += this.semestres[i].coef;
+            total_notes += this.semestres[i].calcul_moy()*this.semestres[i].coef;
+        }
+        moy = total_notes / total_coef;
+        this.moy = moy;
+    return moy;
+    }
+    set_credits(moy)
+    {
+        // if moy is up to 10, get all credits
+        var total_credits = 0;
+
+        for(let i =0; i < this.semestres.length;i++)
+        {
+
+            var moy_semestre = this.semestres[i].moy;
+
+            // setup credit for the module if the unit moy is up to 10, or the module moy is up to 10
+            this.semestres[i].set_credits(Math.max(moy, moy_semestre));
+            
+            // sum credits
+            if((moy >= 10) || (moy_semestre >= 10))
+            total_credits += this.semestres[i].credit;
+        }
+        this.credits = total_credits;
+        return total_credits;
+    }
+}
+
 class Semestre{
   constructor(name, unites)
     {
         this.name = name;
         this.unites = unites;
         this.moy = 0;
+        this.coef = 0;
     } 
     calcul_moy()
     {
@@ -19,6 +63,7 @@ class Semestre{
         }
         moy = total_notes / total_coef;
         //console.log(moy);
+        this.coef = total_coef;
         this.moy = moy;
     return moy;
     }
@@ -39,8 +84,7 @@ class Semestre{
             if((moy >= 10) || (moy_unite >= 10))
             total_credits += this.unites[i].credit;
         }
-       // console.log(this.name + " , moy = "+moy+" credit: " +total_credits);
-
+        this.credits = total_credits;
         return total_credits;
     }
 }
@@ -203,7 +247,7 @@ function moyennemodule2(module_obj) {
 function moyenneUnites2(unite_x) {
     
     var moyenneU = unite_x.calcul_moy();
-    $("#M"+unite_x.name).html(+moyenneU.toFixed(2));
+    $("#Moy"+unite_x.name).html(+moyenneU.toFixed(2));
     return moyenneU;
 }
 
@@ -214,7 +258,7 @@ function credUnites2(unite_x) {
     var credit = unite_x.set_credits(unite_x.moy);
     //~ var credit = 7;
     console.log("credit output "+credit);
-    $("#C"+unite_x.name).html(+credit);
+    $("#Crd"+unite_x.name).html(+credit);
 }
 
 
@@ -243,6 +287,28 @@ function rattraper2(unite_x, semestre_x, annee_moy) {
 
 }
 
+// calcul unit moy and credits
+function calcul_semestre_unites_moy(semestre1)
+    {
+    for(let unite_x of semestre1.unites)
+        {
+            // calcul every module
+            for( let module_x of unite_x.modules)
+                moyennemodule2(module_x);
+        moyenneUnites2(unite_x);
+        credUnites2(unite_x); 
+        }
+    }
+// calcul les modules à rattraper
+function rattraper_all(semestre_x, moy_annuel)
+    {
+    for(let unite_x of semestre_x.unites)
+        {
+        // calcul every unite
+        rattraper2(unite_x, semestre_x, moy_annuel);
+
+        }
+    }
 
 $("document").ready(function() {
     $('input').val(0);
