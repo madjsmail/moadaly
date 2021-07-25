@@ -13,8 +13,8 @@ class Year{
         var total_coef = 0;
         for(let i =0; i < this.semestres.length;i++)
         {
-            total_coef += this.semestres[i].coef;
-            total_notes += this.semestres[i].calcul_moy()*this.semestres[i].coef;
+            total_coef  += this.semestres[i].coef;
+            total_notes += this.semestres[i].moy*this.semestres[i].coef;
         }
         moy = total_notes / total_coef;
         this.moy = moy;
@@ -57,12 +57,10 @@ class Semestre{
         var total_coef = 0;
         for(let i =0; i < this.unites.length;i++)
         {
-            //console.log(this.modules[i].name);
             total_coef += this.unites[i].coef;
             total_notes += this.unites[i].calcul_moy()*this.unites[i].coef;
         }
         moy = total_notes / total_coef;
-        //console.log(moy);
         this.coef = total_coef;
         this.moy = moy;
     return moy;
@@ -105,13 +103,11 @@ class Unite{
         var total_coef = 0;
         for(let i =0; i < this.modules.length;i++)
         {
-            //console.log(this.modules[i].name);
             total_coef += this.modules[i].coef;
             total_notes += this.modules[i].calcul_moy()*this.modules[i].coef;
         }
         moy = total_notes / total_coef;
         this.coef = total_coef;
-        //console.log(moy);
         this.moy = moy;
     return moy;
     }
@@ -132,7 +128,6 @@ class Unite{
             if((moy >= 10) || (moy_module >= 10))
             total_credits += this.modules[i].credit;
         }
-        console.log(this.name + " , moy = "+moy+" credit: " +total_credits);
 
         this.credit = total_credits;
         return total_credits;
@@ -257,31 +252,64 @@ function credUnites2(unite_x) {
     // else make sum of existing modules crédits
     var credit = unite_x.set_credits(unite_x.moy);
     //~ var credit = 7;
-    console.log("credit output "+credit);
     $("#Crd"+unite_x.name).html(+credit);
 }
 
+function display_results(semestre1, semestre2)
+{
+    
+    // calcul S1
+    calcul_semestre_unites_moy(semestre1);
+    semestre1.calcul_moy();
+
+    // calcul unit moy and credits
+    calcul_semestre_unites_moy(semestre2)    
+    semestre2.calcul_moy();
+
+    // display moyenne S2
+    $("#moyenneS1").html(+semestre1.moy.toFixed(2));
+    $("#moyenneS2").html(+semestre2.moy.toFixed(2));
+    
+    var cred_s1 = semestre1.set_credits(semestre1.moy)
+    $("#creditS1").html(+cred_s1);
+    
+    var cred_s2 = semestre2.set_credits(semestre2.moy)
+    $("#creditS2").html(+cred_s2);
+    
+
+    // Moyenne generale
+    var moyenne_genral = (semestre1.moy + semestre2.moy) / 2;
+    $("#moyenneGen").html(+moyenne_genral.toFixed(2))
+
+    if (moyenne_genral >= 10) {
+        var CredGen = 60;
+        $("#creditGen").html(+CredGen);
+
+    } else {
+        var CredGen = cred_s2 + cred_s1;
+        $("#creditGen").html(+CredGen);
+    }
+    
+     rattraper_all(semestre1 , moyenne_genral);
+     rattraper_all(semestre2 , moyenne_genral);    
+}
 
 
 function rattraper2(unite_x, semestre_x, annee_moy) {
-    console.log("rapptraper2-begin");
     if( (annee_moy < 10) && (semestre_x.moy < 10) && (unite_x.moy < 10))
     {
         
       for (var i=0; i < unite_x.modules.length; i++)
        {
            var module1 = "#"+unite_x.modules[i].name;
-          console.log("Rattrapge2: "+ module1 +": "+unite_x.modules[i].moy );
           //~ $('span', unite_x.modules[i].name).addClass('hidden');
            if(unite_x.modules[i].moy < 10)
            {
                 $('span', module1).removeClass('hidden');
-                console.log("Rattrapge: "+module1 +": "+unite_x.modules[i].moy );
             }
             else
             $('span', module1).addClass('hidden');
        }  
-       console.log("rapptraper2-end");
     }
 
 
