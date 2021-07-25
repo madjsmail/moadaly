@@ -1,3 +1,98 @@
+
+class Semestre{
+  constructor(name, unites)
+    {
+        this.name = name;
+        this.unites = unites;
+    } 
+    calcul_moy()
+    {
+        var moy = 0;
+        var total_notes = 0;
+        var total_coef = 0;
+        for(let i =0; i < this.unites.length;i++)
+        {
+            //console.log(this.modules[i].name);
+            total_coef += this.unites[i].coef;
+            total_notes += this.unites[i].calcul_moy()*this.unites[i].coef;
+        }
+        moy = total_notes / total_coef;
+        //console.log(moy);
+    return moy;
+    }
+    set_credits(moy)
+    {
+        // if moy is up to 10, get all credits
+        var total_credits = 0;
+
+        for(let i =0; i < this.unites.length;i++)
+        {
+
+            var moy_unite = this.unites[i].moy;
+
+            // setup credit for the module if the unit moy is up to 10, or the module moy is up to 10
+            this.unites[i].set_credits(Math.max(moy, moy_unite));
+            
+            // sum credits
+            if((moy >= 10) || (moy_unite >= 10))
+            total_credits += this.unites[i].credit;
+        }
+       // console.log(this.name + " , moy = "+moy+" credit: " +total_credits);
+
+        return total_credits;
+    }
+}
+
+class Unite{
+  constructor(name, modules)
+    {
+        this.name = name;
+        this.modules = modules;
+        this.coef = 0;
+        this.credit = 0;
+        this.moy = 0;
+    } 
+    calcul_moy()
+    {
+        var moy = 0;
+        var total_notes = 0;
+        var total_coef = 0;
+        for(let i =0; i < this.modules.length;i++)
+        {
+            //console.log(this.modules[i].name);
+            total_coef += this.modules[i].coef;
+            total_notes += this.modules[i].calcul_moy()*this.modules[i].coef;
+        }
+        moy = total_notes / total_coef;
+        this.coef = total_coef;
+        //console.log(moy);
+        this.moy = moy;
+    return moy;
+    }
+    set_credits(moy)
+    {
+        // if moy is up to 10, get all credits
+        var total_credits = 0;
+
+        for(let i =0; i < this.modules.length;i++)
+        {
+
+            var moy_module = this.modules[i].get_note("moyen");
+
+            // setup credit for the module if the unit moy is up to 10, or the module moy is up to 10
+            this.modules[i].set_credit(Math.max(moy, moy_module));
+            
+            // sum credits
+            if((moy >= 10) || (moy_module >= 10))
+            total_credits += this.modules[i].credit;
+        }
+        console.log(this.name + " , moy = "+moy+" credit: " +total_credits);
+
+        this.credit = total_credits;
+        return total_credits;
+    }
+}
+
 class Module{
     constructor(name, coef, cred, poids)
     {
@@ -19,10 +114,6 @@ class Module{
         this.poids_tp = poids[2]/100;
         this.poids_td = poids[1]/100;
         this.poids_exam = poids[0]/100;
-        // notes
-        //~ this.note_tp = 0;
-        //~ this.note_td = 0;
-        //~ this.note_exam = 0;
         this.moy = 0;
     }
     calcul_moy(){
@@ -33,7 +124,7 @@ class Module{
         moy += this.get_note("td") * this.poids_td; 
     if(this.poids_exam >  0)
         moy += this.get_note("exam")* this.poids_exam; 
-    
+    this.moy = moy;
    return moy;
     }
     // return the given note
@@ -45,6 +136,9 @@ class Module{
           return $("#td"+this.name).val();
      if((kind =="exam") && (this.poids_exam > 0))
           return $("#ex"+this.name).val();
+     if (kind =="moyen")
+          return $("#mo"+this.name).val();
+     return 0;
     }
     
     // set the credit
@@ -68,20 +162,13 @@ class Module{
 function moyennemodule2(module_obj) {
     // list of ids
     var module = module_obj.name;
-    var poids = module_obj.poids;
+    //~ var poids = module_obj.poids;
     // html items' IDs
     var exam = "#ex"+module;
     var tp = "#tp"+module;
     var td = "#td"+module;
-    var momodule = "#mo"+module;
-    // crédit de la matière
-    var crmodule = "#cr"+module; 
-    // credit obtenu
-    var Credmodule = "#Cred"+module; 
-    var cred = $(Credmodule).html();
     
-
-
+    // initialize items
     $(exam).css("background-color", "#0000");
     $(td).css("background-color", "#0000");
     $(tp).css("background-color", "#0000");
@@ -98,83 +185,14 @@ function moyennemodule2(module_obj) {
         $(tp).val(0);
     };
 
-    // poids est un array de trois valeurs entre 0 et 100; represente
-    // le pourcentage des Exam, TD, TP
-    // par example : 
-    // [100, 0, 0] => module avec examen 100%
-    // [60, 20, 20] => module avec examen 60% et TD + TP
-    // [60, 0, 40] => module avec exame 60% et un TP
-    //~ var poids_tp = poids[2]/100;
-    //~ var poids_td = poids[1]/100;
-    //~ var poids_exam = poids[0]/100;
-    //~ if(poids_tp >  0)
-        //~ moy += $(tp).val() * poids_tp; 
-    //~ if(poids_td >  0)
-        //~ moy += $(td).val() * poids_td; 
-    //~ if(poids_exam >  0)
-        //~ moy += $(exam).val() * poids_exam; 
-    //~ var moy = 0;
-    //~ if(module_obj.poids_tp >  0)
-        //~ moy += $(tp).val() * module_obj.poids_tp; 
-    //~ if(module_obj.poids_td >  0)
-        //~ moy += $(td).val() * module_obj.poids_td; 
-    //~ if(module_obj.poids_exam >  0)
-        //~ moy += $(exam).val() * module_obj.poids_exam; 
-    
+    // calcul moyen
     var moy = module_obj.calcul_moy();
-    //~ if (moy >= 10) 
-        //~ $(crmodule).html(+cred)
-    //~ else $(crmodule).html("0");
+    // set credits
     module_obj.set_credit(moy);
+    // set moyen
     module_obj.set_moy(moy);
-    //~ $(momodule).html(+moy.toFixed(2));
     return moy.toFixed(2);
-    //~ // TD + TP + Examn
-    //~ if (td !== "undefined" && tp !== "undefined") {
-        //~ var note_td = $(td).val();
-        //~ var note_tp = $(tp).val();
-        //~ var note_exam = $(exam).val();
-        //~ var moyenne = note_td*0.2 + note_tp*0.2 + note_exam * 0.6;
-        //~ if (moyenne >= 10) $(crmodule).html(+cred)
-        //~ else $(crmodule).html("0");
-        //~ $(momodule).html(+moyenne.toFixed(2));
-        //~ return moyenne.toFixed(2);
 
-    //~ }
-    //~ // Examn    
-    //~ if (td == "undefined" && tp == "undefined") {
-
-        //~ var note_exam = $(exam).val();
-        //~ var moyenne = note_exam;
-        //~ if (moyenne >= 10) $(crmodule).html($(Credmodule).html());
-        //~ else $(crmodule).html("0");
-        //~ $(momodule).html(+moyenne);
-        //~ return moyenne;
-
-    //~ }
-    //~ // TD + Examn    
-    //~ if (td !== "undefined" && tp == "undefined") {
-        //~ var note_td = $(td).val();
-
-        //~ var note_exam = $(exam).val();
-        //~ var moyenne = note_td * 0.4 + note_exam * 0.6;
-        //~ if (moyenne >= 10) $(crmodule).html(+cred)
-        //~ else $(crmodule).html("0");
-        //~ $(momodule).html(+moyenne.toFixed(2));
-        //~ return moyenne.toFixed(2);
-
-    //~ }
-    //~ // TP + Examn     
-    //~ if (td == "undefined" && tp !== "undefined") {
-        //~ var note_tp = $(tp).val();
-        //~ var note_exam = $(exam).val();
-        //~ var moyenne = note_tp * 0.4 + note_exam * 0.6;
-        //~ if (moyenne >= 10) $(crmodule).html(+cred)
-        //~ else $(crmodule).html("0");
-        //~ $(momodule).html(+moyenne.toFixed(2));
-        //~ return moyenne.toFixed(2);
-
-    //~ }
 
 }
 
@@ -252,6 +270,13 @@ function moyennemodule(td, tp, exam, momodule, crmodule, Credmodule) {
 
 
 
+function moyenneUnites2(unite_x) {
+    
+    var moyenneU = unite_x.calcul_moy();
+    $("#M"+unite_x.name).html(+moyenneU.toFixed(2));
+    return moyenneU;
+}
+
 function moyenneUnites(moyenne_module1, moyenne_module2, moyenne_module3, Coef1, Coef2, Coef3, MoynneU) {
     if (moyenne_module1 !== "undefined" && moyenne_module2 !== "undefined" && moyenne_module3 !== "undefined") {
         var Cof1 = parseInt($(Coef1).html());
@@ -283,6 +308,18 @@ function moyenneUnites(moyenne_module1, moyenne_module2, moyenne_module3, Coef1,
 
     }
 }
+
+function credUnites2(unite_x, unite_moy) {
+    // if unit average is up to 10 then all modules set up their credits
+    // else make sum of existing modules crédits
+    var credit = unite_x.set_credits(unite_moy);
+    //~ var credit = 7;
+    console.log("credit output "+credit);
+    $("#C"+unite_x.name).html(+credit);
+}
+
+
+
 
 function credUnites(moyenUnites1, Cred1, Cred2, Cred3, cr1, cr2, cr3, creditmodule) {
     if (Cred1 !== "undefined" && Cred2 !== "undefined" && Cred3 !== "undefined" && cr1 !== "undefined" && cr2 !== "undefined" && cr3 !== "undefined") {
@@ -336,7 +373,32 @@ function credUnites(moyenUnites1, Cred1, Cred2, Cred3, cr1, cr2, cr3, creditmodu
 
 }
 
-function ratraper(module1, module2, module3, moyenne_module1, moyenne_module2, moyenne_module3, moyenne_unit, moyennesemstre, moyenneGen) {
+
+function rattraper2(unite_x, unite_moy, semestre_moy, annee_moy) {
+    console.log("rapptraper2-begin");
+    if( (annee_moy < 10) && (semestre_moy < 10) && (unite_moy < 10))
+    {
+        
+      for (var i=0; i < unite_x.modules.length; i++)
+       {
+           var module1 = "#"+unite_x.modules[i].name;
+          console.log("Rattrapge2: "+ module1 +": "+unite_x.modules[i].moy );
+          //~ $('span', unite_x.modules[i].name).addClass('hidden');
+           if(unite_x.modules[i].moy < 10)
+           {
+                $('span', module1).removeClass('hidden');
+                console.log("Rattrapge: "+module1 +": "+unite_x.modules[i].moy );
+            }
+            else
+            $('span', module1).addClass('hidden');
+       }  
+       console.log("rapptraper2-end");
+    }
+
+
+}
+
+function rattraper(module1, module2, module3, moyenne_module1, moyenne_module2, moyenne_module3, moyenne_unit, moyennesemstre, moyenneGen) {
 
     if (moyennesemstre < 10) {
 
@@ -430,29 +492,61 @@ function main() {
     // Semstre 1 
     //~ var moyenne_SE = moyennemodule("#tdSE", "#tpSE", "#exSE", "#moSE", "#crSE", "#CredSE");
     // 
-    var module_se = new Module("SE", 3, 5, [60,20,20]);
-    //~ var moyenne_SE = moyennemodule2("SE", [0,100,0]);
-    //~ var moyenne_SE = moyennemodule2(module_se.name, module_se.poids);
+    var module_se   = new Module("SE",   3, 5, [60,20,20]);
+    var module_comp = new Module("Comp", 3, 5, [60,20,20]);
+    
+    var module_gl =  new Module("GL2", 3, 5, [60,20,20]);
+    var module_ihm = new Module("IHM", 3, 5, [60,20,20]);
+    
+    var module_pl =    new Module("PL",    2, 4, [60,40,0]);
+    var module_proba = new Module("Proba", 2, 4, [60,40,0]);
+    
+    var module_econum = new Module("Econum", 1, 2, [00,100,0]);
+    
     var moyenne_SE = moyennemodule2(module_se);
-    var moyenne_Comp = moyennemodule("#tdComp", "undefined", "#exComp", "#moComp", "#crComp", "#CredComp");
-    //var moyenne_prolog = moyennemodule("undefined", "#tpprolog", "#exprolog", "#moprolog", "#undefined", "#undefined");
-    var moyenne_GL2 = moyennemodule("#tdGL2", "#tpGL2", "#exGL2", "#moGL2", "#crGL2", "#CredGL2");
-    var moyenne_IHM = moyennemodule("undefined", "#tpIHM", "#exIHM", "#moIHM", "#crIHM", "#CredIHM");
-    var moyenne_PL = moyennemodule("#tdPL", "undefined", "#exPL", "#moPL", "#crPL", "#CredPL");
-    var moyenne_Proba = moyennemodule("#tdProba", "undefined", "#exProba", "#moProba", "#crProba", "#CredProba");
-    var moyenne_ang = moyennemodule("undefined", "undefined", "#tdEconum", "#moEconum", "#crEconum", "#CredEconum");
+    
+    //~ var moyenne_Comp = moyennemodule("#tdComp", "undefined", "#exComp", "#moComp", "#crComp", "#CredComp");
+    //~ //var moyenne_prolog = moyennemodule("undefined", "#tpprolog", "#exprolog", "#moprolog", "#undefined", "#undefined");
+    //~ var moyenne_GL2 = moyennemodule("#tdGL2", "#tpGL2", "#exGL2", "#moGL2", "#crGL2", "#CredGL2");
+    //~ var moyenne_IHM = moyennemodule("undefined", "#tpIHM", "#exIHM", "#moIHM", "#crIHM", "#CredIHM");
+    //~ var moyenne_PL = moyennemodule("#tdPL", "undefined", "#exPL", "#moPL", "#crPL", "#CredPL");
+    //~ var moyenne_Proba = moyennemodule("#tdProba", "undefined", "#exProba", "#moProba", "#crProba", "#CredProba");
+    //~ var moyenne_ang = moyennemodule("undefined", "undefined", "#tdEconum", "#moEconum", "#crEconum", "#CredEconum");
+    
+    var moyenne_Comp =  moyennemodule2(module_comp);
+    var moyenne_GL2 =   moyennemodule2(module_gl);
+    var moyenne_IHM =   moyennemodule2(module_ihm);
+    var moyenne_PL =    moyennemodule2(module_pl);
+    var moyenne_Proba = moyennemodule2(module_proba);
+    var moyenne_ang =   moyennemodule2(module_econum);
 
     // unites
-    var moyenne_Unites_fondamentale1_S1 = moyenneUnites(moyenne_SE, moyenne_Comp, "undefined","#CoefSE", "#CoefComp","undefined","#MoynneU1");
+    var unite_uef1_s1 = new Unite("U1",[module_se, module_comp]);
+    var unite_uef2_s1 = new Unite("U2",[module_gl, module_ihm]);
+    var unite_uem_s1 = new Unite("U3",[module_pl, module_proba]);
+    var unite_ued_s1 = new Unite("U4",[module_econum]);
     
-    var moyenne_Unites_fondamentale2_S1 = moyenneUnites(moyenne_IHM, moyenne_GL2, "undefined", "#CoefIHM", "#CoefGL2", "undefined", "#MoynneU2");
-    var moyenne_Unites_Méthodologie1 = moyenneUnites(moyenne_Proba, moyenne_PL, "undefined", "#CoefProba", "#CoefPL", "undefined", "#MU3");
-    var moyenne_Unites_Découverte1 = moyenneUnites(moyenne_ang, "undefined", "undefined", "#CoefEconum", "undefined", "undefined", "#MU4");
     
-    var Cred_Unites_fondamentale1_S1 = credUnites(moyenne_Unites_fondamentale1_S1, "#CredSE", "#CredComp", "#undefined", "#crSE", "#crComp", "#undefined", "#CU1");
-    var Cred_Unites_fondamentale2_S1 = credUnites(moyenne_Unites_fondamentale2_S1, "#CredIHM", "#CredGL2", "undefined", "#crIHM", "#crGL2", "undefined", "#CU2");
-    var Cred_Unites_Méthodologie1 = credUnites(moyenne_Unites_Méthodologie1, "#CredProba", "#CredPL", "undefined", "#crProba", "#crPL", "undefined", "#CU3");
-    var Cred_Unites_Découverte1 = credUnites(moyenne_Unites_Découverte1, "#CredEconum", "undefined", "undefined", "#crEconum", "undefined", "undefined", "#CU4");
+    var moyenne_Unites_fondamentale1_S1 = moyenneUnites2(unite_uef1_s1);
+    var Cred_Unites_fondamentale1_S1    = credUnites2(unite_uef1_s1);
+    
+    var moyenne_Unites_fondamentale2_S1 = moyenneUnites2(unite_uef2_s1);
+    var Cred_Unites_fondamentale2_S1    = credUnites2(unite_uef2_s1, moyenne_Unites_fondamentale2_S1);
+    
+    var moyenne_Unites_Méthodologie1 = moyenneUnites2(unite_uem_s1);
+    var Cred_Unites_Méthodologie1 = credUnites2(unite_uem_s1, moyenne_Unites_Méthodologie1);
+
+    var moyenne_Unites_Découverte1 = moyenneUnites2(unite_ued_s1);
+    var Cred_Unites_Découverte1 = credUnites2(unite_ued_s1, moyenne_Unites_Découverte1);
+
+
+    //~ var moyenne_Unites_Méthodologie1 = moyenneUnites(moyenne_Proba, moyenne_PL, "undefined", "#CoefProba", "#CoefPL", "undefined", "#MU3");
+    //~ var moyenne_Unites_Découverte1 = moyenneUnites(moyenne_ang, "undefined", "undefined", "#CoefEconum", "undefined", "undefined", "#MU4");
+    
+    //~ var Cred_Unites_fondamentale1_S1 = credUnites(moyenne_Unites_fondamentale1_S1, "#CredSE", "#CredComp", "#undefined", "#crSE", "#crComp", "#undefined", "#CU1");
+    //~ var Cred_Unites_fondamentale2_S1 = credUnites(moyenne_Unites_fondamentale2_S1, "#CredIHM", "#CredGL2", "undefined", "#crIHM", "#crGL2", "undefined", "#CU2");
+    //~ var Cred_Unites_Méthodologie1 = credUnites(moyenne_Unites_Méthodologie1, "#CredProba", "#CredPL", "undefined", "#crProba", "#crPL", "undefined", "#CU3");
+    //~ var Cred_Unites_Découverte1 = credUnites(moyenne_Unites_Découverte1, "#CredEconum", "undefined", "undefined", "#crEconum", "undefined", "undefined", "#CU4");
     
     // Semstre 2 
     var moyenne_mobile = moyennemodule("#tdmobile", "#tpmobile", "#exmobile", "#momobile", "#crmobile", "#Credmobile");
@@ -474,24 +568,24 @@ function main() {
     //Genral 
     //-----------------------
     //Semstre1
-    var lasomme_des_moyennemodule_S1 = moyenne_SE * parseInt($('#CoefSE').html()) + moyenne_Comp * parseInt($('#CoefComp').html()) + moyenne_GL2 * parseInt($('#CoefGL2').html()) +  moyenne_IHM * parseInt($('#CoefIHM').html()) + moyenne_PL * parseInt($('#CoefPL').html()) + moyenne_Proba * parseInt($('#CoefProba').html()) +moyenne_ang*parseInt($('#CoefEconum').html()) ;
-    var lasomme_des_Coef_S1 = parseInt($('#CoefSE').html())  + parseInt($('#CoefComp').html()) + parseInt($('#CoefGL2').html())  + parseInt($('#Coefprolog').html()) + parseInt($('#CoefIHM').html()) + parseInt($('#CoefPL').html()) + parseInt($('#CoefProba').html()) +parseInt($('#CoefEconum').html()) ;
-    var moyenne_Semstre1 = lasomme_des_moyennemodule_S1 / lasomme_des_Coef_S1;
+    var semestre1 = new Semestre("S1", [unite_uef1_s1, unite_uef2_s1, unite_uem_s1,unite_ued_s1]);
+    var moy_sem1 = semestre1.calcul_moy();
+    console.log("moy S1 "+ moy_sem1);
+    var moyenne_Semstre1 = moy_sem1;
+    // display moyenne S1
+    $("#moyenneS1").html(+moy_sem1.toFixed(2));
+    var cred_s1 = semestre1.set_credits(moy_sem1)
+    $("#creditS1").html(+cred_s1);
+    var CredS1 = cred_s1;
+    //~ if (moyenne_Semstre1 >= 10) {
+        //~ var CredS1 = 30;
+        //~ $("#creditS1").html(+CredS1);
 
+    //~ } else {
+        //~ var CredS1 = parseInt($('#crSE').html()) + parseInt($('#crComp').html()) + parseInt($('#crGL2').html()) + parseInt($('#undefined').html()) + parseInt($('#crIHM').html()) + parseInt($('#crPL').html()) + parseInt($('#crProba').html());
 
-
-    $("#moyenneS1").html(+moyenne_Semstre1.toFixed(2));
-
-
-    if (moyenne_Semstre1 >= 10) {
-        var CredS1 = 30;
-        $("#creditS1").html(+CredS1);
-
-    } else {
-        var CredS1 = parseInt($('#crSE').html()) + parseInt($('#crComp').html()) + parseInt($('#crGL2').html()) + parseInt($('#undefined').html()) + parseInt($('#crIHM').html()) + parseInt($('#crPL').html()) + parseInt($('#crProba').html());
-
-        $("#creditS1").html(+CredS1);;
-    }
+        //~ $("#creditS1").html(+CredS1);
+    //~ }
     //Semstre2
     var lasomme_des_moyennemodule_S2 = moyenne_mobile * parseInt($('#Coefmobile').html()) + moyenne_secu * parseInt($('#Coefsecu').html()) + moyenne_Crypto * parseInt($('#CoefCrypto').html()) + moyenne_ABD * parseInt($('#CoefABD').html()) + moyenne_redaction * parseInt($('#Coefredaction').html())  + moyenne_projet * parseInt($('#Coefprojet').html()) ;
     var lasomme_des_Coef_S2 = parseInt($('#Coefmobile').html()) + parseInt($('#Coefsecu').html()) + parseInt($('#CoefCrypto').html()) + parseInt($('#CoefABD').html()) + parseInt($('#Coefredaction').html())  + parseInt($('#Coefprojet').html()) ;
@@ -523,15 +617,19 @@ function main() {
 
 
 
-     ratraper("#SE", "#Comp", "undefined", moyenne_SE, moyenne_Comp, "undefined", moyenne_Unites_fondamentale1_S1, moyenne_Semstre1, moyenne_genral);
-     ratraper("#IHM", "#GL2", "undefined", moyenne_IHM, moyenne_GL2, "undefined", moyenne_Unites_fondamentale2_S1, moyenne_Semstre1, moyenne_genral);
-     ratraper("#PL", "#Proba", "undefined", moyenne_PL, moyenne_Proba, "undefined", moyenne_Unites_Méthodologie1, moyenne_Semstre1, moyenne_genral);
-     ratraper("#Econum", "undefined", "undefined", moyenne_ang, "undefined", "undefined", moyenne_Unites_Découverte1, moyenne_Semstre1, moyenne_genral);
 
-     ratraper("#mobile", "#secu", "undefined", moyenne_mobile, moyenne_secu, "undefined", moyenne_Unites_fondamentale1_S2, moyenne_Semstre2, moyenne_genral);
-     ratraper("#ABD", "#Crypto", "undefined", moyenne_ABD, moyenne_Crypto, "undefined", moyenne_Unites_fondamentale2_S2, moyenne_Semstre2, moyenne_genral);
-     ratraper("#redaction", "undefined", "undefined", moyenne_redaction, "undefined", "undefined", moyenne_Unites_Méthodologie2, moyenne_Semstre2, moyenne_genral);
-     ratraper("#projet", "undefined", "undefined", moyenne_projet, "undefined", "undefined", moyenne_Unites_Découverte2, moyenne_Semstre2, moyenne_genral);
+     //~ rattraper2(unite_uef1_s1,moyenne_Unites_fondamentale1_S1, moyenne_Semstre1, moyenne_genral);
+     rattraper("#SE", "#Comp", "undefined", moyenne_SE, moyenne_Comp, "undefined", moyenne_Unites_fondamentale1_S1, moyenne_Semstre1, moyenne_genral);
+     //~ rattraper("#IHM", "#GL2", "undefined", moyenne_IHM, moyenne_GL2, "undefined", moyenne_Unites_fondamentale2_S1, moyenne_Semstre1, moyenne_genral);
+    rattraper2(unite_uef2_s1,moyenne_Unites_fondamentale2_S1, moyenne_Semstre1, moyenne_genral);
+
+     rattraper("#PL", "#Proba", "undefined", moyenne_PL, moyenne_Proba, "undefined", moyenne_Unites_Méthodologie1, moyenne_Semstre1, moyenne_genral);
+     rattraper("#Econum", "undefined", "undefined", moyenne_ang, "undefined", "undefined", moyenne_Unites_Découverte1, moyenne_Semstre1, moyenne_genral);
+
+     rattraper("#mobile", "#secu", "undefined", moyenne_mobile, moyenne_secu, "undefined", moyenne_Unites_fondamentale1_S2, moyenne_Semstre2, moyenne_genral);
+     rattraper("#ABD", "#Crypto", "undefined", moyenne_ABD, moyenne_Crypto, "undefined", moyenne_Unites_fondamentale2_S2, moyenne_Semstre2, moyenne_genral);
+     rattraper("#redaction", "undefined", "undefined", moyenne_redaction, "undefined", "undefined", moyenne_Unites_Méthodologie2, moyenne_Semstre2, moyenne_genral);
+     rattraper("#projet", "undefined", "undefined", moyenne_projet, "undefined", "undefined", moyenne_Unites_Découverte2, moyenne_Semstre2, moyenne_genral);
 
 
 
