@@ -327,7 +327,7 @@ function rattraper_all(semestre_x, moy_annuel)
 
 function rattraper2(unite_x, semestre_x, annee_moy) {
     
-    console.log("rattrapper2 "+ semestre_x.moy + " unite_moy "+ unite_x.moy +" annee_moy " +annee_moy);
+    //~ console.log("rattrapper2 "+ semestre_x.moy + " unite_moy "+ unite_x.moy +" annee_moy " +annee_moy);
     //~ if( (annee_moy < 10) && (semestre_x.moy < 10) && (unite_x.moy < 10))
     {
         
