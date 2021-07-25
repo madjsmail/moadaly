@@ -4,6 +4,7 @@ class Semestre{
     {
         this.name = name;
         this.unites = unites;
+        this.moy = 0;
     } 
     calcul_moy()
     {
@@ -18,6 +19,7 @@ class Semestre{
         }
         moy = total_notes / total_coef;
         //console.log(moy);
+        this.moy = moy;
     return moy;
     }
     set_credits(moy)
@@ -206,10 +208,10 @@ function moyenneUnites2(unite_x) {
 }
 
 
-function credUnites2(unite_x, unite_moy) {
+function credUnites2(unite_x) {
     // if unit average is up to 10 then all modules set up their credits
     // else make sum of existing modules crédits
-    var credit = unite_x.set_credits(unite_moy);
+    var credit = unite_x.set_credits(unite_x.moy);
     //~ var credit = 7;
     console.log("credit output "+credit);
     $("#C"+unite_x.name).html(+credit);
@@ -217,9 +219,9 @@ function credUnites2(unite_x, unite_moy) {
 
 
 
-function rattraper2(unite_x, unite_moy, semestre_moy, annee_moy) {
+function rattraper2(unite_x, semestre_x, annee_moy) {
     console.log("rapptraper2-begin");
-    if( (annee_moy < 10) && (semestre_moy < 10) && (unite_moy < 10))
+    if( (annee_moy < 10) && (semestre_x.moy < 10) && (unite_x.moy < 10))
     {
         
       for (var i=0; i < unite_x.modules.length; i++)
@@ -240,3 +242,9 @@ function rattraper2(unite_x, unite_moy, semestre_moy, annee_moy) {
 
 
 }
+
+
+$("document").ready(function() {
+    $('input').val(0);
+    
+});
