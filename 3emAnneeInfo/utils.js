@@ -95,6 +95,9 @@ class Unite{
         this.coef = 0;
         this.credit = 0;
         this.moy = 0;
+        for(let i =0; i < this.modules.length;i++)
+            this.coef += this.modules[i].coef;
+
     } 
     calcul_moy()
     {
@@ -103,11 +106,9 @@ class Unite{
         var total_coef = 0;
         for(let i =0; i < this.modules.length;i++)
         {
-            total_coef += this.modules[i].coef;
             total_notes += this.modules[i].calcul_moy()*this.modules[i].coef;
         }
-        moy = total_notes / total_coef;
-        this.coef = total_coef;
+        moy = total_notes / this.coef;
         this.moy = moy;
     return moy;
     }
@@ -119,7 +120,7 @@ class Unite{
         for(let i =0; i < this.modules.length;i++)
         {
 
-            var moy_module = this.modules[i].get_note("moyen");
+            var moy_module = this.modules[i].moy;
 
             // setup credit for the module if the unit moy is up to 10, or the module moy is up to 10
             this.modules[i].set_credit(Math.max(moy, moy_module));
@@ -186,10 +187,14 @@ class Module{
     set_credit(moy)
     {
         // if the moyen is up to 10 set up the credit
+    //~ console.log("module:set_credit:"+this.name+" " +moy );
     if (moy >= 10) 
-        $("#cr"+this.name).html(+this.credit)
+    {
+        $("#cr"+this.name).html(+this.credit);
+    }
     else $("#cr"+this.name).html("0"); 
     }
+
     // set the moyenne
     set_moy(moy)
     {
@@ -295,25 +300,7 @@ function display_results(semestre1, semestre2)
 }
 
 
-function rattraper2(unite_x, semestre_x, annee_moy) {
-    if( (annee_moy < 10) && (semestre_x.moy < 10) && (unite_x.moy < 10))
-    {
-        
-      for (var i=0; i < unite_x.modules.length; i++)
-       {
-           var module1 = "#"+unite_x.modules[i].name;
-          //~ $('span', unite_x.modules[i].name).addClass('hidden');
-           if(unite_x.modules[i].moy < 10)
-           {
-                $('span', module1).removeClass('hidden');
-            }
-            else
-            $('span', module1).addClass('hidden');
-       }  
-    }
 
-
-}
 
 // calcul unit moy and credits
 function calcul_semestre_unites_moy(semestre1)
@@ -338,6 +325,29 @@ function rattraper_all(semestre_x, moy_annuel)
         }
     }
 
+function rattraper2(unite_x, semestre_x, annee_moy) {
+    
+    console.log("rattrapper2 "+ semestre_x.moy + " unite_moy "+ unite_x.moy +" annee_moy " +annee_moy);
+    //~ if( (annee_moy < 10) && (semestre_x.moy < 10) && (unite_x.moy < 10))
+    {
+        
+      for (var i=0; i < unite_x.modules.length; i++)
+       {
+           var module1 = "#"+unite_x.modules[i].name;
+           //~ console.log("rattrapper2 "+ module1 +" "+unite_x.modules[i].moy);
+
+          //~ $('span', unite_x.modules[i].name).addClass('hidden');
+           if ((annee_moy < 10) && (semestre_x.moy < 10) && (unite_x.moy < 10)
+             && (unite_x.modules[i].moy < 10))
+           {
+                $('span', module1).removeClass('hidden');
+            }
+            else
+            $('span', module1).addClass('hidden');
+       }  
+    }
+
+}
 $("document").ready(function() {
     $('input').val(0);
     
