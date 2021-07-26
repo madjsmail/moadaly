@@ -26,8 +26,8 @@ See our design : [design](https://github.com/Sho-Oter/dynamic-grade-average-calc
 # Calcul 
 The calcul is based on :
 * License:
-	* [Canevas L2 Info](docs/L2Info.pdf)
-	* [Canevas L2 Info](docs/L2Info.pdf)
+	* [Canevas L1 MI](docs/L1MI.pdf)
+	* [Canevas L2 Info](docs/L2info.pdf)
 	* [Canevas L3 SI ](docs/L3SI.pdf)
 	* [Canevas L3 ISIL ](docs/L3ISIL.pdf)
 * Master:
