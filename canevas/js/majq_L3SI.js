@@ -1,4 +1,3 @@
-function main() {
 
     // les modules
 
@@ -51,14 +50,20 @@ function main() {
     //Semstre2
 
     var semestre2 = new Semestre("S2", [unite_uef1_s2, unite_uef2_s2, unite_uem_s2,unite_ued_s2]);
-    
+create_menu();
+create_canevas(semestre1);
+create_canevas(semestre2);
+
+function main()
+{
     // Calcul et traitement
     // calcul unit moy and credits
    
     display_results(semestre1, semestre2);
 
 }
-   create_menu();
+
+
 
 $(document).click(main);
 $(document).keypress(function(e) {

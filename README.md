@@ -1,8 +1,8 @@
 # Moadaly معدلي
- 
+
 محاكي حساب المعدل لطلبة
 نظام ل.م.د تخصص رياضيات وإعلام آلي
- 
+
 Try it : https://abdelmadjidsmail.github.io/moadaly/ 
 &nbsp;
 
@@ -14,11 +14,15 @@ See Moadaly android app : [moadaly-App](https://github.com/tarekDZ2019/moadaly-A
 See our design : [design](https://github.com/Sho-Oter/dynamic-grade-average-calculator)
 
 ## Moadaly
- 
-* is a web application that allow you to calculate your pass mark. The app is for first and second year computer science student " LMD "   
 
-* تطبيق ويب لحساب المعدل الفصلي و السنوي للسنة الاولى  و الثانية اعلام الى   نطام
-* [LMD] الجزائر 
+* is a web application that allow you to calculate your pass mark. The app is for first and second year computer science student " LMD "   
+* تطبيق ويب لحساب المعدل الفصلي و السنوي للسنة الاولى  و الثانية اعلام الى   نظام [LMD] الجزائر 
+* التخصصات المدعومة: 
+  * L1 MI
+  * L2 Info
+  * L3 SI + ISIL
+  * M1 ISIL+ GSI
+  * M2 ISIL + GSI
 
 # Calcul 
 The calcul is based on :
