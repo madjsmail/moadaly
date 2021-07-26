@@ -357,26 +357,29 @@ function create_canevas(semestre_x)
     for(let i=0; i< semestre_x.unites.length; i++)
     {
         // create first case
-        create_dynamique_unite(semestre_x.unites[i]);
+        create_dynamique_unite(semestre_x.unites[i], semestre_x);
     }    
 }
-function create_dynamique_unite(unite_x)
+function create_dynamique_unite(unite_x, semestre_x)
 {
     // create dynamique canevas
 
     for(let i=0; i< unite_x.modules.length; i++)
     {
         // create first case
-        create_one_module(unite_x.modules[i], i==0, unite_x.name, unite_x.title);
+        create_one_module(unite_x.modules[i], i==0, unite_x, semestre_x);
     }
 }
-function create_one_module(module_x, first_case_boolean, unite_name, unite_title)
+function create_one_module(module_x, first_case_boolean, unite_x, semestre_x)
 {
     // create dynamique canevas
     var mod_name = module_x.name;
     var mod_title = module_x.title;
     var mod_coef = module_x.coef;
     var mod_cred = module_x.credit;
+    var unite_name = unite_x.name;
+    var unite_title = unite_x.title;
+    var semestre_name = semestre_x.name;
 
     var new_module_name = (first_case_boolean) ? `<td>${unite_title}</td>` : `<td/>` ;    
  
@@ -415,6 +418,22 @@ function create_one_module(module_x, first_case_boolean, unite_name, unite_title
     var new_module = document.createElement("tr");
     new_module.innerHTML =new_module_name+module_parts+ module_coef+ module_cred+ module_moy+ module_cr+ module_moy_unit+ module_cred_unit ;
 
-    $("#table1").append(new_module);
+    if(semestre_name == "S1")
+        $("#table1").append(new_module);
+    else
+        $("#table2").append(new_module);    
 }
 
+function create_menu()
+{
+    var list  =  ["L2Info", "L3SI", "L3ISIL", "M1ISIL", "M1GSI", "M2ISIL", "M2GSI"];
+    var link = "";
+    for( let title of list)
+    {
+    var menu_item = `<li id="3em" class="nav-item">
+                            <a class="nav-link" href="./index${title}.html">${title}</a>
+                        </li> 
+                    `;
+    $("#navbarTextList").append(menu_item);
+    }
+}

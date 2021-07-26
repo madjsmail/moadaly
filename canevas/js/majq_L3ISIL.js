@@ -1,5 +1,3 @@
-function main() {
-
     // les modules
 
     // Semstre 1 
@@ -17,10 +15,10 @@ function main() {
     
 
     // unites
-    var unite_uef1_s1 = new Unite("U1_S1",[module_sid, module_sad], "Unité Fondamentale 1");
-    var unite_uef2_s1 = new Unite("U2_S1",[module_gl, module_ihm], "Unité Fondamentale 2");
-    var unite_uem_s1 = new Unite("U3_S1",[module_asi, module_paw], "Unité méthodologique");
-    var unite_ued_s1 = new Unite("U4_S1",[module_econum], "Unité Découverté");
+    var unite_uef1_s1 = new Unite("U1_S1",[module_sid, module_sad], "Fondamentale1");
+    var unite_uef2_s1 = new Unite("U2_S1",[module_gl, module_ihm], "Fondamentale2");
+    var unite_uem_s1 = new Unite("U3_S1",[module_asi, module_paw], "Méthodologique");
+    var unite_ued_s1 = new Unite("U4_S1",[module_econum], "Découverte");
     
     
     //Semstre1
@@ -41,33 +39,31 @@ function main() {
     var module_redaction = new Module("redaction", 1, 2, [0, 100,0], "Rédaction Scientifiques");
 
     // unites
-    var unite_uef1_s2 = new Unite("U1_S2",[module_ri, module_securite], "Unité Fondamentale 1");
-    var unite_uef2_s2 = new Unite("U2_S2",[module_dss, module_se], "Unité Fondamentale 2");
-    var unite_uem_s2 = new Unite("U3_S2",[module_projet, module_bi], "Unité méthodologique");
-    var unite_ued_s2 = new Unite("U4_S2",[module_redaction], "Unité Découverte");
+    var unite_uef1_s2 = new Unite("U1_S2",[module_ri, module_securite], "Fondamentale1");
+    var unite_uef2_s2 = new Unite("U2_S2",[module_dss, module_se], "Fondamentale2");
+    var unite_uem_s2 = new Unite("U3_S2",[module_projet, module_bi], "Méthodologique");
+    var unite_ued_s2 = new Unite("U4_S2",[module_redaction], "Découverte");
     
     
 
     //Semstre2
 
     var semestre2 = new Semestre("S2", [unite_uef1_s2, unite_uef2_s2, unite_uem_s2,unite_ued_s2]);
-    
+   // create_canevas(semestre1);
+   create_menu();
+
+function main() {     
     // Calcul et traitement
     // calcul unit moy and credits
-   
     display_results(semestre1, semestre2);
-    //~ create_canevas(semestre1);
 
 }
 
 $("document").ready(function() {
     $('input').val(0);
-    //~ create_canevas(semestre1);
-    
 });
 
 $(document).click(main);
-$(document).onLoad(main);
 $(document).keypress(function(e) {
     if (e.keyCode == 13) { main() }
 });

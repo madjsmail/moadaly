@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+
+
+
+<html lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- title -->
+    <title>Calculateur de Moyenne</title>
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/bootstrap.min.css" />
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/shards.min.css" />
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/shards-extras.min.css" />
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/style.css" />
+</head>
+
+<body style="background-color:rgba(16, 35, 51, 0.9) ">
+    <div id="main-container">
+        <div class="page-header">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto" id="navbarTextList">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="../index.html">Math info <span class="sr-only">(current)</span></a>
+                        </li>
+                    
+                    </ul>
+                    <span class="navbar-text">
+                            <h3 id="nav-titre">Calculateur de Moyenne</h3>
+                        </span>
+                </div>
+            </nav>
+        </div>
+
+
+ <!-- in case adding new modules you must stick with syntax of the id's      -->
+        <!--                                                                         -->
+
+        <!--   tdModule =============> Note de td                                -->
+        <!--   tpModule =============> Note de tp                                -->
+        <!--   exModule =============  >Note d'exam                              -->
+        <!--   CoefModule =============> coefficient de module                   -->
+        <!--   CredModule =============>crédit de module                         -->
+        <!--   moModule =============> moyenne de module obtenu                  -->
+        <!--   crModule =============> crédit de module obtenu                   -->
+        <!--   MoyU1_S1/MoyU1_S2 =============> moyenne d'unité obtenu         -->
+        <!--   CrdU1_S1/CU1_S2  =============>    crédit d'unité obtenu                -->
+
+        <div class="page-content">
+            <div class="tables-container">
+                <div class="tables" style="overflow-x:auto;">
+                    <table id="table1" class="table-striped  mb-5">
+                        <thead>
+                            <tr>
+                                <th id="titre1" colspan="11">
+                                    <h2>Semestre 1</h2>
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <h6 class="uname">Unités</h6>
+                                </th>
+                                <th>
+                                    <h6>Modules</h6>
+                                </th>
+                                <th>
+                                    <h6>Note TD</h6> |
+                                    <h6>TP</h6> |
+                                    <h6> Exam</h6>
+                                </th>
+                                <th class="noneed">
+                                    <h6>Coef</h6>
+                                </th>
+                                <th class="noneed">
+                                    <h6>Créd</h6>
+                                </th>
+                                <th>
+                                    <h6>Moyenne Module</h6>
+                                </th>
+                                <th>
+                                    <h6>Créd Mod</h6>
+                                </th>
+                                <th>
+                                    <h6>Moyenne Unités</h6>
+                                </th>
+                                <th>
+                                    <h6>Créd Unités</h6>
+                                </th>
+
+                            </tr>
+                            <!--ligne 3 -->
+
+                                            <!-- 2em semstre -->
+
+        <div class="page-content">
+            <div class="tables-container">
+                <div class="tables" style="overflow-x:auto;">
+                    <table id="table2" class="table-striped  mb-5">
+                        <thead>
+                            <tr>
+                                <th id="titre2" colspan="11">
+                                    <h2>Semestre 2</h2>
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <h6 class="uname">Unités</h6>
+                                </th>
+                                <th>
+                                    <h6>Modules</h6>
+                                </th>
+                                <th>
+                                    <h6>Note TD</h6> |
+                                    <h6>TP</h6> |
+                                    <h6> Exam</h6>
+                                </th>
+                                <th class="noneed">
+                                    <h6>Coef</h6>
+                                </th>
+                                <th class="noneed">
+                                    <h6>Créd</h6>
+                                </th>
+                                <th>
+                                    <h6>Moyenne Module</h6>
+                                </th>
+                                <th>
+                                    <h6>Créd Mod</h6>
+                                </th>
+                                <th>
+                                    <h6>Moyenne Unités</h6>
+                                </th>
+                                <th>
+                                    <h6>Créd Unités</h6>
+                                </th>
+
+                            </tr>
+
+
+
+
+
+
+            <div style="padding-bottom:50px">
+                <table id="table3">
+                    <!--ligne 8-->
+                    <tbody>
+                        <tr>
+                            <th>
+                                <h5>Semestre/année</h5>
+                            </th>
+                            <th>
+                                <h5>Moyenne</h5>
+                            </th>
+                            <th>
+                                <h5>Crédits</h5>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Semestre 1</h5>
+                            </td>
+                            <td>
+                                <h5 id="moyenneS1">0</h5>
+                            </td>
+                            <td>
+                                <h5 id="creditS1">0</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Semestre 2</h5>
+                            </td>
+                            <td>
+                                <h5 id="moyenneS2">0</h5>
+                            </td>
+                            <td>
+                                <h5 id="creditS2">0</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>Annéé </h5>
+                            </td>
+                            <td>
+                                <h5 id="moyenneGen">0</h5>
+                            </td>
+                            <td>
+                                <h5 id="creditGen">0</h5>
+                            </td>                            
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+        <script type='text/javascript' src='../assets/js/jquery.js'></script>
+        <script type='text/javascript' src='../assets/js/popper.min.js'></script>
+        <script type='text/javascript' src='../assets/js/bootstrap.min.js'></script>
+        <script type='text/javascript' src='../assets/js/shards.min.js'></script>
+        <script type='text/javascript' src='../assets/js/main.js'></script>
+        <script type='text/javascript' src='./js/utils.js'></script>
+        <script type='text/javascript' src='./js/majq_M2ISIL.js'></script>
+</body>
+
+
+
+</html>
