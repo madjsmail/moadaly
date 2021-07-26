@@ -55,6 +55,19 @@ Testing is much appreciated. Please post any issue you find in the [Issue tracke
 ## Contribution
 * Adapt this app for more specialities (ST, SM, etc..)
 
+### How to create a new canvas
+For example a new level named "L3ML"
+
+1. make a copy of canevas template:
+ a. html file: copy canevas/templates/indexL3ML.html
+ b. html file: copy canevas/templates/majq_L3ML.js
+ make copy and put it on canevas directory and canevas/js for js files
+2. Test if it works
+3. Update configuration modules and unites
+4. You can add an argument to  annee.create_canevas(true) as true to check your canevas
+5. If it works: Add new menu item "L3ML"
+into file :canevas/js/utils.js function create_menu: 
+
 
 
 
