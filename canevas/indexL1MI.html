@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- meta data -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- title -->
+    <title>Calculateur de Moyenne</title>
+    <!-- css -->
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/bootstrap.min.css" />
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/shards.min.css" />
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/shards-extras.min.css" />
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/style.css" />
+</head>
+
+<body>
+    <div id="main-container">
+        <div class="page-header">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto"  id="navbarTextList">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Math info <span class="sr-only">(current)</span></a>
+                        </li>
+                       
+                    </ul>
+                    <span class="navbar-text">
+                        <h3 id="nav-titre">Calculateur de Moyenne</h3>
+                    </span>
+                </div>
+            </nav>
+        </div>
+        <!-- in case adding new modules you must stick with syntax of the id's      -->
+        <!--                                                                         -->
+
+        <!--   tdModule =============> Note de td                                -->
+        <!--   tpModule =============> Note de tp                                -->
+        <!--   exModule =============  >Note d'exam                              -->
+        <!--   CoefModule =============> coefficient de module                   -->
+        <!--   CredModule =============>crédit de module                         -->
+        <!--   moModule =============> moyenne de module obtenu                  -->
+        <!--   crModule =============> crédit de module obtenu                   -->
+        <!--   MoynneU1/MoynneU1S2 =============> moyenne d'unité obtenu         -->
+        <!--   CU1/CU_S2  =============>    crédit d'unité obtenu                -->
+
+
+
+
+
+
+
+        <div class="page-content">
+            <div class="tables-container">
+                <div class="tables" style="overflow-x:auto;">
+                    <table id="table1" class="table-striped  mb-5">
+                        <thead>
+                            <tr>
+                                <th id="titre1" colspan="11">
+                                    <h2>Semestre 1</h2>
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <h6 class="uname">Unités</h6>
+                                </th>
+                                <th>
+                                    <h6>Modules</h6>
+                                </th>
+                                <th>
+                                    <h6>Note TD</h6> |
+                                    <h6>TP</h6> |
+                                    <h6> Exam</h6>
+                                </th>
+                                <th class="noneed">
+                                    <h6>Coef</h6>
+                                </th>
+                                <th class="noneed">
+                                    <h6>Créd</h6>
+                                </th>
+                                <th>
+                                    <h6>Moyenne Module</h6>
+                                </th>
+                                <th>
+                                    <h6>Créd Mod</h6>
+                                </th>
+                                <th>
+                                    <h6>Moyenne Unités</h6>
+                                </th>
+                                <th>
+                                    <h6>Créd Unités</h6>
+                                </th>
+
+                            </tr>
+                            <!--ligne 3 -->
+                            <tr>
+                                <td rowspan="2">
+                                    <h6 class="uname"> fondamentale1 </h6>
+                                </td>
+                                <td class="light" id="Analyse1">
+                                    <h6>Analyse 1 <span class="badge badge-danger hidden ">Ratrapage</span> </h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdAnalyse1" id="tdAnalyse1">
+                                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" hidden>
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exAnalyse1" id="exAnalyse1">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefAnalyse1">4</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredAnalyse1">6</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moAnalyse1">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crAnalyse1">0</h6>
+                                </td>
+                                <td class="light" rowspan="2">
+                                    <h6 id="MoynneU1">0 </h6>
+                                </td>
+                                <td id="CU1" rowspan="2">
+                                    <h6>0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 4 -->
+                            <tr>
+
+                                <td class="light" id="Algebre1">
+                                    <h6>Algebre 1 <span class="badge badge-danger hidden ">Ratrapage</span></h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdAlgebre1" id="tdAlgebre1">
+                                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" hidden>
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exAlgebre1" id="exAlgebre1">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefAlgebre1">3</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredAlgebre1">5</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moAlgebre1">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crAlgebre1">0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 5 -->
+                            <tr>
+                                <td rowspan="2">
+                                    <h6 class="uname"> fondamentale2</h6>
+                                </td>
+                                <td class="light" id="Algo1">
+                                    <h6>Algorithmiques et structure de données<span class="badge badge-danger hidden ">Ratrapage</span> </h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdAlgo1" id="tdAlgo1">
+                                        <input type="text" class="form-control" placeholder="TP" aria-label="" aria-describedby="addon-wrapping" name="tpAlgo1" id="tpAlgo1">
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exAlgo1" id="exAlgo1">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefAlgo1">4</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredAlgo1">6</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moAlgo1">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crAlgo1">0</h6>
+                                </td>
+                                <td class="light" rowspan="2">
+                                    <h6 id="MoynneU2">0</h6>
+                                </td>
+                                <td id="CU2" rowspan="2">
+                                    <h6>0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 6 -->
+                            <tr>
+                                <td class="light" id="Strm1">
+                                    <h6>Structure Machine 1<span class="badge badge-danger hidden ">Ratrapage</span>
+                                    </h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdStrm1" id="tdStrm1">
+                                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" name="" id="" hidden>
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exStrm1" id="exStrm1">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefStrm1">3</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredStrm1">5</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moStrm1">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crStrm1">0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 7 -->
+                            <tr>
+                                <td rowspan="2">
+                                    <h6 class="uname"> Méthodologie</h6>
+                                </td>
+                                <td class="light" id="Te">
+                                    <h6>Terminologie Scient<span class="badge badge-danger hidden ">Ratrapage</span>
+                                    </h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exTe" id="exTe">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefTe">1</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredTe">2</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moTe">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crTe">0</h6>
+                                </td>
+                                <td class="light" rowspan="2">
+                                    <h6 id="MU3">0</h6>
+                                </td>
+                                <td id="CU3" rowspan="2">
+                                    <h6>0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 8 -->
+                            <tr>
+                                <td class="light" id="Le">
+                                    <h6>Langue Etrangere<span class="badge badge-danger hidden ">Ratrapage</span></h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exLe" id="exLe">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefLe">1</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredLe">2</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moLe">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crLe">0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 9 -->
+                            <tr>
+                                <td rowspan="">
+                                    <h6 class="uname"> Découverte</h6>
+                                </td>
+                                <td class="light" id="Phy1">
+                                    <h6>Physique1<span class="badge badge-danger hidden ">Ratrapage</span></h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdPhy1" id="tdPhy1">
+                                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" name="" id="" hidden>
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exPhy1" id="exPhy1">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefPhy1">2</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredPhy1">4</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moPhy1">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crPhy1">0</h6>
+                                </td>
+                                <td class="light" rowspan="">
+                                    <h6 id="MU4">0</h6>
+                                </td>
+                                <td rowspan="">
+                                    <h6 id="CU4">0</h6>
+                                </td>
+                            </tr>
+                            <!----------------------------------------2em Semstre -------------------------------------------------->
+                        </tbody>
+                    </table>
+                    <table id="table2" class="table-striped  ">
+                        <thead>
+                            <tr>
+                                <th id="titre2" colspan="11">
+                                    <h2>Semestre 2</h2>
+                                </th>
+
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <h6 class="uname">Unités</h6>
+                                </th>
+                                <th>
+                                    <h6>Modules</h6>
+                                </th>
+                                <th>
+                                    <h6>Note TD</h6> |
+                                    <h6>TP</h6> |
+                                    <h6> Exam</h6>
+                                </th>
+                                <th class="noneed">
+                                    <h6>Coef</h6>
+                                </th>
+                                <th class="noneed">
+                                    <h6>Créd</h6>
+                                </th>
+                                <th>
+                                    <h6>Moyenne Module</h6>
+                                </th>
+                                <th>
+                                    <h6>Créd Mod</h6>
+                                </th>
+                                <th>
+                                    <h6>Moyenne Unités</h6>
+                                </th>
+                                <th>
+                                    <h6>Créd Unités</h6>
+                                </th>
+
+                            </tr>
+                            <!--ligne 3 -->
+                            <tr>
+                                <td rowspan="2">
+                                    <h6 class="uname"> fondamentale1 </h6>
+                                </td>
+                                <td class="light" id="Analyse2">
+                                    <h6>Analyse 2 <span class="badge badge-danger hidden ">Ratrapage</span> </h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdAnalyse2" id="tdAnalyse2">
+                                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" hidden>
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exAnalyse2" id="exAnalyse2">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefAnalyse2">4</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredAnalyse2">6</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moAnalyse2">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crAnalyse2">0</h6>
+                                </td>
+                                <td class="light" rowspan="2">
+                                    <h6 id="MoynneU1S2">0 </h6>
+                                </td>
+                                <td id="CU1_S2" rowspan="2">
+                                    <h6>0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 4 -->
+                            <tr>
+
+                                <td class="light" id="Algebre2">
+                                    <h6>Algebre 2 <span class="badge badge-danger hidden ">Ratrapage</span></h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdAlgebre2" id="tdAlgebre2">
+                                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" hidden>
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exAlgebre2" id="exAlgebre2">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefAlgebre2">2</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredAlgebre2">4</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moAlgebre2">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crAlgebre2">0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 5 -->
+                            <tr>
+                                <td rowspan="2">
+                                    <h6 class="uname"> fondamentale2</h6>
+                                </td>
+                                <td class="light" id="Algo2">
+                                    <h6>Algorithmiques et structure de données 2<span class="badge badge-danger hidden ">Ratrapage</span> </h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdAlgo2" id="tdAlgo2">
+                                        <input type="text" class="form-control" placeholder="TP" aria-label="" aria-describedby="addon-wrapping" name="tpAlgo2" id="tpAlgo2">
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exAlgo2" id="exAlgo2">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefAlgo2">4</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredAlgo2">6</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moAlgo2">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crAlgo2">0</h6>
+                                </td>
+                                <td class="light" rowspan="2">
+                                    <h6 id="MoynneU2S2">0</h6>
+                                </td>
+                                <td id="CU2_S2" rowspan="2">
+                                    <h6>0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 6 -->
+                            <tr>
+                                <td class="light" id="Strm2">
+                                    <h6>Structure Machine 2<span class="badge badge-danger hidden ">Ratrapage</span>
+                                    </h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdStrm2" id="tdStrm2">
+                                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" name="" id="" hidden>
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exStrm2" id="exStrm2">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefStrm2">2</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredStrm2">4</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moStrm2">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crStrm2">0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 7 -->
+                            <tr>
+                                <td rowspan="3">
+                                    <h6 class="uname"> Méthodologie</h6>
+                                </td>
+                                <td class="light" id="Proba">
+                                    <h6>Proba <span class="badge badge-danger hidden ">Ratrapage</span>
+                                    </h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+
+                                        <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdProba" id="tdProba">
+                                        <input type="text" class="form-control" placeholder="TP" aria-label="TP" aria-describedby="addon-wrapping" name="tpProba" id="tpProba" hidden>
+                                        <input type="taxt" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exProba" id="exProba">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefProba">2</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredProba">3</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moProba">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crProba">0</h6>
+                                </td>
+                                <td class="light" rowspan="3">
+                                    <h6 id="MoynneU3S2">0</h6>
+                                </td>
+                                <td id="CU3_S2" rowspan="3">
+                                    <h6>0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 8 -->
+                            <td class="light" id="Opm">
+                                <h6>OPM <span class="badge badge-danger hidden ">Ratrapage</span>
+                                </h6>
+                            </td>
+                            <td class="light">
+                                <div class="input-group flex-nowrap">
+
+                                    <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdOpt" id="tdOpt" hidden>
+                                    <input type="text" class="form-control" placeholder="TP" aria-label="TP" aria-describedby="addon-wrapping" name="tpOpt" id="tpOpt">
+                                    <input type="taxt" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exOpt" id="exOpt">
+                                </div>
+                            </td>
+                            <td class="noneed">
+                                <h6 id="CoefOpt">1</h6>
+                            </td>
+                            <td class="noneed">
+                                <h6 id="CredOpt">2</h6>
+                            </td>
+                            <td class="light">
+                                <h6 id="moOpt">0</h6>
+                            </td>
+                            <td>
+                                <h6 id="crOpt">0</h6>
+                            </td>
+                            </tr>
+                            <!--ligne9-->
+                            <tr>
+                                <td class="light" id="Tic">
+                                    <h6>TIC<span class="badge badge-danger hidden ">Ratrapage</span></h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exTic" id="exTic">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefTic">1</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredTic">2</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moTic">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crTic">0</h6>
+                                </td>
+
+                            </tr>
+                            <!--ligne 9 -->
+                            <tr>
+                                <td rowspan="">
+                                    <h6 class="uname"> Découverte</h6>
+                                </td>
+                                <td class="light" id="Phy2">
+                                    <h6>Physique2<span class="badge badge-danger hidden ">Ratrapage</span></h6>
+                                </td>
+                                <td class="light">
+                                    <div class="input-group flex-nowrap">
+                                        <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="tdPhy2" id="tdPhy2">
+                                        <input type="text" class="form-control" placeholder="" aria-label="" aria-describedby="addon-wrapping" name="" id="" hidden>
+                                        <input type="text" class="form-control" placeholder="EXAM" aria-label="Username" aria-describedby="addon-wrapping" name="exPhy2" id="exPhy2">
+                                    </div>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CoefPhy2">2</h6>
+                                </td>
+                                <td class="noneed">
+                                    <h6 id="CredPhy2">3</h6>
+                                </td>
+                                <td class="light">
+                                    <h6 id="moPhy2">0</h6>
+                                </td>
+                                <td>
+                                    <h6 id="crPhy2">0</h6>
+                                </td>
+                                <td class="light" rowspan="">
+                                    <h6 id="MoynneU4S2">0</h6>
+                                </td>
+                                <td rowspan="">
+                                    <h6 id="CU4_S2">0</h6>
+                                </td>
+                            </tr>
+                            <!----------------------------------------2em Semstre -------------------------------------------------->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div style="padding-bottom:50px">
+                <table id="table3">
+                    <!--ligne 8-->
+                    <tbody>
+                        <tr>
+                            <td>
+                                <h5>moyenne semestre 1</h5>
+                            </td>
+                            <td>
+                                <h5 id="moyenneS1">0</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>moyenne semestre 2</h5>
+                            </td>
+                            <td>
+                                <h5 id="moyenneS2">0</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>crédit obtenu S1</h5>
+                            </td>
+                            <td>
+                                <h5 id="creditS1">0</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>crédit obtenu S2</h5>
+                            </td>
+                            <td>
+                                <h5 id="creditS2">0</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>moyenne Gen</h5>
+                            </td>
+                            <td>
+                                <h5 id="moyenneGen">0</h5>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>crédit obtenu</h5>
+                            </td>
+                            <td>
+                                <h5 id="creditGen">0</h5>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- js -->
+    <script type='text/javascript' src='../assets/js/jquery.js'></script>
+    <script type='text/javascript' src='../assets/js/popper.min.js'></script>
+    <script type='text/javascript' src='../assets/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='../assets/js/shards.min.js'></script>
+    <script type='text/javascript' src='../assets/js/main.js'></script>
+    <script type='text/javascript' src='./js/utils.js'></script>
+    <script type='text/javascript' src='./js/majq.js'></script>
+
+</body>
+
+</html>
