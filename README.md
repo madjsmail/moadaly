@@ -63,7 +63,7 @@ For example a new level named "L3ML"
  b. html file: copy canevas/templates/majq_L3ML.js
  make copy and put it on canevas directory and canevas/js for js files
 2. Test if it works
-3. Update configuration modules and unites
+3. Update configuration modules and unites in majq_L3ML.js file
 4. You can add an argument to  annee.create_canevas(true) as true to check your canevas
 5. If it works: Add new menu item "L3ML"
 into file :canevas/js/utils.js function create_menu: 
