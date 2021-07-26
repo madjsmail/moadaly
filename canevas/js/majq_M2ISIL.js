@@ -39,13 +39,15 @@
     //Semstre2
 
     var semestre2 = new Semestre("S2", [unite_uef1_s2]);
-    create_canevas(semestre1);
-    create_canevas(semestre2);
+    // Year 
+    var annee = new Year("M2GSI", semestre1, semestre2);
+    annee.create_canevas();
     create_menu();
+
 function main() {     
     // Calcul et traitement
     // calcul unit moy and credits
-    display_results(semestre1, semestre2);
+    annee.display_results();
 
 }
 

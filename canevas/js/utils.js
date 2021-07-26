@@ -1,45 +1,56 @@
 
 class Year{
-  constructor(name, semestres)
+  constructor(name, semestre1, semestre2)
     {
         this.name = name;
-        this.semestres = semestres;
+        this.semestre1 = semestre1;
+        this.semestre2 = semestre2;
         this.moy = 0;
     } 
-    calcul_moy()
-    {
-        var moy = 0;
-        var total_notes = 0;
-        var total_coef = 0;
-        for(let i =0; i < this.semestres.length;i++)
-        {
-            total_coef  += this.semestres[i].coef;
-            total_notes += this.semestres[i].moy*this.semestres[i].coef;
-        }
-        moy = total_notes / total_coef;
-        this.moy = moy;
-    return moy;
+display_results()
+{
+    
+    // calcul S1
+    this.semestre1.calcul_semestre_unites_moy();
+    this.semestre1.calcul_moy();
+
+    // calcul unit moy and credits
+    this.semestre2.calcul_semestre_unites_moy()    
+    this.semestre2.calcul_moy();
+
+    // display moyenne S2
+    $("#moyenneS1").html(+this.semestre1.moy.toFixed(2));
+    $("#moyenneS2").html(+this.semestre2.moy.toFixed(2));
+    
+    var cred_s1 = this.semestre1.set_credits(this.semestre1.moy)
+    $("#creditS1").html(+cred_s1);
+    
+    var cred_s2 = this.semestre2.set_credits(this.semestre2.moy)
+    $("#creditS2").html(+cred_s2);
+    
+
+    // Moyenne generale
+    var moyenne_genral = (this.semestre1.moy * this.semestre1.coef + this.semestre2.moy * this.semestre2.coef) / (this.semestre1.coef + this.semestre2.coef);
+    $("#moyenneGen").html(+moyenne_genral.toFixed(2))
+
+    if (moyenne_genral >= 10) {
+        var CredGen = 60;
+        $("#creditGen").html(+CredGen);
+
+    } else {
+        var CredGen = cred_s2 + cred_s1;
+        $("#creditGen").html(+CredGen);
     }
-    set_credits(moy)
-    {
-        // if moy is up to 10, get all credits
-        var total_credits = 0;
+    
+     this.semestre1.rattraper_all(moyenne_genral);
+     this.semestre2.rattraper_all(moyenne_genral);    
+}  
 
-        for(let i =0; i < this.semestres.length;i++)
-        {
-
-            var moy_semestre = this.semestres[i].moy;
-
-            // setup credit for the module if the unit moy is up to 10, or the module moy is up to 10
-            this.semestres[i].set_credits(Math.max(moy, moy_semestre));
-            
-            // sum credits
-            if((moy >= 10) || (moy_semestre >= 10))
-            total_credits += this.semestres[i].credit;
-        }
-        this.credits = total_credits;
-        return total_credits;
-    }
+create_canevas()  
+{
+    this.semestre1.create_canevas();
+    this.semestre2.create_canevas();
+}
 }
 
 class Semestre{
@@ -85,6 +96,39 @@ class Semestre{
         this.credits = total_credits;
         return total_credits;
     }
+    
+    rattraper_all(moy_annuel)
+    {
+    for(let unite_x of this.unites)
+        {
+        // calcul every unite
+        unite_x.rattraper2( this, moy_annuel);
+
+        }
+    }
+// calcul unit moy and credits
+ calcul_semestre_unites_moy()
+    {
+    for(let unite_x of this.unites)
+        {
+            // calcul every module
+            for( let module_x of unite_x.modules)
+                //~ moyennemodule2(module_x);
+                module_x.moyennemodule2();
+        unite_x.moyenneUnites();
+        unite_x.credUnites(); 
+        }
+    }
+
+create_canevas()
+{
+    // create dynamique canevas
+    for(let i=0; i< this.unites.length; i++)
+    {
+        // create first case
+        this.unites[i].create_dynamique_unite(this);
+    }    
+}
 }
 
 class Unite{
@@ -134,6 +178,50 @@ class Unite{
         this.credit = total_credits;
         return total_credits;
     }
+    moyenneUnites() {
+    
+    var moyenneU = this.calcul_moy();
+    $("#Moy"+this.name).html(+moyenneU.toFixed(2));
+    return moyenneU;
+}
+
+
+    credUnites() {
+    // if unit average is up to 10 then all modules set up their credits
+    // else make sum of existing modules crédits
+    var credit = this.set_credits(this.moy);
+    //~ var credit = 7;
+    $("#Crd"+this.name).html(+credit);
+    }
+    
+ rattraper2(semestre_x, annee_moy) {
+    
+        
+      for (var i=0; i < this.modules.length; i++)
+       {
+           var module1 = "#"+this.modules[i].name;
+           if ((annee_moy < 10) && (semestre_x.moy < 10) && (this.moy < 10)
+             && (this.modules[i].moy < 10))
+           {
+                $('span', module1).removeClass('hidden');
+            }
+            else
+            $('span', module1).addClass('hidden');
+       }  
+
+}
+
+create_dynamique_unite(semestre_x)
+{
+    // create dynamique canevas
+
+    for(let i=0; i< this.modules.length; i++)
+    {
+        // create first case
+        this.modules[i].create_one_module(i==0, this, semestre_x);
+    }
+}
+
 }
 
 class Module{
@@ -204,12 +292,9 @@ class Module{
         $("#mo"+this.name).html(+moy.toFixed(2))
     }
     
-}
-
-//~ function moyennemodule2(module, poids) {
-function moyennemodule2(module_obj) {
+    moyennemodule2() {
     // list of ids
-    var module = module_obj.name;
+    var module = this.name;
     //~ var poids = module_obj.poids;
     // html items' IDs
     var exam = "#ex"+module;
@@ -234,149 +319,23 @@ function moyennemodule2(module_obj) {
     };
 
     // calcul moyen
-    var moy = module_obj.calcul_moy();
+    var moy = this.calcul_moy();
     // set credits
-    module_obj.set_credit(moy);
+    this.set_credit(moy);
     // set moyen
-    module_obj.set_moy(moy);
+    this.set_moy(moy);
     return moy.toFixed(2);
 
 
 }
 
-
-
-function moyenneUnites2(unite_x) {
-    
-    var moyenneU = unite_x.calcul_moy();
-    $("#Moy"+unite_x.name).html(+moyenneU.toFixed(2));
-    return moyenneU;
-}
-
-
-function credUnites2(unite_x) {
-    // if unit average is up to 10 then all modules set up their credits
-    // else make sum of existing modules crédits
-    var credit = unite_x.set_credits(unite_x.moy);
-    //~ var credit = 7;
-    $("#Crd"+unite_x.name).html(+credit);
-}
-
-function display_results(semestre1, semestre2)
-{
-    
-    // calcul S1
-    calcul_semestre_unites_moy(semestre1);
-    semestre1.calcul_moy();
-
-    // calcul unit moy and credits
-    calcul_semestre_unites_moy(semestre2)    
-    semestre2.calcul_moy();
-
-    // display moyenne S2
-    $("#moyenneS1").html(+semestre1.moy.toFixed(2));
-    $("#moyenneS2").html(+semestre2.moy.toFixed(2));
-    
-    var cred_s1 = semestre1.set_credits(semestre1.moy)
-    $("#creditS1").html(+cred_s1);
-    
-    var cred_s2 = semestre2.set_credits(semestre2.moy)
-    $("#creditS2").html(+cred_s2);
-    
-
-    // Moyenne generale
-    var moyenne_genral = (semestre1.moy * semestre1.coef + semestre2.moy * semestre2.coef) / (semestre1.coef + semestre2.coef);
-    $("#moyenneGen").html(+moyenne_genral.toFixed(2))
-
-    if (moyenne_genral >= 10) {
-        var CredGen = 60;
-        $("#creditGen").html(+CredGen);
-
-    } else {
-        var CredGen = cred_s2 + cred_s1;
-        $("#creditGen").html(+CredGen);
-    }
-    
-     rattraper_all(semestre1 , moyenne_genral);
-     rattraper_all(semestre2 , moyenne_genral);    
-}
-
-
-
-
-// calcul unit moy and credits
-function calcul_semestre_unites_moy(semestre1)
-    {
-    for(let unite_x of semestre1.unites)
-        {
-            // calcul every module
-            for( let module_x of unite_x.modules)
-                moyennemodule2(module_x);
-        moyenneUnites2(unite_x);
-        credUnites2(unite_x); 
-        }
-    }
-// calcul les modules à rattraper
-function rattraper_all(semestre_x, moy_annuel)
-    {
-    for(let unite_x of semestre_x.unites)
-        {
-        // calcul every unite
-        rattraper2(unite_x, semestre_x, moy_annuel);
-
-        }
-    }
-
-function rattraper2(unite_x, semestre_x, annee_moy) {
-    
-    //~ console.log("rattrapper2 "+ semestre_x.moy + " unite_moy "+ unite_x.moy +" annee_moy " +annee_moy);
-    //~ if( (annee_moy < 10) && (semestre_x.moy < 10) && (unite_x.moy < 10))
-    {
-        
-      for (var i=0; i < unite_x.modules.length; i++)
-       {
-           var module1 = "#"+unite_x.modules[i].name;
-           //~ console.log("rattrapper2 "+ module1 +" "+unite_x.modules[i].moy);
-
-          //~ $('span', unite_x.modules[i].name).addClass('hidden');
-           if ((annee_moy < 10) && (semestre_x.moy < 10) && (unite_x.moy < 10)
-             && (unite_x.modules[i].moy < 10))
-           {
-                $('span', module1).removeClass('hidden');
-            }
-            else
-            $('span', module1).addClass('hidden');
-       }  
-    }
-
-}
-
-function create_canevas(semestre_x)
+create_one_module(first_case_boolean, unite_x, semestre_x)
 {
     // create dynamique canevas
-    for(let i=0; i< semestre_x.unites.length; i++)
-    {
-        // create first case
-        create_dynamique_unite(semestre_x.unites[i], semestre_x);
-    }    
-}
-function create_dynamique_unite(unite_x, semestre_x)
-{
-    // create dynamique canevas
-
-    for(let i=0; i< unite_x.modules.length; i++)
-    {
-        // create first case
-        create_one_module(unite_x.modules[i], i==0, unite_x, semestre_x);
-    }
-}
-function create_one_module(module_x, first_case_boolean, unite_x, semestre_x)
-{
-    // create dynamique canevas
-    var mod_name = module_x.name;
-    var mod_title = module_x.title;
-    var mod_coef = module_x.coef;
-    var mod_cred = module_x.credit;
+    var mod_name = this.name;
+    var mod_title = this.title;
+    var mod_coef = this.coef;
+    var mod_cred = this.credit;
     var unite_name = unite_x.name;
     var unite_title = unite_x.title;
     var semestre_name = semestre_x.name;
@@ -387,9 +346,9 @@ function create_one_module(module_x, first_case_boolean, unite_x, semestre_x)
                                     <h6>${mod_title}<span class="badge badge-danger hidden ">Rattrapage</span> </h6>
                     </td>`;
 
-    var hidden_exam = (module_x.poids_exam != 0) ? "" : "hidden";
-    var hidden_tp   = (module_x.poids_tp != 0) ? "" : "hidden";
-    var hidden_td   = (module_x.poids_td != 0) ? "" : "hidden";
+    var hidden_exam = (this.poids_exam != 0) ? "" : "hidden";
+    var hidden_tp   = (this.poids_tp != 0) ? "" : "hidden";
+    var hidden_td   = (this.poids_td != 0) ? "" : "hidden";
 
     var module_parts = `<td class="light">
                                     <div class="input-group flex-nowrap">
@@ -423,6 +382,10 @@ function create_one_module(module_x, first_case_boolean, unite_x, semestre_x)
     else
         $("#table2").append(new_module);    
 }
+
+}
+
+
 
 function create_menu()
 {
