@@ -1,3 +1,7 @@
+// Global variable
+// used in development 
+var CHECK_CANVAS = true;
+//~ var CHECK_CANVAS = false;
 
 class Year{
   constructor(name, semestre1, semestre2)
@@ -49,7 +53,7 @@ display_results()
 create_canevas()  
 {
     // itiialize the checking point to test canvas
-    create_initial_checkpoint()
+    if(CHECK_CANVAS) create_initial_checkpoint()
     // create a canvacs for each semester
     this.semestre1.create_canevas();
     this.semestre2.create_canevas();
@@ -63,6 +67,12 @@ class Semestre{
         this.unites = unites;
         this.moy = 0;
         this.coef = 0;
+        this.credits_origine = 0;
+        for(let i =0; i < this.unites.length;i++)
+        {
+            this.coef += this.unites[i].coef;
+            this.credits_origine += this.unites[i].credits_origine;
+        }
     } 
     calcul_moy()
     {
@@ -131,7 +141,25 @@ create_canevas()
         // create first case
         this.unites[i].create_dynamique_unite(this);
         this.unites[i].create_check_unite(this)
-    }    
+    } 
+    this.create_check_semestre()    
+}
+create_check_semestre()
+{
+    // create dynamique canevas
+    var row_name = `<td class="noneed"> <h6>Semestre ${this.name}</h6></td>`;
+    var row_coef = `<td class="noneed"> <h6>${this.coef}</h6></td>`;
+    var row_cred = `<td class="noneed"> <h6>${this.credits_origine}</h6></td>`;
+
+    
+    var new_unite = document.createElement("tr");
+    new_unite.innerHTML = row_name +  row_coef +  row_cred;
+
+    if(this.name == "S1")
+        $("#checkplace1").append(new_unite);
+    else
+        $("#checkplace2").append(new_unite);    
+   
 }
 }
 
