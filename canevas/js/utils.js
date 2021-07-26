@@ -1,7 +1,4 @@
-// Global variable
-// used in development 
-//~ var CHECK_CANVAS = true;
-var CHECK_CANVAS = false;
+
 
 class Year{
   constructor(name, semestre1, semestre2)
@@ -50,10 +47,11 @@ display_results()
      this.semestre2.rattraper_all(moyenne_genral);    
 }  
 
-create_canevas()  
+create_canevas(check_canvas=false)  
 {
+    // if you want check canvas use true instead
     // itiialize the checking point to test canvas
-    if(CHECK_CANVAS) create_initial_checkpoint()
+    if(check_canvas) create_initial_checkpoint()
     // create a canvacs for each semester
     this.semestre1.create_canevas();
     this.semestre2.create_canevas();
