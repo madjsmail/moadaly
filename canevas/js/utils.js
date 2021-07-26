@@ -285,7 +285,7 @@ function display_results(semestre1, semestre2)
     
 
     // Moyenne generale
-    var moyenne_genral = (semestre1.moy + semestre2.moy) / 2;
+    var moyenne_genral = (semestre1.moy * semestre1.coef + semestre2.moy * semestre2.coef) / (semestre1.coef + semestre2.coef);
     $("#moyenneGen").html(+moyenne_genral.toFixed(2))
 
     if (moyenne_genral >= 10) {
