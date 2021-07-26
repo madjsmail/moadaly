@@ -19,7 +19,7 @@
     // unites
     var unite_uef1_s1 = new Unite("U1_S1",[module_soc, module_sysemb], "Fondamentale1");
     var unite_uef2_s1 = new Unite("U2_S1",[module_vf, module_gi], "Fondamentale2");
-    var unite_uem_s1 = new Unite("U3_S1",[module_ci, module_ci], "Méthodologie");
+    var unite_uem_s1 = new Unite("U3_S1",[module_ic, module_ci], "Méthodologie");
     var unite_ued_s1 = new Unite("U4_S1",[module_rm], "Découverte");
     var unite_uet_s1 = new Unite("U5_S1",[module_dtic], "Transversale");
     
@@ -42,6 +42,7 @@
     
     // Year 
     var annee = new Year("M2GSI", semestre1, semestre2);
+   
     annee.create_canevas();
     create_menu();
 

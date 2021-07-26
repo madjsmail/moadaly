@@ -48,6 +48,9 @@ display_results()
 
 create_canevas()  
 {
+    // itiialize the checking point to test canvas
+    create_initial_checkpoint()
+    // create a canvacs for each semester
     this.semestre1.create_canevas();
     this.semestre2.create_canevas();
 }
@@ -127,6 +130,7 @@ create_canevas()
     {
         // create first case
         this.unites[i].create_dynamique_unite(this);
+        this.unites[i].create_check_unite(this)
     }    
 }
 }
@@ -139,10 +143,13 @@ class Unite{
         this.modules = modules;
         this.coef = 0;
         this.credit = 0;
+        this.credits_origine = 0;
         this.moy = 0;
         for(let i =0; i < this.modules.length;i++)
+        {
             this.coef += this.modules[i].coef;
-
+            this.credits_origine += this.modules[i].credit;
+        }
     } 
     calcul_moy()
     {
@@ -220,6 +227,23 @@ create_dynamique_unite(semestre_x)
         // create first case
         this.modules[i].create_one_module(i==0, this, semestre_x);
     }
+}
+create_check_unite(semestre_x)
+{
+    // create dynamique canevas
+    var unite_name = `<td class="noneed"> ${this.title} [${this.name}]</td>`;
+    var unite_coef = `<td class="noneed"> ${this.coef}</td>`;
+    var unite_cred = `<td class="noneed"> ${this.credits_origine}</td>`;
+
+    
+    var new_unite = document.createElement("tr");
+    new_unite.innerHTML = unite_name +  unite_coef +  unite_cred;
+
+    if(semestre_x.name == "S1")
+        $("#checkplace1").append(new_unite);
+    else
+        $("#checkplace2").append(new_unite);    
+   
 }
 
 }
@@ -349,7 +373,7 @@ create_one_module(first_case_boolean, unite_x, semestre_x)
     var hidden_exam = (this.poids_exam != 0) ? "" : "hidden";
     var hidden_tp   = (this.poids_tp != 0) ? "" : "hidden";
     var hidden_td   = (this.poids_td != 0) ? "" : "hidden";
-
+    
     var module_parts = `<td class="light">
                                     <div class="input-group flex-nowrap">
                                         <input type="text" class="form-control" placeholder="TD" aria-label="TD" aria-describedby="addon-wrapping" name="td${mod_name}" id="td${mod_name}" ${hidden_td}>
@@ -358,6 +382,15 @@ create_one_module(first_case_boolean, unite_x, semestre_x)
                                     </div>
                                 </td>
                         `;
+                        
+    // verify if total poids is not 100%
+    //~ var check_poids = "";
+    if(this.poids_exam+this.poids_td+this.poids_tp != 1)
+        //~ check_poids = `<span class="badge badge-danger">Poids Error [${this.poids_exam}, ${this.poids_exam}, ${this.poids_exam}]</span>`;
+        module_parts = `<td class="light">
+            <span class="badge badge-danger">Poids Error [${this.poids_exam}, ${this.poids_td}, ${this.poids_tp}]</span>
+         </td>`;
+    
     var module_coef = `<td class="noneed"> <h6 id="Coef${mod_name}">${mod_coef}</h6></td>`;
     var module_cred = `<td class="noneed"> <h6 id="Cred${mod_name}">${mod_cred}</h6></td>`;
     var module_moy = `<td class="light"> <h6 id="mo${mod_name}">0</h6></td>`;
@@ -399,4 +432,31 @@ function create_menu()
                     `;
     $("#navbarTextList").append(menu_item);
     }
+}
+function create_initial_checkpoint()
+{
+    var checkpoint = `            <div id="checkplaces">
+             <h2> Check point for canvas</h2>                         
+             <h3> Semestre2</h3>                         
+             <table id="checkplace1" class="table-striped  mb-5">
+           
+                <thead> 
+                <th> Unité </th><th> Coef </th><th>Credit</th>  
+                </thead> 
+              <tbody>    
+            </tbody>     
+             </table>
+             <h3> Semestre2</h3>
+             <table id="checkplace2" class="table-striped  mb-5">
+            
+                <thead> 
+                <th> Unité </th><th> Coef </th><th>Credit</th>  
+                </thead> 
+             <tbody>    
+            </tbody>     
+             </table>
+
+                
+ </div>`;
+    $("#tables").append(checkpoint); 
 }
