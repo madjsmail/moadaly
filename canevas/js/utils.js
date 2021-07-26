@@ -1,7 +1,7 @@
 // Global variable
 // used in development 
-var CHECK_CANVAS = true;
-//~ var CHECK_CANVAS = false;
+//~ var CHECK_CANVAS = true;
+var CHECK_CANVAS = false;
 
 class Year{
   constructor(name, semestre1, semestre2)
