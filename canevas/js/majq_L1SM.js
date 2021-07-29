@@ -56,7 +56,7 @@
    // create_canevas(semestre1);
     // Year 
     var annee = new Year("L1SM", semestre1, semestre2);
-    annee.create_canevas(true);
+    annee.create_canevas();
     create_menu("L1SM");
 
 function main() {     
