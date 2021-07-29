@@ -450,12 +450,15 @@ function create_menu(current_page="")
 {
     var list  =  ["L2Info", "L3SI", "L3ISIL", "M1ISIL", "M1GSI", "M2ISIL", "M2GSI"];
     var link = "";
+    var menu_item="";    
+    var active = "";
     for( let title of list)
     {
-        
-    var active = "";
+    active = "";    
+
     if(title == current_page) active = "active";
-    var menu_item = `<li id="3em" class="nav-item ${active}">
+    
+    menu_item= `<li id="3em" class="nav-item ${active}">
                             <a class="nav-link" href="./index${title}.html">${title}</a>
                         </li> 
                     `;
@@ -464,6 +467,12 @@ function create_menu(current_page="")
         
     $("#navbarTextList").append(menu_item);
     }
+    // fix menu items
+    menu_item= `<li id="3em" class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li> 
+                    `;
+    $("#navbarTextList").append(menu_item);                    
 }
 function create_initial_checkpoint()
 {

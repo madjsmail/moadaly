@@ -11,6 +11,8 @@ See Moadaly android app : [moadaly-App](https://github.com/tarekDZ2019/moadaly-A
 
 See our design : [design](https://github.com/Sho-Oter/dynamic-grade-average-calculator)
 
+See  : [SourceCode](https://github.com/Abdelmadjidsmail/moadaly)
+
 ## Moadaly
 
 * is a web application that allow you to calculate your pass marks. The app is for computer science student " LMD "   
@@ -60,14 +62,13 @@ For example a new level named "L3ML"
 
 1. make a copy of canevas template:
  a. html file: copy canevas/templates/indexL3ML.html
- b. html file: copy canevas/templates/majq_L3ML.js
- make copy and put it on canevas directory and canevas/js for js files
+  b. html file: copy canevas/templates/majq_L3ML.js
+  make copy and put it on canevas directory and canevas/js for js files
 2. Test if it works
 3. Update configuration modules and unites in majq_L3ML.js file
 4. You can add an argument to  annee.create_canevas(true) as true to check your canevas
 5. If it works: Add new menu item "L3ML"
 into file :canevas/js/utils.js function create_menu: 
-
 
 
 
