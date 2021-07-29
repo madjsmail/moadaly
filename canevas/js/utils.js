@@ -446,18 +446,33 @@ create_one_module(first_case_boolean, unite_x, semestre_x)
 
 
 
-function create_menu()
+function create_menu(current_page="")
 {
     var list  =  ["L2Info", "L3SI", "L3ISIL", "M1ISIL", "M1GSI", "M2ISIL", "M2GSI"];
     var link = "";
+    var menu_item="";    
+    var active = "";
     for( let title of list)
     {
-    var menu_item = `<li id="3em" class="nav-item">
+    active = "";    
+
+    if(title == current_page) active = "active";
+    
+    menu_item= `<li id="3em" class="nav-item ${active}">
                             <a class="nav-link" href="./index${title}.html">${title}</a>
                         </li> 
                     `;
+
+
+        
     $("#navbarTextList").append(menu_item);
     }
+    // fix menu items
+    menu_item= `<li id="3em" class="nav-item">
+                            <a class="nav-link" href="./about.html">About</a>
+                        </li> 
+                    `;
+    $("#navbarTextList").append(menu_item);                    
 }
 function create_initial_checkpoint()
 {

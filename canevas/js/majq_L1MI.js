@@ -54,7 +54,7 @@
     // Year 
     var annee = new Year("M2GSI", semestre1, semestre2);
     annee.create_canevas();
-    create_menu();
+    create_menu("L1MI");
 
 function main() {     
     // Calcul et traitement
