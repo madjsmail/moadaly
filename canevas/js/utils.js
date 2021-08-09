@@ -448,7 +448,7 @@ create_one_module(first_case_boolean, unite_x, semestre_x)
 
 function create_menu(current_page="")
 {
-    var list  =  ["L2Info", "L3SI", "L3ISIL", "M1ISIL", "M1GSI", "M2ISIL", "M2GSI"];
+    var list  =  ["L2Info", "L3SI", "L3ISIL", "M1ISIL", "M1GSI", "M2ISIL", "M2GSI", "L1ST", "L1SM"];
     var link = "";
     var menu_item="";    
     var active = "";

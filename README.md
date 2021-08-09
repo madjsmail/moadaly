@@ -24,18 +24,20 @@ See  : [SourceCode](https://github.com/Abdelmadjidsmail/moadaly)
   * L3 SI + ISIL
   * M1 ISIL+ GSI
   * M2 ISIL + GSI
+* تمت إضافة السنة الأولى في ميداني العلوم والتكنولوجيا وميدان علوم المادة ST/SM
 
 # Calcul 
 The calcul is based on :
 * License:
-	* [Canevas L1 MI](docs/L1MI.pdf)
-	* [Canevas L2 Info](docs/L2info.pdf)
-	* [Canevas L3 SI ](docs/L3SI.pdf)
-	* [Canevas L3 ISIL ](docs/L3ISIL.pdf)
+    * [Canevas L1 MI](docs/L1MI.pdf)
+    * [Canevas L2 Info](docs/L2info.pdf)
+    * [Canevas L3 SI ](docs/L3SI.pdf)
+    * [Canevas L3 ISIL ](docs/L3ISIL.pdf)
 * Master:
-	* [Canevas M1 + M2 GSI](docs/MGSI.pdf)
-	* [Canevas M1 + M2 ISIL](docs/MISIL.pdf)	
-
+    * [Canevas M1 + M2 GSI](docs/MGSI.pdf)
+    * [Canevas M1 + M2 ISIL](docs/MISIL.pdf)    
+* Domaine ST [Canevas L1 ST](docs/L1ST.pdf)
+* Domaine SM [Canevas L1 SM](docs/L1SM.pdf)
 * More details can be found  [here](http://dpinfo.univ-bouira.dz/?page_id=22) 
 
 ## Issues
@@ -62,8 +64,8 @@ For example a new level named "L3ML"
 
 1. make a copy of canevas template:
  a. html file: copy canevas/templates/indexL3ML.html
-  b. html file: copy canevas/templates/majq_L3ML.js
-  make copy and put it on canevas directory and canevas/js for js files
+    b. html file: copy canevas/templates/majq_L3ML.js
+    make copy and put it on canevas directory and canevas/js for js files
 2. Test if it works
 3. Update configuration modules and unites in majq_L3ML.js file
 4. You can add an argument to  annee.create_canevas(true) as true to check your canevas
