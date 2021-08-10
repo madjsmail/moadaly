@@ -63,14 +63,16 @@ Testing is much appreciated. Please post any issue you find in the [Issue tracke
 For example a new level named "L3ML"
 
 1. make a copy of canevas template:
- a. html file: copy canevas/templates/indexL3ML.html
-    b. html file: copy canevas/templates/majq_L3ML.js
-    make copy and put it on canevas directory and canevas/js for js files
+ a. Make a copy of canevas/templates/L1MI.json  as L3ML.json
+ b. Modify the JSON file as you need.
+ c. copy the file into : canevas/json/L3ML.json
+ c. Add a line to index.html like this:
+ ```html
+     <script type='text/javascript' src='canevas/json/L3ML.json'></script>
+ ```
 2. Test if it works
-3. Update configuration modules and unites in majq_L3ML.js file
-4. You can add an argument to  annee.create_canevas(true) as true to check your canevas
-5. If it works: Add new menu item "L3ML"
-into file :canevas/js/utils.js function create_menu: 
+5. The menu must be updated automatically
+
 
 
 
