@@ -27,10 +27,10 @@ display_results()
     
     var cred_s1 = this.semestre1.set_credits(this.semestre1.moy)
     $("#creditS1").html(+cred_s1);
-    $("#creditS1a").html(+cred_s1);
+    $("#creditS1_copy").html(+cred_s1);
     
     var cred_s2 = this.semestre2.set_credits(this.semestre2.moy)
-    $("#creditS2_copy").html(+cred_s2);
+    $("#creditS2").html(+cred_s2);
     $("#creditS_copy").html(+cred_s2);
     
 
