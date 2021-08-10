@@ -562,7 +562,7 @@ function create_menu(current_page="", item_list=[])
     }
     // fix menu items
     menu_item= `<li id="3em" class="nav-item">
-                            <a class="nav-link" href="./about.html">About</a>
+                            <a class="nav-link" href="canevas/about.html">About</a>
                         </li> 
                     `;
     $("#navbarTextList").append(menu_item);                    
