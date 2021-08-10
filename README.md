@@ -62,16 +62,16 @@ Testing is much appreciated. Please post any issue you find in the [Issue tracke
 ### How to create a new canvas
 For example a new level named "L3ML"
 
-1. make a copy of canevas template:
- a. Make a copy of canevas/templates/L1MI.json  as L3ML.json
- b. Modify the JSON file as you need.
- c. copy the file into : canevas/json/L3ML.json
- c. Add a line to index.html like this:
+
+1. Make a copy of canevas/templates/L1MI.json  as L3ML.json
+2. Modify the JSON file as you need.
+3. copy the file into : canevas/json/L3ML.json
+4. Add a line to index.html like this:
  ```html
      <script type='text/javascript' src='canevas/json/L3ML.json'></script>
  ```
-2. Test if it works
-5. The menu must be updated automatically
+5. Test if it works
+6. The menu must be updated automatically
 
 
 
