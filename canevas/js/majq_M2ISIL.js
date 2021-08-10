@@ -40,7 +40,7 @@
 
     var semestre2 = new Semestre("S2", [unite_uef1_s2]);
     // Year 
-    var annee = new Year("M2GSI", semestre1, semestre2);
+    var annee = new Year("M2ISIL", semestre1, semestre2);
     annee.create_canevas();
     create_menu("M2ISIL");
 

@@ -9,10 +9,10 @@
     <!-- title -->
     <title>Calculateur de Moyenne</title>
     <!-- css -->
-    <link rel='stylesheet' type='text/css' media='all' href="assets/css/bootstrap.min.css" />
-    <link rel='stylesheet' type='text/css' media='all' href="assets/css/shards.min.css" />
-    <link rel='stylesheet' type='text/css' media='all' href="assets/css/shards-extras.min.css" />
-    <link rel='stylesheet' type='text/css' media='all' href="assets/css/style.css" />
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/bootstrap.min.css" />
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/shards.min.css" />
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/shards-extras.min.css" />
+    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/style.css" />
 </head>
 
 <body>
@@ -195,30 +195,32 @@
         </div>
     </div>
     <!-- js -->
-    <script type='text/javascript' src='assets/js/jquery.js'></script>
-    <script type='text/javascript' src='assets/js/popper.min.js'></script>
-    <script type='text/javascript' src='assets/js/bootstrap.min.js'></script>
-    <script type='text/javascript' src='assets/js/shards.min.js'></script>
-    <script type='text/javascript' src='assets/js/main.js'></script>
-    <script type='text/javascript' src='canevas/js/utils.js'></script>
-    <script type='text/javascript' src='canevas/json/L1MI.json'></script>
-    <script type='text/javascript' src='canevas/json/L2Info.json'></script>
-    <script type='text/javascript' src='canevas/json/L3SI.json'></script>
-    <script type='text/javascript' src='canevas/json/L3ISIL.json'></script>
-    <script type='text/javascript' src='canevas/json/M1ISIL.json'></script>
-    <script type='text/javascript' src='canevas/json/M2ISIL.json'></script>
-    <script type='text/javascript' src='canevas/json/M1GSI.json'></script>
-    <script type='text/javascript' src='canevas/json/M2GSI.json'></script>
-    <script type='text/javascript' src='canevas/json/L1ST.json'></script>
-    <script type='text/javascript' src='canevas/json/L1SM.json'></script>
+    <script type='text/javascript' src='../assets/js/jquery.js'></script>
+    <script type='text/javascript' src='../assets/js/popper.min.js'></script>
+    <script type='text/javascript' src='../assets/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='../assets/js/shards.min.js'></script>
+    <script type='text/javascript' src='../assets/js/main.js'></script>
+    <script type='text/javascript' src='./js/utils.js'></script>
+    <script type='text/javascript' src='./json/L1MI.json'></script>
+    <script type='text/javascript' src='./json/L2Info.json'></script>
+    <script type='text/javascript' src='./json/L3SI.json'></script>
+    <script type='text/javascript' src='./json/L3ISIL.json'></script>
+    <script type='text/javascript' src='./json/M1ISIL.json'></script>
+    <script type='text/javascript' src='./json/M2ISIL.json'></script>
+    <script type='text/javascript' src='./json/M1GSI.json'></script>
+    <script type='text/javascript' src='./json/M2GSI.json'></script>
+    <script type='text/javascript' src='./json/L1ST.json'></script>
+    <script type='text/javascript' src='./json/L1SM.json'></script>
+    <script type='text/javascript'>var level="L2Info";</script>
     <script type='text/javascript'>
          var url_string =  window.location;
-         //~ console.log(url_string);
+         console.log(url_string);
             var url = new URL(url_string);
             var level = url.searchParams.get("level");
-            //~ console.log(level);
+           
+            console.log(level);
     </script>
-    <script type='text/javascript' src='canevas/js/majq_Model.js'></script>
+    <script type='text/javascript' src='./js/majq_Model.js'></script>
 
 </body>
 

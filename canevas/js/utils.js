@@ -49,7 +49,7 @@ display_results()
     
      this.semestre1.rattraper_all(moyenne_genral);
      this.semestre2.rattraper_all(moyenne_genral);  
-     console.log("Year"+JSON.stringify(this));  
+     //~ console.log("Year"+JSON.stringify(this));  
 }  
 
 create_canevas(check_canvas=false)  
@@ -60,6 +60,7 @@ create_canevas(check_canvas=false)
     // create a canvacs for each semester
     this.semestre1.create_canevas();
     this.semestre2.create_canevas();
+    //~ console.log(JSON.stringify(this));
 }
 }
 
@@ -531,9 +532,12 @@ create_one_module(first_case_boolean, unite_x, semestre_x)
 
 
 
-function create_menu(current_page="")
+function create_menu(current_page="", item_list=[])
 {
-    var list  =  ["L2Info", "L3SI", "L3ISIL", "M1ISIL", "M1GSI", "M2ISIL", "M2GSI", "L1ST", "L1SM"];
+    if(item_list==[])
+        var list  =  ["L2Info", "L3SI", "L3ISIL", "M1ISIL", "M1GSI", "M2ISIL", "M2GSI", "L1ST", "L1SM"];
+    else
+        var list = item_list;
     var link = "";
     var menu_item="";    
     var active = "";
@@ -544,9 +548,13 @@ function create_menu(current_page="")
     if(title == current_page) active = "active";
     
     menu_item= `<li id="3em" class="nav-item ${active}">
-                            <a class="nav-link" href="./index${title}.html">${title}</a>
+                            <a class="nav-link" href="./index.html?level=${title}">${title}</a>
                         </li> 
                     `;
+    //~ menu_item= `<li id="3em" class="nav-item ${active}">
+                            //~ <a class="nav-link" href="./index${title}.html?level=${title}">${title}</a>
+                        //~ </li> 
+                    //~ `;
 
 
         
@@ -585,4 +593,41 @@ function create_initial_checkpoint()
                 
  </div>`;
     $("#tables").append(checkpoint); 
+}
+
+
+// load modules from Json data 
+function generate_canevas_from_json(canevas, level)
+{// load modules from Json data 
+    //~ var level = "L1MI";
+    var sems_list = [];
+    var semestres = ["semestre1", "semestre2"];
+    for(let sems  of semestres)
+    {   ;
+        var unite_list = [];
+        //~ console.log("Level+sems+"+level+sems);
+        for(let unite of canevas[level][sems]['unites'])
+        { 
+            //~ var unite = canevas[level][sems]['unites'][j];
+           var modules_list = [];
+           for(let mod of unite["modules"])
+            { 
+
+                //~ console.log("unite['modules']:"+JSON.stringify(unite["modules"]));                
+                //~ console.log("Mod:"+JSON.stringify(mod));                
+                var module = new Module(mod["name"],  mod["coef"], mod['credit'], 
+                mod["poids"],  mod["title"]);
+                modules_list.push(module);
+                //~ console.log("Module:"+JSON.stringify(module));
+
+            }
+            var unite_obj = new Unite(unite["name"], modules_list, unite['title']);
+            unite_list.push(unite_obj);
+        }
+        var sem_obj = new Semestre(canevas[level][sems]["name"], unite_list);
+        sems_list.push(sem_obj);
+    }
+    annee2 = new Year(level, sems_list[0], sems_list[1])
+    //~ console.log(JSON.stringify(annee2));
+    return annee2;
 }
