@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-
-
-
-
 <html lang="en">
 
 <head>
@@ -19,29 +15,27 @@
     <link rel='stylesheet' type='text/css' media='all' href="../assets/css/style.css" />
 </head>
 
-<body style="background-color:rgba(16, 35, 51, 0.9) ">
+<body>
     <div id="main-container">
         <div class="page-header">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto" id="navbarTextList">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../index.html">Math info <span class="sr-only">(current)</span></a>
+                    <ul class="navbar-nav mr-auto"  id="navbarTextList">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">Math info <span class="sr-only">(current)</span></a>
                         </li>
-                     
+                       
                     </ul>
                     <span class="navbar-text">
-                            <h3 id="nav-titre">L3ISIL: Calculateur de Moyenne</h3>
-                        </span>
+                        <h3 id="nav-titre">L1MI: Calculateur de Moyenne</h3>
+                    </span>
                 </div>
             </nav>
         </div>
-
-
- <!-- in case adding new modules you must stick with syntax of the id's      -->
+        <!-- in case adding new modules you must stick with syntax of the id's      -->
         <!--                                                                         -->
 
         <!--   tdModule =============> Note de td                                -->
@@ -51,12 +45,18 @@
         <!--   CredModule =============>crédit de module                         -->
         <!--   moModule =============> moyenne de module obtenu                  -->
         <!--   crModule =============> crédit de module obtenu                   -->
-        <!--   MoyU1_S1/MoyU1_S2 =============> moyenne d'unité obtenu         -->
-        <!--   CrdU1_S1/CU1_S2  =============>    crédit d'unité obtenu                -->
+        <!--   MoynneU1/MoynneU1S2 =============> moyenne d'unité obtenu         -->
+        <!--   CU1/CU_S2  =============>    crédit d'unité obtenu                -->
+
+
+
+
+
+
 
         <div class="page-content">
             <div class="tables-container">
-                <div class="tables"  id="tables" style="overflow-x:auto;">
+                <div class="tables"  id="tables"  style="overflow-x:auto;">
                     <table id="table1" class="table-striped  mb-5">
                         <thead>
                             <tr>
@@ -69,15 +69,7 @@
                         <tbody>
                             <tr>
                                 <th>
-                                    <h6 class="uname">Unités</h6>
-                                </th>
-                                <th>
                                     <h6>Modules</h6>
-                                </th>
-                                <th>
-                                    <h6>Note TD</h6> |
-                                    <h6>TP</h6> |
-                                    <h6> Exam</h6>
                                 </th>
                                 <th class="noneed">
                                     <h6>Coef</h6>
@@ -86,30 +78,24 @@
                                     <h6>Créd</h6>
                                 </th>
                                 <th>
+                                    <h6>Note TD</h6> |
+                                    <h6>TP</h6> |
+                                    <h6> Exam</h6>
+                                </th>
+
+                                <th>
                                     <h6>Moyenne Module</h6>
                                 </th>
                                 <th>
                                     <h6>Créd Mod</h6>
                                 </th>
-                                <th>
-                                    <h6>Moyenne Unités</h6>
-                                </th>
-                                <th>
-                                    <h6>Créd Unités</h6>
-                                </th>
 
                             </tr>
-                            <!--ligne 3 -->
-                 </tbody> 
-                </table>
-                 </div> 
-                </div>                            
-                                             <!-- 2em semstre -->
 
-        <div class="page-content">
-            <div class="tables-container">
-                <div class="tables" style="overflow-x:auto;">
-                    <table id="table2" class="table-striped  mb-5">
+                            <!----------------------------------------2em Semstre -------------------------------------------------->
+                        </tbody>
+                    </table>
+                    <table id="table2" class="table-striped  ">
                         <thead>
                             <tr>
                                 <th id="titre2" colspan="11">
@@ -121,46 +107,43 @@
                         <tbody>
                             <tr>
                                 <th>
-                                    <h6 class="uname">Unités</h6>
-                                </th>
-                                <th>
                                     <h6>Modules</h6>
-                                </th>
-                                <th>
-                                    <h6>Note TD</h6> |
-                                    <h6>TP</h6> |
-                                    <h6> Exam</h6>
                                 </th>
                                 <th class="noneed">
                                     <h6>Coef</h6>
                                 </th>
                                 <th class="noneed">
                                     <h6>Créd</h6>
+                                </th>                                
+                                <th>
+                                    <h6>Note TD</h6> |
+                                    <h6>TP</h6> |
+                                    <h6> Exam</h6>
                                 </th>
+
                                 <th>
                                     <h6>Moyenne Module</h6>
                                 </th>
                                 <th>
                                     <h6>Créd Mod</h6>
                                 </th>
-                                <th>
-                                    <h6>Moyenne Unités</h6>
-                                </th>
-                                <th>
-                                    <h6>Créd Unités</h6>
-                                </th>
 
                             </tr>
-                            <!--ligne 3 -->
-                 </tbody> 
-                </table>
 
-
-            <div style="padding-bottom:50px">
-                <table id="table3">
+                            <!----------------------------------------2em Semstre -------------------------------------------------->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+<!--
+            <div style="padding-bottom:50px" class="tables-container">
+-->
+            <div class="tables-container">
+                <div class="tables"  id="tables"  style="overflow-x:auto;">
+                <table id="table3" class="table-striped">
                     <!--ligne 8-->
-                    <tbody>
-                        <tr>
+                    <tbody >
+                       <tr>
                             <th>
                                 <h5>Semestre/année</h5>
                             </th>
@@ -176,10 +159,10 @@
                                 <h5>Semestre 1</h5>
                             </td>
                             <td>
-                                <h5 id="moyenneS1">0</h5>
+                                <h5 id="moyenneS1_copy">0</h5>
                             </td>
                             <td>
-                                <h5 id="creditS1">0</h5>
+                                <h5 id="creditS1_copy">0</h5>
                             </td>
                         </tr>
                         <tr>
@@ -187,10 +170,10 @@
                                 <h5>Semestre 2</h5>
                             </td>
                             <td>
-                                <h5 id="moyenneS2">0</h5>
-                            </td>
+                                <h5 id="moyenneS2_copy">0</h5>
+                            </td>a
                             <td>
-                                <h5 id="creditS2">0</h5>
+                                <h5 id="creditS2_copy">0</h5>
                             </td>
                         </tr>
                         <tr>
@@ -211,22 +194,34 @@
             </div>
         </div>
     </div>
+    <!-- js -->
+    <script type='text/javascript' src='../assets/js/jquery.js'></script>
+    <script type='text/javascript' src='../assets/js/popper.min.js'></script>
+    <script type='text/javascript' src='../assets/js/bootstrap.min.js'></script>
+    <script type='text/javascript' src='../assets/js/shards.min.js'></script>
+    <script type='text/javascript' src='../assets/js/main.js'></script>
+    <script type='text/javascript' src='./js/utils.js'></script>
+    <script type='text/javascript' src='./json/L1MI.json'></script>
+    <script type='text/javascript' src='./json/L2Info.json'></script>
+    <script type='text/javascript' src='./json/L3SI.json'></script>
+    <script type='text/javascript' src='./json/L3ISIL.json'></script>
+    <script type='text/javascript' src='./json/M1ISIL.json'></script>
+    <script type='text/javascript' src='./json/M2ISIL.json'></script>
+    <script type='text/javascript' src='./json/M1GSI.json'></script>
+    <script type='text/javascript' src='./json/M2GSI.json'></script>
+    <script type='text/javascript' src='./json/L1ST.json'></script>
+    <script type='text/javascript' src='./json/L1SM.json'></script>
+    <script type='text/javascript'>var level="L2Info";</script>
+    <script type='text/javascript'>
+         var url_string =  window.location;
+         console.log(url_string);
+            var url = new URL(url_string);
+            var level = url.searchParams.get("level");
+           
+            console.log(level);
+    </script>
+    <script type='text/javascript' src='./js/majq_Model.js'></script>
 
-
-
-
-
-
-
-        <script type='text/javascript' src='../assets/js/jquery.js'></script>
-        <script type='text/javascript' src='../assets/js/popper.min.js'></script>
-        <script type='text/javascript' src='../assets/js/bootstrap.min.js'></script>
-        <script type='text/javascript' src='../assets/js/shards.min.js'></script>
-        <script type='text/javascript' src='../assets/js/main.js'></script>
-        <script type='text/javascript' src='./js/utils.js'></script>
-        <script type='text/javascript' src='./js/majq_L3ISIL.js'></script>
 </body>
-
-
 
 </html>
