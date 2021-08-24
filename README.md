@@ -5,13 +5,13 @@
 
 * فيه جزئية خاصة بتخصصات الماستر في الإعلام الآلي بالبويرة،
 
-Try it : https://abdelmadjidsmail.github.io/moadaly/ 
+Try it : [moadaly-App](https://madjsmail.github.io/moadaly/)
 
 See Moadaly android app : [moadaly-App](https://github.com/tarekDZ2019/moadaly-App)
 
 See our design : [design](https://github.com/Sho-Oter/dynamic-grade-average-calculator)
 
-See  : [SourceCode](https://github.com/Abdelmadjidsmail/moadaly)
+See  : [SourceCode](https://github.com/madjsmail/moadaly)
 
 ## Moadaly
 
@@ -46,7 +46,7 @@ Testing is much appreciated. Please post any issue you find in the [Issue tracke
 
 
 ## Project Implementation by 
-* [**Smail Abd El Madjid**](https://github.com/Abdelmadjidsmail/)
+* [**Smail Abd El Madjid**](https://github.com/madjsmail/)
 * [**Taha Zerrouki**](https://github.com/linuxscout/)
 * [**Tarek Berkane**](https://github.com/tarekDZ2019) *mobile app*
 * [**Aouf Ali**](https://github.com/Sho-Oter)  *design* 
