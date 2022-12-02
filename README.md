@@ -9,6 +9,8 @@ Try it : [moadaly-App](https://madjsmail.github.io/moadaly/)
 
 See Moadaly android app : [moadaly-App](https://github.com/tarekDZ2019/moadaly-App)
 
+See Moadaly desktop app : [moadaly-Desktop-app](https://github.com/mintech-dot/moadaly)
+
 See our design : [design](https://github.com/Sho-Oter/dynamic-grade-average-calculator)
 
 See  : [SourceCode](https://github.com/madjsmail/moadaly)
