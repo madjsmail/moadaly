@@ -187,8 +187,8 @@ create_one_semestre_line()
     var module_parts = `<td/>`;
                         
     // prepare unite moy and credits    
-    var module_coef = `<td> <h6 id="Coef${unite_name}">${unite_coef}</h6></td>`;
-    var module_cred = `<td> <h6 id="Cred${unite_name}">${unite_cred}</h6></td>`;
+    var module_coef = `<td class="noneed"> <h6 id="Coef${unite_name}">${unite_coef}</h6></td>`;
+    var module_cred = `<td class="noneed"> <h6 id="Cred${unite_name}">${unite_cred}</h6></td>`;
     var module_moy = `<td> <h6 id="moyenne${unite_name}">0</h6></td>`;
     var module_cr = `<td> <h6 id="credit${unite_name}">0</h6></td>`;
     
@@ -338,8 +338,8 @@ create_one_unite(semestre_x)
     var module_parts = `<td/>`;
                         
     // prepare unite moy and credits    
-    var module_coef = `<td> <h6 id="Coef${unite_name}">${unite_coef}</h6></td>`;
-    var module_cred = `<td> <h6 id="Cred${unite_name}">${unite_cred}</h6></td>`;
+    var module_coef = `<td class="noneed"> <h6 id="Coef${unite_name}">${unite_coef}</h6></td>`;
+    var module_cred = `<td class="noneed"> <h6 id="Cred${unite_name}">${unite_cred}</h6></td>`;
     var module_moy = `<td> <h6 id="Moy${unite_name}">0</h6></td>`;
     var module_cr = `<td> <h6 id="Crd${unite_name}">0</h6></td>`;
     
