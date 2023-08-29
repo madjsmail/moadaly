@@ -7,7 +7,7 @@
 
 Try it : [moadaly-WebApp](https://madjsmail.github.io/moadaly/)
 
-See Moadaly android app : [moadaly-App](https://github.com/tarekDZ2019/moadaly-App)
+See Moadaly android app : [moadaly-App](https://github.com/tarek-berkane/moadaly_v2)
 
 See our design : [design](https://github.com/Sho-Oter/dynamic-grade-average-calculator)
 
