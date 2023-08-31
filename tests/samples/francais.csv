@@ -1,0 +1,23 @@
+#name	semestre	unite	unite_type	module	credit	coef	td	tp	exam
+Lettres et langues étrangers	S1	UEF11	Fondamentale	Compréhension et expression écrite 11	4	2	50	0	50
+Lettres et langues étrangers	S1	UEF11	Fondamentale	Compréhension et expression orale 12	4	2	50	0	50
+Lettres et langues étrangers	S1	UEF12	Fondamentale	Grammaire de la langue d'étude 1	4	2	50	0	50
+Lettres et langues étrangers	S1	UEF12	Fondamentale	Phonétique corrective et articulatoire 1	2	1	50	0	50
+Lettres et langues étrangers	S1	UEF12	Fondamentale	Initiation à la linguistique 1 (concepts)	2	1	50	0	50
+Lettres et langues étrangers	S1	UEF13	Fondamentale	Initiation aux textes littéraires	2	1	50	0	50
+Lettres et langues étrangers	S1	UEF13	Fondamentale	Culture (s)  Civilisation(s) de la Langue 1	2	1	50	0	50
+Lettres et langues étrangers	S1	UEM 1.1	Méthodologique	Techniques du travail universitaire 1	4	2	50	0	50
+Lettres et langues étrangers	S1	UEM 1.1	Méthodologique	Etude de textes 1	2	1	50	0	50
+Lettres et langues étrangers	S1	UED 1.1	Découverte	Sciences sociales et humaines 1	2	1	0	0	100
+Lettres et langues étrangers	S1	UET 1.1	Transversale	Langue(s) étrangère(s) 1	2	1	50	0	50
+Lettres et langues étrangers	S2	UEF11	Fondamentale	Compréhension et expression écrite 23	4	2	50	0	50
+Lettres et langues étrangers	S2	UEF11	Fondamentale	Compréhension et expression orale 24	4	2	50	0	50
+Lettres et langues étrangers	S2	UEF12	Fondamentale	Grammaire de la langue d'étude 2	4	2	50	0	50
+Lettres et langues étrangers	S2	UEF12	Fondamentale	Phonétique corrective et articulatoire 2	2	1	50	0	50
+Lettres et langues étrangers	S2	UEF12	Fondamentale	Initiation à la linguistique 2 (concepts)	2	1	50	0	50
+Lettres et langues étrangers	S2	UEF13	Fondamentale	Littératures de la langue d'étude 1	2	1	50	0	50
+Lettres et langues étrangers	S2	UEF13	Fondamentale	Culture (s)  Civilisation(s) de la Langue 2	2	1	50	0	50
+Lettres et langues étrangers	S2	UEM 1.1	Méthodologique	Techniques du travail universitaire 2	4	2	50	0	50
+Lettres et langues étrangers	S2	UEM 1.1	Méthodologique	Etude de textes 2	2	1	50	0	50
+Lettres et langues étrangers	S2	UED 1.1	Découverte	Sciences sociales et humaines 2	2	1	0	0	100
+Lettres et langues étrangers	S2	UET 1.1	Transversale	Langue(s) étrangère(s) 2	2	1	50	0	50

@@ -1,0 +1,472 @@
+
+canevas['L1Francais']={
+  "name": "Lettres et langues étrangers",
+  "semestre1": {
+    "name": "S1",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "UEF11",
+        "title": "Fondamentale",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 8,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Compréhension et expression écrite 11",
+            "title": "Compréhension et expression écrite 11",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          },
+          {
+            "name": "Compréhension et expression orale 12",
+            "title": "Compréhension et expression orale 12",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UEF12",
+        "title": "Fondamentale",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 8,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Grammaire de la langue d'étude 1",
+            "title": "Grammaire de la langue d'étude 1",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          },
+          {
+            "name": "Phonétique corrective et articulatoire 1",
+            "title": "Phonétique corrective et articulatoire 1",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          },
+          {
+            "name": "Initiation à la linguistique 1 (concepts)",
+            "title": "Initiation à la linguistique 1 (concepts)",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UEF13",
+        "title": "Fondamentale",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 4,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Initiation aux textes littéraires",
+            "title": "Initiation aux textes littéraires",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          },
+          {
+            "name": "Culture (s)  Civilisation(s) de la Langue 1",
+            "title": "Culture (s)  Civilisation(s) de la Langue 1",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UEM 1.1",
+        "title": "Méthodologique",
+        "coef": 3,
+        "credit": 0,
+        "credits_origine": 6,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Techniques du travail universitaire 1",
+            "title": "Techniques du travail universitaire 1",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          },
+          {
+            "name": "Etude de textes 1",
+            "title": "Etude de textes 1",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UED 1.1",
+        "title": "Découverte",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Sciences sociales et humaines 1",
+            "title": "Sciences sociales et humaines 1",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UET 1.1",
+        "title": "Transversale",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Langue(s) étrangère(s) 1",
+            "title": "Langue(s) étrangère(s) 1",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  },
+  "semestre2": {
+    "name": "S2",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "UEF11",
+        "title": "Fondamentale",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 8,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Compréhension et expression écrite 23",
+            "title": "Compréhension et expression écrite 23",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          },
+          {
+            "name": "Compréhension et expression orale 24",
+            "title": "Compréhension et expression orale 24",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UEF12",
+        "title": "Fondamentale",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 8,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Grammaire de la langue d'étude 2",
+            "title": "Grammaire de la langue d'étude 2",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          },
+          {
+            "name": "Phonétique corrective et articulatoire 2",
+            "title": "Phonétique corrective et articulatoire 2",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          },
+          {
+            "name": "Initiation à la linguistique 2 (concepts)",
+            "title": "Initiation à la linguistique 2 (concepts)",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UEF13",
+        "title": "Fondamentale",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 4,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Littératures de la langue d'étude 1",
+            "title": "Littératures de la langue d'étude 1",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          },
+          {
+            "name": "Culture (s)  Civilisation(s) de la Langue 2",
+            "title": "Culture (s)  Civilisation(s) de la Langue 2",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UEM 1.1",
+        "title": "Méthodologique",
+        "coef": 3,
+        "credit": 0,
+        "credits_origine": 6,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Techniques du travail universitaire 2",
+            "title": "Techniques du travail universitaire 2",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          },
+          {
+            "name": "Etude de textes 2",
+            "title": "Etude de textes 2",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UED 1.1",
+        "title": "Découverte",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Sciences sociales et humaines 2",
+            "title": "Sciences sociales et humaines 2",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UET 1.1",
+        "title": "Transversale",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Langue(s) étrangère(s) 2",
+            "title": "Langue(s) étrangère(s) 2",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              50,
+              50,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.5,
+            "poids_exam": 0.5,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  }
+}
