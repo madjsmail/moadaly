@@ -38,13 +38,16 @@ def grabargs():
     parser.add_argument("-o", dest="outfile", required=False,
     help="Output file to convert", metavar="OUT_FILE")
     
+    parser.add_argument("-s", dest="sep", required=False, default="\t",
+    help="Separator fo fields", metavar="SEP")
+    
     parser.add_argument("--all", type=bool, nargs='?',
                         const=True, 
                         help="Test all.")
     args = parser.parse_args()
     return args
     
-def load_csv(lines):
+def load_csv(lines, sep="\t"):
     """
     Convert lines into canvevas json
     """
@@ -53,7 +56,7 @@ def load_csv(lines):
         line = line.strip("\n")
         if line.startswith("#"):
             continue
-        fields = line.split("\t")
+        fields = line.split(sep)
         #name   semestre    unite   unite_type  module  credit  coef    td  tp  exam
         if len(fields) >= 10:
             name,semestre,unite, unite_type = fields[0], fields[1], fields[2], fields[3]
@@ -109,8 +112,14 @@ def load_csv(lines):
             data[semestre]["unites"][unite]["coef"] += coef
             data[semestre]["unites"][unite]["credits_origine"] += credit
     # ajust unites into list instead of dict
-    data["semestre1"]['unites'] = list(data["semestre1"]['unites'].values())
-    data["semestre2"]['unites'] = list(data["semestre2"]['unites'].values())
+    if data["semestre1"]:
+        data["semestre1"]['unites'] = list(data["semestre1"]['unites'].values())
+    else:
+        print("Error: can't read semestre 1, check separator, default is 'tab'")
+    if data["semestre2"]:    
+        data["semestre2"]['unites'] = list(data["semestre2"]['unites'].values())
+    else:
+        print("Error: can't read semestre 2, check separator, default is 'tab'")        
     return data
 def main(args):
     """
@@ -119,15 +128,18 @@ def main(args):
     
     args = grabargs()
     filename = args.filename
+    sep = args.sep
+    print("SEP '%s'"%sep)
     try:
         fl = open(filename, encoding="utf-8")
     except:
         print("Can't open file ", filename)
         sys.exit()
     lines = fl.readlines()
-    data = load_csv(lines)
+    data = load_csv(lines, sep)
     # ~ print(json.dumps(data, ensure_ascii=False))
     # ~ pprint.pprint(json.dumps(data, ensure_ascii=False, indent=4))
+    print("canevas['%s'] ="%data["name"], end="")
     print(json.dumps(data, ensure_ascii=False, indent=2))
     return 0
 

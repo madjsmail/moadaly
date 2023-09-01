@@ -1,0 +1,387 @@
+
+canevas['L1economie']={
+  "name": "علوم اقتصادية، تسيير وعلوم تجارية",
+  "semestre1": {
+    "name": "S1",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس11",
+        "title": "أساسية",
+        "coef": 8,
+        "credit": 0,
+        "credits_origine": 18,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل للاقتصاد",
+            "title": "مدخل للاقتصاد",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "اقتصاد جزئي 1",
+            "title": "اقتصاد جزئي 1",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "محاسبة عامة 1",
+            "title": "محاسبة عامة 1",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "تاريخ الوقائع الاقتصادية",
+            "title": "تاريخ الوقائع الاقتصادية",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 1.1",
+        "title": "منهجية",
+        "coef": 5,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "إحصاء 1",
+            "title": "إحصاء 1",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "رياضيات 1",
+            "title": "رياضيات 1",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "منهجيات البحث 1",
+            "title": "منهجيات البحث 1",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "إس 1.1",
+        "title": "استكشافية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل للقانون",
+            "title": "مدخل للقانون",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          },
+          {
+            "name": "مدخل لعلم الاجتماع",
+            "title": "مدخل لعلم الاجتماع",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 1.1",
+        "title": "أفقية",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 1,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "لغة أجنبية 1",
+            "title": "لغة أجنبية 1",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  },
+  "semestre2": {
+    "name": "S2",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس21",
+        "title": "أساسية",
+        "coef": 6,
+        "credit": 0,
+        "credits_origine": 16,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل لإدارة الأعمال",
+            "title": "مدخل لإدارة الأعمال",
+            "coef": 2,
+            "credit": 6,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "اقتصاد جزئي 2",
+            "title": "اقتصاد جزئي 2",
+            "coef": 2,
+            "credit": 6,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "محاسبة عامة 2",
+            "title": "محاسبة عامة 2",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 2.1",
+        "title": "منهجية",
+        "coef": 6,
+        "credit": 0,
+        "credits_origine": 11,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "إحصاء 2",
+            "title": "إحصاء 2",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "رياضيات 2",
+            "title": "رياضيات 2",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "إعلام آلي",
+            "title": "إعلام آلي",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              0,
+              0,
+              100
+            ],
+            "poids_tp": 1.0,
+            "poids_td": 0.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "إس 2.1",
+        "title": "استكشافية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "قانون تجاري",
+            "title": "قانون تجاري",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          },
+          {
+            "name": "علم اجتماع المنظمات",
+            "title": "علم اجتماع المنظمات",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 1.1",
+        "title": "أفقية",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 1,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "لغة أجنبية 2",
+            "title": "لغة أجنبية 2",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  }
+}
