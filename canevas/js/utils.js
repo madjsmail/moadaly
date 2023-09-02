@@ -541,6 +541,7 @@ function create_menu(current_page="", item_list=[])
     var link = "";
     var menu_item="";    
     var active = "";
+    var cpt = 0;
     for( let title of list)
     {
     active = "";    
@@ -557,8 +558,13 @@ function create_menu(current_page="", item_list=[])
                     //~ `;
 
 
-        
-    $("#navbarTextList").append(menu_item);
+    if(cpt<=15)
+        $("#navbarTextList").append(menu_item);
+    else if(cpt<=30)
+        $("#navbarTextList2").append(menu_item);
+    else
+        $("#navbarTextList3").append(menu_item);
+    cpt +=1;
     }
     // fix menu items
     menu_item= `<li id="3em" class="nav-item">
@@ -567,6 +573,7 @@ function create_menu(current_page="", item_list=[])
                     `;
     $("#navbarTextList").append(menu_item);                    
 }
+
 function create_initial_checkpoint()
 {
     var checkpoint = `            <div id="checkplaces">

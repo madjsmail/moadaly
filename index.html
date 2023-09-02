@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- title -->
-    <title>Calculateur de Moyenne</title>
+    <title>Calculateur de Moyenne حساب المعدّل</title>
     <!-- css -->
     <link rel='stylesheet' type='text/css' media='all' href="assets/css/bootstrap.min.css" />
     <link rel='stylesheet' type='text/css' media='all' href="assets/css/shards.min.css" />
@@ -30,10 +30,24 @@
                        
                     </ul>
                     <span class="navbar-text">
-                        <h3 id="nav-titre">Calculateur de Moyenne</h3>
+                        <h3 id="nav-titre">Calculateur de Moyenne حساب المعّدل</h3>
                     </span>
+              
                 </div>
             </nav>
+ 
+            <nav class="navbar navbar-expand-lg navbar-dark">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav mr-auto"  id="navbarTextList2">
+                        <li class="nav-item active">
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+ 
         </div>
         <!-- in case adding new modules you must stick with syntax of the id's      -->
         <!--                                                                         -->
@@ -61,7 +75,7 @@
                         <thead>
                             <tr>
                                 <th id="titre1" colspan="11">
-                                    <h2>Semestre 1</h2>
+                                    <h2>Semestre 1 السداسي</h2>
                                 </th>
 
                             </tr>
@@ -69,13 +83,13 @@
                         <tbody>
                             <tr>
                                 <th>
-                                    <h6>Modules</h6>
+                                    <h6>Modules المواد</h6>
                                 </th>
                                 <th class="noneed">
-                                    <h6>Coef</h6>
+                                    <h6>Coef معامل</h6>
                                 </th>
                                 <th class="noneed">
-                                    <h6>Créd</h6>
+                                    <h6>Créd رصيد</h6>
                                 </th>
                                 <th>
                                     <h6>Note TD</h6> |
@@ -84,10 +98,10 @@
                                 </th>
 
                                 <th>
-                                    <h6>Moyenne Module</h6>
+                                    <h6>Moyenne Module معدل المادة</h6>
                                 </th>
                                 <th>
-                                    <h6>Créd Mod</h6>
+                                    <h6>Créd Mod رصيد المادة</h6>
                                 </th>
 
                             </tr>
@@ -99,7 +113,7 @@
                         <thead>
                             <tr>
                                 <th id="titre2" colspan="11">
-                                    <h2>Semestre 2</h2>
+                                    <h2>Semestre 2 السداسي</h2>
                                 </th>
 
                             </tr>
@@ -107,13 +121,13 @@
                         <tbody>
                             <tr>
                                 <th>
-                                    <h6>Modules</h6>
+                                    <h6>Modules المواد</h6>
                                 </th>
                                 <th class="noneed">
-                                    <h6>Coef</h6>
+                                    <h6>Coef معامل</h6>
                                 </th>
                                 <th class="noneed">
-                                    <h6>Créd</h6>
+                                    <h6>Créd رصيد</h6>
                                 </th>                                
                                 <th>
                                     <h6>Note TD</h6> |
@@ -122,10 +136,10 @@
                                 </th>
 
                                 <th>
-                                    <h6>Moyenne Module</h6>
+                                    <h6>Moyenne Module معدّل المادة</h6>
                                 </th>
                                 <th>
-                                    <h6>Créd Mod</h6>
+                                    <h6>Créd Mod رصيد المادة</h6>
                                 </th>
 
                             </tr>
@@ -145,18 +159,18 @@
                     <tbody >
                        <tr>
                             <th>
-                                <h5>Semestre/année</h5>
+                                <h5>Semestre/année سداسي/سنوي</h5>
                             </th>
                             <th>
-                                <h5>Moyenne</h5>
+                                <h5>Moyenne معدّل</h5>
                             </th>
                             <th>
-                                <h5>Crédits</h5>
+                                <h5>Crédits أرصدة</h5>
                             </th>
                         </tr>
                         <tr>
                             <td>
-                                <h5>Semestre 1</h5>
+                                <h5>Semestre 1 سداسي </h5>
                             </td>
                             <td>
                                 <h5 id="moyenneS1_copy">0</h5>
@@ -167,7 +181,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <h5>Semestre 2</h5>
+                                <h5>Semestre 2 سداسي</h5>
                             </td>
                             <td>
                                 <h5 id="moyenneS2_copy">0</h5>
@@ -180,7 +194,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <h5>Année </h5>
+                                <h5>Année سنوي</h5>
                             </td>
                             <td>
                                 <h5 id="moyenneGen">0</h5>
@@ -208,7 +222,6 @@
     <script type='text/javascript' src='canevas/json/M1ISIL.json'></script>
     <script type='text/javascript' src='canevas/json/M2ISIL.json'></script>
     <script type='text/javascript' src='canevas/json/M1GSI.json'></script>
-<!--
     <script type='text/javascript' src='canevas/json/M2GSI.json'></script>
     <script type='text/javascript' src='canevas/json/M1ISIL-new.json'></script>
     <script type='text/javascript' src='canevas/json/M2ISIL-new.json'></script>
@@ -218,12 +231,9 @@
     <script type='text/javascript' src='canevas/json/M2IA.json'></script>
     <script type='text/javascript' src='canevas/json/L1ST.json'></script>
     <script type='text/javascript' src='canevas/json/L1SM.json'></script>
--->
-<!--
     <script type='text/javascript' src='canevas/json/L1francais.json'></script>
     <script type='text/javascript' src='canevas/json/L1arab.json'></script>
     <script type='text/javascript' src='canevas/json/L1economie.json'></script>
--->
     <script type='text/javascript' src='canevas/json/L1SNV.json'></script>
     <script type='text/javascript' src='canevas/json/L1droit.json'></script>
     <script type='text/javascript' src='canevas/json/L1humaines.json'></script>
