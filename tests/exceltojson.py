@@ -129,7 +129,7 @@ def main(args):
     args = grabargs()
     filename = args.filename
     sep = args.sep
-    print("SEP '%s'"%sep)
+    # ~ print("SEP '%s'"%sep)
     try:
         fl = open(filename, encoding="utf-8")
     except:

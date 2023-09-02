@@ -1,0 +1,401 @@
+canevas['علوم اجتماعية'] ={
+  "name": "علوم اجتماعية",
+  "semestre1": {
+    "name": "S1",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس11",
+        "title": "أساسية",
+        "coef": 8,
+        "credit": 0,
+        "credits_origine": 20,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى الأنتروبولوجيا",
+            "title": "مدخل إلى الأنتروبولوجيا",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى علم النفس",
+            "title": "مدخل إلى علم النفس",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى علم الاجتماع",
+            "title": "مدخل إلى علم الاجتماع",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى الفلسفة",
+            "title": "مدخل إلى الفلسفة",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 1.1",
+        "title": "منهجية",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 5,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدارس ومناهج 1",
+            "title": "مدارس ومناهج 1",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "إحصاء وصفي",
+            "title": "إحصاء وصفي",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          },
+          {
+            "name": "إعلام آلي 1",
+            "title": "إعلام آلي 1",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "اس 1.1",
+        "title": "استكشافية",
+        "coef": 3,
+        "credit": 0,
+        "credits_origine": 4,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى الاقتصاد",
+            "title": "مدخل إلى الاقتصاد",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          },
+          {
+            "name": "الفرد والثقافة",
+            "title": "الفرد والثقافة",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 1.1",
+        "title": "أفقية",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 1,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "لغة أجنبية 1",
+            "title": "لغة أجنبية 1",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  },
+  "semestre2": {
+    "name": "S2",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس21",
+        "title": "أساسية",
+        "coef": 8,
+        "credit": 0,
+        "credits_origine": 20,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى علوم التربية",
+            "title": "مدخل إلى علوم التربية",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى الديموغرافيا",
+            "title": "مدخل إلى الديموغرافيا",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى الأرطفونيا",
+            "title": "مدخل إلى الأرطفونيا",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مجالات العلوم الاجتماعية",
+            "title": "مجالات العلوم الاجتماعية",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 2.1",
+        "title": "منهجية",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 5,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدارس ومناهج 2",
+            "title": "مدارس ومناهج 2",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "إحصاء استدلالي",
+            "title": "إحصاء استدلالي",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          },
+          {
+            "name": "إعلام آلي 2",
+            "title": "إعلام آلي 2",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "اس 2.1",
+        "title": "استكشافية",
+        "coef": 3,
+        "credit": 0,
+        "credits_origine": 4,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى الاقتصاد",
+            "title": "مدخل إلى الاقتصاد",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى مجتمع المعلومات",
+            "title": "مدخل إلى مجتمع المعلومات",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 2.1",
+        "title": "أفقية",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 1,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "لغة أجنبية 2",
+            "title": "لغة أجنبية 2",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  }
+}
