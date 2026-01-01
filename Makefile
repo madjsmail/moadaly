@@ -18,3 +18,5 @@ md2html:
 	pandoc -s -r markdown -w html README.md -o README.html
 md2rst:
 	pandoc -s -r markdown -w rst README.md -o docs/README.rst
+server:
+	python3 -m http.server 8000
