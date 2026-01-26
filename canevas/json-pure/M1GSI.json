@@ -1,8 +1,4 @@
-if (typeof canevas === 'undefined') {
-    var canevas = {};
-}
-
-canevas['M1GSI']={
+{
    "name":"M1GSI",
    "domain":"Mathematiques et Informatique",
 "startdate":"2023",
@@ -367,4 +363,4 @@ canevas['M1GSI']={
       "credits_origine":30
    },
    "moy":0
-};
+}

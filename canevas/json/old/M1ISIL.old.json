@@ -2,8 +2,8 @@ if (typeof canevas === 'undefined') {
     var canevas = {};
 }
 
-canevas['M1GSI-new']={
-   "name":"M1GSI-new",
+canevas['M1ISIL']={
+   "name":"M1ISIL",
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -12,33 +12,33 @@ canevas['M1GSI-new']={
             "title":"Fondamentale1",
             "modules":[
                {
-                  "name":"RCB",
-                  "title":"Réseaux des couches basses",
-                  "coef":3,
-                  "credit":6,
-                  "poids":[
-                     60,
-                     20,
-                     20
-                  ],
-                  "poids_tp":0.2,
-                  "poids_td":0.2,
-                  "poids_exam":0.60,
-                  "moy":0
-               },
-               {
                   "name":"AlgoAv",
-                  "title":"Algorithmique Avancée et Complexité",
+                  "title":"Algorithmique avancé et complexité",
                   "coef":2,
                   "credit":4,
                   "poids":[
-                     60,
-                     0,
-                     40
+                     67,
+                     33,
+                     0
                   ],
-                  "poids_tp":0.40,
-                  "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_tp":0,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
+                  "moy":0
+               },
+               {
+                  "name":"SDA",
+                  "title":"Structures de données avancées",
+                  "coef":3,
+                  "credit":6,
+                  "poids":[
+                     67,
+                     16.5,
+                     16.5
+                  ],
+                  "poids_tp":0.165,
+                  "poids_td":0.165,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
@@ -52,33 +52,33 @@ canevas['M1GSI-new']={
             "title":"Fondamentale2",
             "modules":[
                {
-                  "name":"SE",
-                  "title":"Système d’exploitation",
+                  "name":"AABD",
+                  "title":"Architecture et administration des bases de données",
                   "coef":2,
                   "credit":4,
                   "poids":[
-                     60,
-                     40,
-                     0
+                     67,
+                     0,
+                     33
                   ],
-                  "poids_tp":0,
-                  "poids_td":0.40,
-                  "poids_exam":0.60,
+                  "poids_tp":0.33,
+                  "poids_td":0,
+                  "poids_exam":0.67,
                   "moy":0
                },
                {
-                  "name":"AMSI",
-                  "title":"Architectures Modernes des Systèmes Informatiques",
+                  "name":"SRI",
+                  "title":"Systèmes de recherche d’informations",
                   "coef":2,
                   "credit":4,
                   "poids":[
-                     60,
-                     0,
-                     40
+                     67,
+                     33,
+                     0
                   ],
-                  "poids_tp":0.40,
-                  "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_tp":0,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
@@ -92,33 +92,33 @@ canevas['M1GSI-new']={
             "title":"Méthodologie",
             "modules":[
                {
-                  "name":"AABD",
-                  "title":"Architecture et administration des bases de données",
-                  "coef":2,
-                  "credit":4,
-                  "poids":[
-                     60,
-                     0,
-                     40
-                  ],
-                  "poids_tp":0.40,
-                  "poids_td":0,
-                  "poids_exam":0.60,
-                  "moy":0
-               },
-               {
-                  "name":"MTI",
-                  "title":"Méthodes et Technologies d’Implémentation",
+                  "name":"AOS",
+                  "title":"Introduction aux Architectures Orientées Services",
                   "coef":3,
                   "credit":5,
                   "poids":[
-                     60,
-                     0,
-                     40
+                     67,
+                     16.5,
+                     16.5
                   ],
-                  "poids_tp":0.4,
+                  "poids_tp":0.165,
+                  "poids_td":0.165,
+                  "poids_exam":0.67,
+                  "moy":0
+               },
+               {
+                  "name":"IDM",
+                  "title":"Ingénierie Dirigée par les Modèle",
+                  "coef":2,
+                  "credit":4,
+                  "poids":[
+                     67,
+                     0,
+                     33
+                  ],
+                  "poids_tp":0.33,
                   "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
@@ -132,18 +132,18 @@ canevas['M1GSI-new']={
             "title":"Découverte",
             "modules":[
                {
-                  "name":"scvv",
-                  "title":"Systèmes de Communication  Vocaux et Vidéos",
+                  "name":"FIA",
+                  "title":"Fondements de l’intelligence artificielle",
                   "coef":2,
                   "credit":2,
                   "poids":[
-                     60,
+                     67,
                      0,
-                     40
+                     33
                   ],
-                  "poids_tp":0.40,
+                  "poids_tp":0.33,
                   "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
@@ -158,7 +158,7 @@ canevas['M1GSI-new']={
             "modules":[
                {
                   "name":"cloud",
-                  "title":"Cloud Computing",
+                  "title":"Introduction au CloudComputing",
                   "coef":1,
                   "credit":1,
                   "poids":[
@@ -190,33 +190,33 @@ canevas['M1GSI-new']={
             "title":"Fondamentale1",
             "modules":[
                {
-                  "name":"Middleware",
-                  "title":"Les Middlewares pour les systèmes répartis",
+                  "name":"BDA",
+                  "title":"Bases de données avancées",
                   "coef":3,
                   "credit":6,
                   "poids":[
-                     60,
-                     20,
-                     20
+                     67,
+                     16.5,
+                     16.5
                   ],
-                  "poids_tp":0.20,
-                  "poids_td":0.20,
-                  "poids_exam":0.60,
+                  "poids_tp":0.165,
+                  "poids_td":0.165,
+                  "poids_exam":0.67,
                   "moy":0
                },
                {
                   "name":"MAL",
-                  "title":"Modélisation et Architectures logicielles",
+                  "title":"Modélisation et architectures logicielles",
                   "coef":2,
                   "credit":4,
                   "poids":[
-                     60,
-                     0,
-                     40
+                     67,
+                     33,
+                     0
                   ],
-                  "poids_tp":0.40,
-                  "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_tp":0,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
@@ -230,39 +230,39 @@ canevas['M1GSI-new']={
             "title":"Fondamentale2",
             "modules":[
                {
-                  "name":"ResIP",
-                  "title":"Réseaux de la couche IP",
-                  "coef":3,
-                  "credit":6,
-                  "poids":[
-                     60,
-                     0,
-                     40
-                  ],
-                  "poids_tp":0.40,
-                  "poids_td":0,
-                  "poids_exam":0.60,
-                  "moy":0
-               },
-               {
-                  "name":"ML",
-                  "title":"Introduction au Machine Learning",
+                  "name":"urba",
+                  "title":"Urbanisation des Systèmes d’Information",
                   "coef":2,
                   "credit":4,
                   "poids":[
-                     60,
-                     0,
-                     40
+                     67,
+                     33,
+                     0
                   ],
-                  "poids_tp":0.40,
-                  "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_tp":0,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
+                  "moy":0
+               },
+               {
+                  "name":"MSE",
+                  "title":"Management stratégique des entreprises",
+                  "coef":2,
+                  "credit":4,
+                  "poids":[
+                     67,
+                     33,
+                     0
+                  ],
+                  "poids_tp":0,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
-            "coef":5,
+            "coef":4,
             "credit":0,
-            "credits_origine":10,
+            "credits_origine":8,
             "moy":0
          },
          {
@@ -270,39 +270,39 @@ canevas['M1GSI-new']={
             "title":"Méthodologique",
             "modules":[
                {
-                  "name":"Infog",
-                  "title":"Infographie",
-                  "coef":2,
-                  "credit":3,
+                  "name":"FDD",
+                  "title":"Fouille de données ",
+                  "coef":3,
+                  "credit":5,
                   "poids":[
-                     60,
-                     0,
-                     40
+                     67,
+                     16.5,
+                     16.5
                   ],
-                  "poids_tp":0.4,
-                  "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_tp":0.165,
+                  "poids_td":0.165,
+                  "poids_exam":0.67,
                   "moy":0
                },
                {
-                  "name":"GI",
-                  "title":"Gestion de l'incertain",
+                  "name":"TAL",
+                  "title":"Introduction au traitement automatique des langues naturelles",
                   "coef":2,
-                  "credit":3,
+                  "credit":4,
                   "poids":[
-                     60,
-                     40,
-                     0
+                     67,
+                     0,
+                     33
                   ],
-                  "poids_tp":0,
-                  "poids_td":0.40,
-                  "poids_exam":0.60,
+                  "poids_tp":0.33,
+                  "poids_td":0,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
-            "coef":4,
+            "coef":5,
             "credit":0,
-            "credits_origine":6,
+            "credits_origine":9,
             "moy":0
          },
          {
@@ -310,24 +310,24 @@ canevas['M1GSI-new']={
             "title":"Découverte",
             "modules":[
                {
-                  "name":"IoT",
-                  "title":"Internet of Things",
+                  "name":"SE",
+                  "title":"Système d’exploitation",
                   "coef":2,
-                  "credit":3,
+                  "credit":2,
                   "poids":[
-                     60,
-                     0,
-                     40
+                     67,
+                     33,
+                     0
                   ],
-                  "poids_tp":0.40,
-                  "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_tp":0,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
             "coef":2,
             "credit":0,
-            "credits_origine":3,
+            "credits_origine":2,
             "moy":0
          },
          {
@@ -335,8 +335,8 @@ canevas['M1GSI-new']={
             "title":"Transversale",
             "modules":[
                {
-                  "name":"Sec",
-                  "title":"Cybercriminalité",
+                  "name":"SM",
+                  "title":" Système multimédia",
                   "coef":1,
                   "credit":1,
                   "poids":[

@@ -3,13 +3,13 @@ if (typeof canevas === 'undefined') {
 }
 
 canevas["L1MI"] ={
-   "name":"L1MI",
-   "domain":"Mathematiques et Informatique",
+"domain":"Mathematiques et Informatique",
 "startdate":"2025",
 "expired":"",
 "cycle":"licence",
 "level":"1",
 "branch":"Tronc commun",
+   "name":"L1MI",
    "semestre1":{
       "name":"S1",
       "unites":[

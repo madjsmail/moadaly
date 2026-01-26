@@ -4,12 +4,6 @@ if (typeof canevas === 'undefined') {
 
 canevas['M2GSI']={
    "name":"M2GSI",
-   "domain":"Mathematiques et Informatique",
-"startdate":"2023",
-"expired":"",
-"cycle":"master",
-"level":"2",
-"branch":"Informatique",
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -19,32 +13,32 @@ canevas['M2GSI']={
             "modules":[
                {
                   "name":"SoC",
-                  "title":"Les SoC (System On Chip)",
+                  "title":" Les SoC (System On Chip)",
                   "coef":3,
                   "credit":6,
                   "poids":[
-                     60,
-                     0,
-                     40
+                     67,
+                     16.5,
+                     16.5
                   ],
-                  "poids_tp":0.4,
-                  "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_tp":0.165,
+                  "poids_td":0.165,
+                  "poids_exam":0.67,
                   "moy":0
                },
                {
-                  "name":"RM",
-                  "title":"Réseaux Mobiles",
+                  "name":"SysEmb",
+                  "title":"Systèmes embarqués",
                   "coef":2,
                   "credit":4,
                   "poids":[
-                     60,
+                     67,
                      0,
-                     40
+                     33
                   ],
-                  "poids_tp":0.40,
+                  "poids_tp":0.33,
                   "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
@@ -58,33 +52,33 @@ canevas['M2GSI']={
             "title":"Fondamentale2",
             "modules":[
                {
-                  "name":"Perform",
-                  "title":"Evaluation de Performances",
+                  "name":"VF",
+                  "title":"Validation formelle de Systèmes Informatiques",
                   "coef":2,
                   "credit":4,
                   "poids":[
-                     60,
-                     40,
+                     67,
+                     33,
                      0
                   ],
                   "poids_tp":0,
-                  "poids_td":0.40,
-                  "poids_exam":0.60,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
                   "moy":0
                },
                {
-                  "name":"BlockChain",
-                  "title":"Introduction á la technologie de Blockchain",
+                  "name":"GI",
+                  "title":"Gestion de l’Incertain",
                   "coef":2,
                   "credit":4,
                   "poids":[
-                     60,
-                     0,
-                     40
+                     67,
+                     33,
+                     0
                   ],
-                  "poids_tp":0.40,
-                  "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_tp":0,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
@@ -98,33 +92,33 @@ canevas['M2GSI']={
             "title":"Méthodologie",
             "modules":[
                {
-                  "name":"DL",
-                  "title":"Deep Learning",
+                  "name":"IC",
+                  "title":"Concepts fondamentaux de l'informatique cognitive",
                   "coef":2,
                   "credit":3,
                   "poids":[
-                     60,
-                     0,
-                     40
+                     67,
+                     33,
+                     0
                   ],
-                  "poids_tp":0.4,
-                  "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_tp":0,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
                   "moy":0
                },
                {
-                  "name":"Optim",
-                  "title":"Méthodes d'optimisation",
+                  "name":"CI",
+                  "title":"Computational Intelligence",
                   "coef":3,
                   "credit":6,
                   "poids":[
-                     60,
-                     20,
-                     20
+                     67,
+                     16.5,
+                     16.5
                   ],
-                  "poids_tp":0.20,
-                  "poids_td":0.20,
-                  "poids_exam":0.60,
+                  "poids_tp":0.165,
+                  "poids_td":0.165,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
@@ -138,18 +132,18 @@ canevas['M2GSI']={
             "title":"Découverte",
             "modules":[
                {
-                  "name":"BigData",
-                  "title":"Programmation pour le Big Data",
+                  "name":"RM",
+                  "title":"Réseaux Mobiles",
                   "coef":2,
                   "credit":2,
                   "poids":[
-                     60,
+                     67,
                      0,
-                     40
+                     33
                   ],
-                  "poids_tp":0.40,
+                  "poids_tp":0.33,
                   "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
@@ -163,8 +157,8 @@ canevas['M2GSI']={
             "title":"Transversale",
             "modules":[
                {
-                  "name":"Recherch",
-                  "title":"Méthodologie de recherche et de documentation",
+                  "name":"DTIC",
+                  "title":"Droit des nouvelles technologies de l'information et de la communication",
                   "coef":1,
                   "credit":1,
                   "poids":[
@@ -197,7 +191,7 @@ canevas['M2GSI']={
             "modules":[
                {
                   "name":"Projet",
-                  "title":"Projet de fin de cycle",
+                  "title":"Stage en Entreprise",
                   "coef":1,
                   "credit":30,
                   "poids":[

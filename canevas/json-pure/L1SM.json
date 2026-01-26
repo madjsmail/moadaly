@@ -1,9 +1,5 @@
-if (typeof canevas === 'undefined') {
-    var canevas = {};
-}
-
-canevas['L1ST']={
-   "name":"L1ST",
+{
+   "name":"L1SM",
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -12,144 +8,118 @@ canevas['L1ST']={
             "title":"Fondamentale",
             "modules":[
                {
-                  "name":"Analyse1",
-                  "title":"Analyse 1",
+                  "name":"math1",
+                  "title":"Mathématiques 1",
                   "coef":3,
                   "credit":6,
                   "poids":[
-                     60,
-                     40,
+                     67,
+                     33,
                      0
                   ],
                   "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
                   "moy":0
                },
-              {
-                  "name":"Algèbre1",
-                  "title":"Algèbre 1",
-                  "coef":2,
-                  "credit":4,
-                  "poids":[
-                     60,
-                     40,
-                     0
-                  ],
-                  "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
-                  "moy":0
-               },
-               ],
-                           "coef":5,
-            "credit":0,
-            "credits_origine":10,
-            "moy":0
-            },
                {
-                  "name":"U2_S1",
-            "title":"Fondamentale",
-            "modules":[
-               {
-                  "name":"Meca",
-                  "title":"Elément de mécanique",
+                  "name":"phys1",
+                  "title":"Physique 1",
                   "coef":3,
                   "credit":6,
                   "poids":[
-                     60,
-                     40,
+                     67,
+                     33,
                      0
                   ],
                   "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
                   "moy":0
                },
                {
-                  "name":"sm",
-                  "title":"Structure de la matière",
+                  "name":"sm1",
+                  "title":"Chimie1",
                   "coef":3,
                   "credit":6,
                   "poids":[
-                     60,
-                     40,
+                     67,
+                     33,
                      0
                   ],
                   "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
                   "moy":0
                }
             ],
-            "coef":6,
+            "coef":9,
             "credit":0,
-            "credits_origine":12,
+            "credits_origine":18,
             "moy":0
          },
-         
          {
-            "name":"U3_S1",
+            "name":"U2_S1",
             "title":"Méthodologique",
             "modules":[
                {
-                  "name":"TPmeca1",
-                  "title":"TP Elément de mécanique",
+                  "name":"TPPhys1",
+                  "title":"TP Physique 1",
                   "coef":1,
                   "credit":2,
                   "poids":[
+                     50,
                      0,
-                     0,
-                     100
+                     50
                   ],
-                  "poids_tp":1,
+                  "poids_tp":0.5,
                   "poids_td":0,
-                  "poids_exam":0,
+                  "poids_exam":0.5,
                   "moy":0
                },
                {
-                  "name":"TPSM",
-                  "title":"TP Structure de la matière",
+                  "name":"TPChim1",
+                  "title":"TP Chimie 1",
                   "coef":1,
                   "credit":2,
                   "poids":[
+                     50,
                      0,
-                     0,
-                     100
+                     50
                   ],
-                  "poids_tp":1,
+                  "poids_tp":0.5,
                   "poids_td":0,
-                  "poids_exam":0,
+                  "poids_exam":0.5,
                   "moy":0
                },
                {
                   "name":"info1",
-                  "title":"Structure des ordinateurs et applications",
-                  "coef":2,
-                  "credit":2,
+                  "title":"Informatique 1",
+                  "coef":3,
+                  "credit":5,
                   "poids":[
-                     60,
+                     50,
                      0,
-                     40
+                     50
                   ],
-                  "poids_tp":0.4,
+                  "poids_tp":0.5,
                   "poids_td":0,
-                  "poids_exam":0.6,
+                  "poids_exam":0.5,
                   "moy":0
                }
             ],
-            "coef":4,
+            "coef":5,
             "credit":0,
-            "credits_origine":6,
+            "credits_origine":9,
             "moy":0
          },
          {
-            "name":"U4_S1",
-            "title":"Transversale",
+            "name":"U3_S1",
+            "title":"Découverte",
             "modules":[
                {
-                  "name":"DED",
-                  "title":"Dimension éthique et déontologique (les fondements)",
+                  "name":"dec1",
+                  "title":"Methode de travail universitaire",
                   "coef":1,
                   "credit":1,
                   "poids":[
@@ -161,12 +131,22 @@ canevas['L1ST']={
                   "poids_td":0,
                   "poids_exam":1,
                   "moy":0
-               },
-                {
-                  "name":"MST1",
-                  "title":"Les métiers en Sciences et Technologies 1",
-                  "coef":1,
-                  "credit":1,
+               }
+            ],
+            "coef":1,
+            "credit":0,
+            "credits_origine":1,
+            "moy":0
+         },
+         {
+            "name":"U4_S1",
+            "title":"Transversale",
+            "modules":[
+               {
+                  "name":"Anglais1",
+                  "title":"Anglais (Niveau A2) ",
+                  "coef":2,
+                  "credit":2,
                   "poids":[
                      100,
                      0,
@@ -182,8 +162,7 @@ canevas['L1ST']={
             "credit":0,
             "credits_origine":2,
             "moy":0
-         },
-      
+         }
       ],
       "moy":0,
       "coef":17,
@@ -192,139 +171,139 @@ canevas['L1ST']={
    "semestre2":{
       "name":"S2",
       "unites":[
-               {
+         {
             "name":"U1_S2",
             "title":"Fondamentale",
             "modules":[
                {
-                  "name":"Analyse2",
-                  "title":"Algèbre 2",
+                  "name":"math2",
+                  "title":"Mathématiques 2",
                   "coef":3,
                   "credit":6,
                   "poids":[
-                     60,
-                     40,
+                     67,
+                     33,
                      0
                   ],
                   "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
                   "moy":0
                },
                {
-                  "name":"Algèbre2",
-                  "title":"Algèbre 2",
-                  "coef":2,
-                  "credit":4,
+                  "name":"phys2",
+                  "title":"Physique 2",
+                  "coef":3,
+                  "credit":6,
                   "poids":[
-                     60,
-                     40,
+                     67,
+                     33,
                      0
                   ],
                   "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
+                  "moy":0
+               },
+               {
+                  "name":"Chimie 2",
+                  "title":"Chimie 2",
+                  "coef":3,
+                  "credit":6,
+                  "poids":[
+                     67,
+                     33,
+                     0
+                  ],
+                  "poids_tp":0,
+                  "poids_td":0.33,
+                  "poids_exam":0.67,
+                  "moy":0
+               }
+            ],
+            "coef":9,
+            "credit":0,
+            "credits_origine":18,
+            "moy":0
+         },
+         {
+            "name":"U2_S2",
+            "title":"Méthodologique",
+            "modules":[
+               {
+                  "name":"TPPhys2",
+                  "title":"TP Physique 2",
+                  "coef":1,
+                  "credit":2,
+                  "poids":[
+                     50,
+                     0,
+                     50
+                  ],
+                  "poids_tp":0.5,
+                  "poids_td":0,
+                  "poids_exam":0.5,
+                  "moy":0
+               },
+               {
+                  "name":"TPChim2",
+                  "title":"TP Chimie 2",
+                  "coef":1,
+                  "credit":2,
+                  "poids":[
+                     50,
+                     0,
+                     50
+                  ],
+                  "poids_tp":0.51,
+                  "poids_td":0,
+                  "poids_exam":0.5,
+                  "moy":0
+               },
+               {
+                  "name":"info2",
+                  "title":"Informatique 2",
+                  "coef":3,
+                  "credit":5,
+                  "poids":[
+                     50,
+                     0,
+                     50
+                  ],
+                  "poids_tp":0.5,
+                  "poids_td":0,
+                  "poids_exam":0.5,
                   "moy":0
                }
             ],
             "coef":5,
             "credit":0,
-            "credits_origine":10,
-            "moy":0
-         },
-         {
-            "name":"U2_S2",
-            "title":"Fondamentale",
-            "modules":[
-               {
-                  "name":"EM",
-                  "title":"Electricité et magnétisme",
-                  "coef":3,
-                  "credit":6,
-                  "poids":[
-                     60,
-                     40,
-                     0
-                  ],
-                  "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
-                  "moy":0
-               },
-               {
-                  "name":"therm",
-                  "title":"Thermodynamique",
-                  "coef":3,
-                  "credit":6,
-                  "poids":[
-                     60,
-                     40,
-                     0
-                  ],
-                  "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
-                  "moy":0
-               }
-            ],
-            "coef":6,
-            "credit":0,
-            "credits_origine":12,
+            "credits_origine":9,
             "moy":0
          },
          {
             "name":"U3_S2",
-            "title":"Méthodologique",
+            "title":"Découverte",
             "modules":[
                {
-                  "name":"TPEM",
-                  "title":"TP Electricité et magnétisme",
+                  "name":"Eco",
+                  "title":"Economie de l'entreprise",
                   "coef":1,
-                  "credit":2,
+                  "credit":1,
                   "poids":[
+                     100,
                      0,
-                     0,
-                     100
+                     0
                   ],
-                  "poids_tp":1,
+                  "poids_tp":0,
                   "poids_td":0,
-                  "poids_exam":0,
-                  "moy":0
-               },
-               {
-                  "name":"TPTherm",
-                  "title":"TP Thermodynamique",
-                  "coef":1,
-                  "credit":2,
-                  "poids":[
-                     0,
-                     0,
-                     100
-                  ],
-                  "poids_tp":1,
-                  "poids_td":0,
-                  "poids_exam":0,
-                  "moy":0
-               },
-               {
-                  "name":"info2",
-                  "title":"Initiation à la programmation",
-                  "coef":2,
-                  "credit":2,
-                  "poids":[
-                     60,
-                     0,
-                     40
-                  ],
-                  "poids_tp":0.4,
-                  "poids_td":0,
-                  "poids_exam":0.6,
+                  "poids_exam":1,
                   "moy":0
                }
             ],
-            "coef":4,
+            "coef":1,
             "credit":0,
-            "credits_origine":6,
+            "credits_origine":2,
             "moy":0
          },
          {
@@ -332,8 +311,8 @@ canevas['L1ST']={
             "title":"Transversale",
             "modules":[
                {
-                  "name":"LLOS",
-                  "title":"Logiciels libres -open sources",
+                  "name":"Anglais2",
+                  "title":"Anglais 2 (niveau B1)",
                   "coef":2,
                   "credit":2,
                   "poids":[
@@ -358,4 +337,4 @@ canevas['L1ST']={
       "credits_origine":30
    },
    "moy":0
-};
+}

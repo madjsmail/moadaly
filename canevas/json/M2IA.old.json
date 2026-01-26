@@ -2,8 +2,14 @@ if (typeof canevas === 'undefined') {
     var canevas = {};
 }
 
-canevas['M2GSI-new']={
-   "name":"M2GSI-new",
+canevas['M2IA old']={
+   "name":"M2IA",
+   "domain":"Mathematiques et Informatique",
+"startdate":"2025",
+"expired":"",
+"cycle":"master",
+"level":"2",
+"branch":"Informatique",
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -12,8 +18,8 @@ canevas['M2GSI-new']={
             "title":"Fondamentale1",
             "modules":[
                {
-                  "name":"SoC",
-                  "title":"Les SoC (System On Chip)",
+                  "name":"Vision",
+                  "title":"Vision artificielle",
                   "coef":3,
                   "credit":6,
                   "poids":[
@@ -23,12 +29,12 @@ canevas['M2GSI-new']={
                   ],
                   "poids_tp":0.4,
                   "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_exam":0.6,
                   "moy":0
                },
                {
-                  "name":"RM",
-                  "title":"Réseaux Mobiles",
+                  "name":"intensif",
+                  "title":"Calcul intensif",
                   "coef":2,
                   "credit":4,
                   "poids":[
@@ -36,9 +42,9 @@ canevas['M2GSI-new']={
                      0,
                      40
                   ],
-                  "poids_tp":0.40,
+                  "poids_tp":0.4,
                   "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_exam":0.6,
                   "moy":0
                }
             ],
@@ -52,8 +58,8 @@ canevas['M2GSI-new']={
             "title":"Fondamentale2",
             "modules":[
                {
-                  "name":"Perform",
-                  "title":"Evaluation de Performances",
+                  "name":"MSS",
+                  "title":"Modèles stochastiques pour la simulation",
                   "coef":2,
                   "credit":4,
                   "poids":[
@@ -62,13 +68,13 @@ canevas['M2GSI-new']={
                      0
                   ],
                   "poids_tp":0,
-                  "poids_td":0.40,
-                  "poids_exam":0.60,
+                  "poids_td":0.4,
+                  "poids_exam":0.6,
                   "moy":0
                },
                {
-                  "name":"BlockChain",
-                  "title":"Introduction á la technologie de Blockchain",
+                  "name":"Robotique",
+                  "title":"Robotique",
                   "coef":2,
                   "credit":4,
                   "poids":[
@@ -76,9 +82,9 @@ canevas['M2GSI-new']={
                      0,
                      40
                   ],
-                  "poids_tp":0.40,
+                  "poids_tp":0.4,
                   "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_exam":0.6,
                   "moy":0
                }
             ],
@@ -92,10 +98,10 @@ canevas['M2GSI-new']={
             "title":"Méthodologie",
             "modules":[
                {
-                  "name":"DL",
-                  "title":"Deep Learning",
+                  "name":"AppDL",
+                  "title":"Application de Deep Learning",
                   "coef":2,
-                  "credit":3,
+                  "credit":4,
                   "poids":[
                      60,
                      0,
@@ -103,22 +109,22 @@ canevas['M2GSI-new']={
                   ],
                   "poids_tp":0.4,
                   "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_exam":0.6,
                   "moy":0
                },
                {
                   "name":"Optim",
                   "title":"Méthodes d'optimisation",
                   "coef":3,
-                  "credit":6,
+                  "credit":5,
                   "poids":[
                      60,
                      20,
                      20
                   ],
-                  "poids_tp":0.20,
-                  "poids_td":0.20,
-                  "poids_exam":0.60,
+                  "poids_tp":0.2,
+                  "poids_td":0.2,
+                  "poids_exam":0.6,
                   "moy":0
                }
             ],
@@ -141,9 +147,9 @@ canevas['M2GSI-new']={
                      0,
                      40
                   ],
-                  "poids_tp":0.40,
+                  "poids_tp":0.4,
                   "poids_td":0,
-                  "poids_exam":0.60,
+                  "poids_exam":0.6,
                   "moy":0
                }
             ],
@@ -157,7 +163,7 @@ canevas['M2GSI-new']={
             "title":"Transversale",
             "modules":[
                {
-                  "name":"Recherch",
+                  "name":"Rech",
                   "title":"Méthodologie de recherche et de documentation",
                   "coef":1,
                   "credit":1,

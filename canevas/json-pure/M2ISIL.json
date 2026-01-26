@@ -1,8 +1,8 @@
-if (typeof canevas === 'undefined') {
-    var canevas = {};
+
+
 }
 
-canevas['M2ISIL-new']={
+canevas['M2ISIL']={
    "name":"M2ISIL-new",
    "semestre1":{
       "name":"S1",

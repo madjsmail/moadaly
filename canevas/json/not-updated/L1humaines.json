@@ -1,0 +1,431 @@
+canevas['علوم إنسانية'] ={
+  "name": "علوم إنسانية",
+  "semestre1": {
+    "name": "S1",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس11",
+        "title": "أساسية",
+        "coef": 9,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "تاريخ وسائل الإعلام",
+            "title": "تاريخ وسائل الإعلام",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل للمناهج البيليوغرافية",
+            "title": "مدخل للمناهج البيليوغرافية",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى تاريخ الحضارات",
+            "title": "مدخل إلى تاريخ الحضارات",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أس12",
+        "title": "أساسية",
+        "coef": 15,
+        "credit": 0,
+        "credits_origine": 15,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى علوم الإعلام والاتصال",
+            "title": "مدخل إلى علوم الإعلام والاتصال",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "تنظيم وتسيير أنظمة المعلومات",
+            "title": "تنظيم وتسيير أنظمة المعلومات",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "تاريخ الجزائر المعاصر",
+            "title": "تاريخ الجزائر المعاصر",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى الفلسفة العامة",
+            "title": "مدخل إلى الفلسفة العامة",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "فلسفة قديمة",
+            "title": "فلسفة قديمة",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 1.1",
+        "title": "منهجية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 3,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "العلوم الإنسانية والاجتماعية : مدارس ومناهج",
+            "title": "العلوم الإنسانية والاجتماعية : مدارس ومناهج",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 1.1",
+        "title": "أفقية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 3,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى الإعلام الآلي",
+            "title": "مدخل إلى الإعلام الآلي",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "لغة أجنبية ",
+            "title": "لغة أجنبية ",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  },
+  "semestre2": {
+    "name": "S2",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس21",
+        "title": "أساسية",
+        "coef": 9,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "تاريخ وسائل الإعلام",
+            "title": "تاريخ وسائل الإعلام",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل للمناهج البيبليوغرافية",
+            "title": "مدخل للمناهج البيبليوغرافية",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "تاريخ حضارة المغرب العربي",
+            "title": "تاريخ حضارة المغرب العربي",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أس22",
+        "title": "أساسية",
+        "coef": 15,
+        "credit": 0,
+        "credits_origine": 15,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى علم الاجتماع الإعلامي",
+            "title": "مدخل إلى علم الاجتماع الإعلامي",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "تنظيم وتسيير أنظمة المعلومات",
+            "title": "تنظيم وتسيير أنظمة المعلومات",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "تاريخ الجزائر المعاصر",
+            "title": "تاريخ الجزائر المعاصر",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى الفلسفة العامة",
+            "title": "مدخل إلى الفلسفة العامة",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "فلسفة قديمة",
+            "title": "فلسفة قديمة",
+            "coef": 3,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 2.1",
+        "title": "منهجية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 3,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "العلوم الإنسانية والاجتماعية : مدارس ومناهج",
+            "title": "العلوم الإنسانية والاجتماعية : مدارس ومناهج",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 2.1",
+        "title": "أفقية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 3,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى الإعلام الآلي التوثيقي",
+            "title": "مدخل إلى الإعلام الآلي التوثيقي",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "لغة أجنبية ",
+            "title": "لغة أجنبية ",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  }
+}

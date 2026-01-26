@@ -1,8 +1,4 @@
-if (typeof canevas === 'undefined') {
-    var canevas = {};
-}
-
-canevas['M1IA-new']={
+{
    "name":"M1IA",
    "domain":"Mathematiques et Informatique",
 "startdate":"2025",
@@ -110,4 +106,4 @@ canevas['M1IA-new']={
   "coef":18,"credits_origine":30,"moy":0
  },
  "moy":0
- };
+ }

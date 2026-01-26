@@ -1,15 +1,5 @@
-if (typeof canevas === 'undefined') {
-    var canevas = {};
-}
-
-canevas["L1MI"] ={
+{
    "name":"L1MI",
-   "domain":"Mathematiques et Informatique",
-"startdate":"2025",
-"expired":"",
-"cycle":"licence",
-"level":"1",
-"branch":"Tronc commun",
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -334,4 +324,5 @@ canevas["L1MI"] ={
       "credits":0
    },
    "moy":0
-}; 
+}
+

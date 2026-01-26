@@ -72,13 +72,13 @@ canevas['L1SM']={
                   "coef":1,
                   "credit":2,
                   "poids":[
+                     50,
                      0,
-                     0,
-                     100
+                     50
                   ],
-                  "poids_tp":1,
+                  "poids_tp":0.5,
                   "poids_td":0,
-                  "poids_exam":0,
+                  "poids_exam":0.5,
                   "moy":0
                },
                {
@@ -87,20 +87,20 @@ canevas['L1SM']={
                   "coef":1,
                   "credit":2,
                   "poids":[
+                     50,
                      0,
-                     0,
-                     100
+                     50
                   ],
-                  "poids_tp":1,
+                  "poids_tp":0.5,
                   "poids_td":0,
-                  "poids_exam":0,
+                  "poids_exam":0.5,
                   "moy":0
                },
                {
                   "name":"info1",
                   "title":"Informatique 1",
-                  "coef":2,
-                  "credit":4,
+                  "coef":3,
+                  "credit":5,
                   "poids":[
                      50,
                      0,
@@ -112,9 +112,9 @@ canevas['L1SM']={
                   "moy":0
                }
             ],
-            "coef":4,
+            "coef":5,
             "credit":0,
-            "credits_origine":8,
+            "credits_origine":9,
             "moy":0
          },
          {
@@ -123,9 +123,9 @@ canevas['L1SM']={
             "modules":[
                {
                   "name":"dec1",
-                  "title":"Module découverte",
+                  "title":"Methode de travail universitaire",
                   "coef":1,
-                  "credit":2,
+                  "credit":1,
                   "poids":[
                      100,
                      0,
@@ -139,7 +139,7 @@ canevas['L1SM']={
             ],
             "coef":1,
             "credit":0,
-            "credits_origine":2,
+            "credits_origine":1,
             "moy":0
          },
          {
@@ -147,9 +147,9 @@ canevas['L1SM']={
             "title":"Transversale",
             "modules":[
                {
-                  "name":"Lang1",
-                  "title":"Langue Etrangère 1 ",
-                  "coef":1,
+                  "name":"Anglais1",
+                  "title":"Anglais (Niveau A2) ",
+                  "coef":2,
                   "credit":2,
                   "poids":[
                      100,
@@ -162,14 +162,14 @@ canevas['L1SM']={
                   "moy":0
                }
             ],
-            "coef":1,
+            "coef":2,
             "credit":0,
             "credits_origine":2,
             "moy":0
          }
       ],
       "moy":0,
-      "coef":15,
+      "coef":17,
       "credits_origine":30
    },
    "semestre2":{
@@ -210,8 +210,8 @@ canevas['L1SM']={
                   "moy":0
                },
                {
-                  "name":"therm",
-                  "title":"Thermodynamique",
+                  "name":"Chimie 2",
+                  "title":"Chimie 2",
                   "coef":3,
                   "credit":6,
                   "poids":[
@@ -240,13 +240,13 @@ canevas['L1SM']={
                   "coef":1,
                   "credit":2,
                   "poids":[
+                     50,
                      0,
-                     0,
-                     100
+                     50
                   ],
-                  "poids_tp":1,
+                  "poids_tp":0.5,
                   "poids_td":0,
-                  "poids_exam":0,
+                  "poids_exam":0.5,
                   "moy":0
                },
                {
@@ -255,34 +255,34 @@ canevas['L1SM']={
                   "coef":1,
                   "credit":2,
                   "poids":[
+                     50,
                      0,
-                     0,
-                     100
+                     50
                   ],
-                  "poids_tp":1,
+                  "poids_tp":0.51,
                   "poids_td":0,
-                  "poids_exam":0,
+                  "poids_exam":0.5,
                   "moy":0
                },
                {
                   "name":"info2",
                   "title":"Informatique 2",
-                  "coef":2,
-                  "credit":4,
+                  "coef":3,
+                  "credit":5,
                   "poids":[
-                     67,
+                     50,
                      0,
-                     33
+                     50
                   ],
-                  "poids_tp":0.33,
+                  "poids_tp":0.5,
                   "poids_td":0,
-                  "poids_exam":0.67,
+                  "poids_exam":0.5,
                   "moy":0
                }
             ],
-            "coef":4,
+            "coef":5,
             "credit":0,
-            "credits_origine":8,
+            "credits_origine":9,
             "moy":0
          },
          {
@@ -290,10 +290,10 @@ canevas['L1SM']={
             "title":"Découverte",
             "modules":[
                {
-                  "name":"dec2",
-                  "title":"Les métiers en Sciences et Technologies 2",
+                  "name":"Eco",
+                  "title":"Economie de l'entreprise",
                   "coef":1,
-                  "credit":2,
+                  "credit":1,
                   "poids":[
                      100,
                      0,
@@ -315,9 +315,9 @@ canevas['L1SM']={
             "title":"Transversale",
             "modules":[
                {
-                  "name":"Lang1",
-                  "title":"Langue Etrangère 2 ",
-                  "coef":1,
+                  "name":"Anglais2",
+                  "title":"Anglais 2 (niveau B1)",
+                  "coef":2,
                   "credit":2,
                   "poids":[
                      100,
@@ -330,14 +330,14 @@ canevas['L1SM']={
                   "moy":0
                }
             ],
-            "coef":1,
+            "coef":2,
             "credit":0,
             "credits_origine":2,
             "moy":0
          }
       ],
       "moy":0,
-      "coef":15,
+      "coef":17,
       "credits_origine":30
    },
    "moy":0

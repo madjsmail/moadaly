@@ -1,15 +1,11 @@
-if (typeof canevas === 'undefined') {
-    var canevas = {};
-}
-
-canevas["L1MI"] ={
-   "name":"L1MI",
+{
+   "name":"L2Info2025",
    "domain":"Mathematiques et Informatique",
 "startdate":"2025",
 "expired":"",
 "cycle":"licence",
-"level":"1",
-"branch":"Tronc commun",
+"level":"2",
+"branch":"Informatique",
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -18,32 +14,32 @@ canevas["L1MI"] ={
             "title":"Fondamentale1",
             "modules":[
                {
-                  "name":"analyse1",
-                  "title":"Analyse1",
-                  "coef":4,
-                  "credit":6,
-                  "poids":[
-                     60,
-                     40,
-                     0
-                  ],
-                  "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
-                  "moy":0
-               },
-               {
-                  "name":"algebre1",
-                  "title":"Algèbre1",
+                  "name":"archi",
+                  "title":"Architecture des ordinateurs ",
                   "coef":3,
                   "credit":5,
                   "poids":[
                      60,
-                     40,
-                     0
+                     20,
+                     20
                   ],
-                  "poids_tp":0,
-                  "poids_td":0.4,
+                  "poids_tp":0.2,
+                  "poids_td":0.2,
+                  "poids_exam":0.6,
+                  "moy":0
+               },
+               {
+                  "name":"ASD",
+                  "title":"Algorithmique et structure de données 3",
+                  "coef":4,
+                  "credit":6,
+                  "poids":[
+                     60,
+                     20,
+                     20
+                  ],
+                  "poids_tp":0.2,
+                  "poids_td":0.2,
                   "poids_exam":0.6,
                   "moy":0
                }
@@ -58,10 +54,123 @@ canevas["L1MI"] ={
             "title":"Fondamentale2",
             "modules":[
                {
-                  "name":"Algo1",
-                  "title":"Algorithmique et structure de données 1",
+                  "name":"SI",
+                  "title":"Systèmes d'information",
+                  "coef":2,
+                  "credit":4,
+                  "poids":[
+                     60,
+                     40,
+                     0
+                  ],
+                  "poids_tp":0,
+                  "poids_td":0.4,
+                  "poids_exam":0.6,
+                  "moy":0
+               },
+               {
+                  "name":"POO1",
+                  "title":"Programmation orienté objet 1",
                   "coef":4,
-                  "credit":6,
+                  "credit":5,
+                  "poids":[
+                     60,
+                     00,
+                     40
+                  ],
+                  "poids_tp":0.4,
+                  "poids_td":0,
+                  "poids_exam":0.6,
+                  "moy":0
+               }
+            ],
+            "coef":6,
+            "credit":0,
+            "credits_origine":9,
+            "moy":0
+         },
+         {
+            "name":"U3_S1",
+            "title":"Méthodologique",
+            "modules":[
+               {
+                  "name":"MN",
+                  "title":"Méthodes numériques",
+                  "coef":2,
+                  "credit":4,
+                  "poids":[
+                     60,
+                     0,
+                     40
+                  ],
+                  "poids_tp":0.4,
+                  "poids_td":0,
+                  "poids_exam":0.6,
+                  "moy":0
+               },
+               {
+                  "name":"Proba1",
+                  "title":"Probabilités et statistique 1",
+                  "coef":2,
+                  "credit":4,
+                  "poids":[
+                     60,
+                     40,
+                     0
+                  ],
+                  "poids_tp":0,
+                  "poids_td":0.4,
+                  "poids_exam":0.6,
+                  "moy":0
+               }
+            ],
+            "coef":4,
+            "credit":0,
+            "credits_origine":8,
+            "moy":0
+         },
+         {
+            "name":"U4_S1",
+            "title":"Transversal",
+            "modules":[
+               {
+                  "name":"GP",
+                  "title":"Gestion de projets",
+                  "coef":1,
+                  "credit":2,
+                  "poids":[
+                     60,
+                     0,
+                     40
+                  ],
+                  "poids_tp":0.4,
+                  "poids_td":0,
+                  "poids_exam":0.6,
+                  "moy":0
+               }
+            ],
+            "coef":1,
+            "credit":0,
+            "credits_origine":2,
+            "moy":0
+         }
+      ],
+      "moy":0,
+      "coef":18,
+      "credits_origine":30
+   },
+   "semestre2":{
+      "name":"S2",
+      "unites":[
+         {
+            "name":"U1_S2",
+            "title":"Fondamentale1",
+            "modules":[
+               {
+                  "name":"SE1",
+                  "title":"Système d'exploitation 1",
+                  "coef":4,
+                  "credit":5,
                   "poids":[
                      60,
                      20,
@@ -73,8 +182,8 @@ canevas["L1MI"] ={
                   "moy":0
                },
                {
-                  "name":"STRM1",
-                  "title":" Structure machine 1",
+                  "name":"TL",
+                  "title":"Théorie des langages",
                   "coef":3,
                   "credit":5,
                   "poids":[
@@ -90,120 +199,6 @@ canevas["L1MI"] ={
             ],
             "coef":7,
             "credit":0,
-            "credits_origine":11,
-            "moy":0
-         },
-         {
-            "name":"U3_S1",
-            "title":"Méthodologique",
-            "modules":[
-               {
-                  "name":"Term",
-                  "title":"Terminologie Scientifique et expression écrite",
-                  "coef":1,
-                  "credit":2,
-                  "poids":[
-                     100,
-                     0,
-                     0
-                  ],
-                  "poids_tp":0,
-                  "poids_td":0,
-                  "poids_exam":1,
-                  "moy":0
-               },
-               {
-                  "name":"Ang1",
-                  "title":"Langue Etrangère 1 ",
-                  "coef":1,
-                  "credit":2,
-                  "poids":[
-                     100,
-                     0,
-                     0
-                  ],
-                  "poids_tp":0,
-                  "poids_td":0,
-                  "poids_exam":1,
-                  "moy":0
-               }
-            ],
-            "coef":2,
-            "credit":0,
-            "credits_origine":4,
-            "moy":0
-         },
-         {
-            "name":"U4_S1",
-            "title":"Découverte",
-            "modules":[
-               {
-                  "name":"Pḧys1",
-                  "title":"Physique 1",
-                  "coef":2,
-                  "credit":4,
-                  "poids":[
-                     60,
-                     40,
-                     0
-                  ],
-                  "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
-                  "moy":0
-               }
-            ],
-            "coef":2,
-            "credit":0,
-            "credits_origine":4,
-            "moy":0
-         }
-      ],
-      "moy":0,
-      "coef":18,
-      "credits_origine":30,
-      "credits":0
-   },
-   "semestre2":{
-      "name":"S2",
-      "unites":[
-         {
-            "name":"U1_S2",
-            "title":"Fondamentale1",
-            "modules":[
-               {
-                  "name":"Analyse2",
-                  "title":"Analyse 2",
-                  "coef":4,
-                  "credit":6,
-                  "poids":[
-                     60,
-                     40,
-                     0
-                  ],
-                  "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
-                  "moy":0
-               },
-               {
-                  "name":"Algb2",
-                  "title":"Algèbre 2",
-                  "coef":2,
-                  "credit":4,
-                  "poids":[
-                     60,
-                     40,
-                     0
-                  ],
-                  "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
-                  "moy":0
-               }
-            ],
-            "coef":6,
-            "credit":0,
             "credits_origine":10,
             "moy":0
          },
@@ -212,10 +207,10 @@ canevas["L1MI"] ={
             "title":"Fondamentale2",
             "modules":[
                {
-                  "name":"Algo2",
-                  "title":"Algorithmique et structure de données 2",
-                  "coef":4,
-                  "credit":6,
+                  "name":"BD",
+                  "title":"Bases de données",
+                  "coef":3,
+                  "credit":5,
                   "poids":[
                      60,
                      20,
@@ -227,17 +222,17 @@ canevas["L1MI"] ={
                   "moy":0
                },
                {
-                  "name":"STRM2",
-                  "title":"Structure machine 2",
-                  "coef":2,
-                  "credit":4,
+                  "name":"POO2",
+                  "title":"Programmation orienté objet 2",
+                  "coef":3,
+                  "credit":5,
                   "poids":[
                      60,
-                     40,
-                     0
+                     0,
+                     40
                   ],
-                  "poids_tp":0,
-                  "poids_td":0.4,
+                  "poids_tp":0.4,
+                  "poids_td":0,
                   "poids_exam":0.6,
                   "moy":0
                }
@@ -252,10 +247,10 @@ canevas["L1MI"] ={
             "title":"Méthodologique",
             "modules":[
                {
-                  "name":"Proba",
-                  "title":"Introduction aux probabilités et statistique descriptive ",
+                  "name":"PL",
+                  "title":"Programmation Linéaire",
                   "coef":2,
-                  "credit":3,
+                  "credit":4,
                   "poids":[
                      60,
                      40,
@@ -267,8 +262,33 @@ canevas["L1MI"] ={
                   "moy":0
                },
                {
-                  "name":"TIC",
-                  "title":"Technologie de l'Information et de la Communication ",
+                  "name":"Proba2",
+                  "title":"Probabilités et Statistique 2",
+                  "coef":2,
+                  "credit":4,
+                  "poids":[
+                     60,
+                     40,
+                     0
+                  ],
+                  "poids_tp":0,
+                  "poids_td":0.4,
+                  "poids_exam":0.6,
+                  "moy":0
+               }
+            ],
+            "coef":4,
+            "credit":0,
+            "credits_origine":8,
+            "moy":0
+         },
+         {
+            "name":"U4_S2",
+            "title":"Transversal",
+            "modules":[
+               {
+                  "name":"Entreprenariat",
+                  "title":"Entreprenariat",
                   "coef":1,
                   "credit":2,
                   "poids":[
@@ -280,58 +300,17 @@ canevas["L1MI"] ={
                   "poids_td":0,
                   "poids_exam":1,
                   "moy":0
-               },
-               {
-                  "name":"OPM",
-                  "title":"Outils de programmation pour les mathématiques ",
-                  "coef":1,
-                  "credit":2,
-                  "poids":[
-                     60,
-                     0,
-                     40
-                  ],
-                  "poids_tp":0.4,
-                  "poids_td":0,
-                  "poids_exam":0.6,
-                  "moy":0
                }
             ],
-            "coef":4,
+            "coef":1,
             "credit":0,
-            "credits_origine":7,
-            "moy":0
-         },
-         {
-            "name":"U4_S2",
-            "title":"Découverte",
-            "modules":[
-               {
-                  "name":"Pḧys2",
-                  "title":"Physique 2",
-                  "coef":2,
-                  "credit":3,
-                  "poids":[
-                     60,
-                     40,
-                     0
-                  ],
-                  "poids_tp":0,
-                  "poids_td":0.4,
-                  "poids_exam":0.6,
-                  "moy":0
-               }
-            ],
-            "coef":2,
-            "credit":0,
-            "credits_origine":3,
+            "credits_origine":2,
             "moy":0
          }
       ],
       "moy":0,
       "coef":18,
-      "credits_origine":30,
-      "credits":0
+      "credits_origine":30
    },
    "moy":0
-}; 
+}
