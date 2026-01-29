@@ -1,5 +1,9 @@
 
-
+function is_odd_semester(name){
+    if (typeof name === 'undefined') return false;
+    const oddSemesters = ["S1", "S3", "S5"];
+    return oddSemesters.includes(name.toUpperCase());
+}
 class Year{
   constructor(name, semestre1, semestre2)
     {
@@ -68,6 +72,7 @@ class Semestre{
   constructor(name, unites)
     {
         this.name = name;
+
         this.unites = unites;
         this.moy = 0;
         this.coef = 0;
@@ -140,6 +145,10 @@ class Semestre{
 create_canevas()
 {
     // create dynamique canevas
+    if(is_odd_semester(this.name))
+        $("#semestre1_num").html(this.name);
+    else
+        $("#semestre2_num").html(this.name);
     for(let i=0; i< this.unites.length; i++)
     {
         // create first case
@@ -152,6 +161,7 @@ create_canevas()
 create_check_semestre()
 {
     // create dynamique canevas
+
     var row_name = `<td class="noneed"> <h6>Semestre ${this.name}</h6></td>`;
     var row_coef = `<td class="noneed"> <h6>${this.coef}</h6></td>`;
     var row_cred = `<td class="noneed"> <h6>${this.credits_origine}</h6></td>`;
@@ -160,7 +170,7 @@ create_check_semestre()
     var new_unite = document.createElement("tr");
     new_unite.innerHTML = row_name +  row_coef +  row_cred;
 
-    if(this.name == "S1")
+    if(is_odd_semester(this.name))
         $("#checkplace1").append(new_unite);
     else
         $("#checkplace2").append(new_unite);    
@@ -198,7 +208,7 @@ create_one_semestre_line()
     new_module.classList.add("text-white");
     new_module.innerHTML =new_module_name+module_coef+ module_cred+module_parts+  module_moy+ module_cr;
 
-    if(semestre_name == "S1")
+     if(is_odd_semester(semestre_name))
         $("#table1").append(new_module);
     else
         $("#table2").append(new_module);    
@@ -350,10 +360,13 @@ create_one_unite(semestre_x)
     //~ new_module.classList.add("bg-info","text-dark");
     new_module.innerHTML =new_module_name+module_coef+ module_cred+module_parts+  module_moy+ module_cr;
 
-    if(semestre_name == "S1")
+    if(is_odd_semester(semestre_name))
         $("#table1").append(new_module);
     else
-        $("#table2").append(new_module);    
+
+    {        $("#table2").append(new_module);
+        console.log("one unit_line "+semestre_name+" "+is_odd_semester(semestre_name));
+    }
 }
 }
 
@@ -522,7 +535,7 @@ create_one_module(first_case_boolean, unite_x, semestre_x)
     //~ new_module.innerHTML =new_module_name+module_coef+ module_cred+module_parts+  module_moy+ module_cr+ module_moy_unit+ module_cred_unit ;
     new_module.innerHTML =new_module_name+module_coef+ module_cred+module_parts+  module_moy+ module_cr;
 
-    if(semestre_name == "S1")
+    if(is_odd_semester(semestre_name))
         $("#table1").append(new_module);
     else
         $("#table2").append(new_module);    
