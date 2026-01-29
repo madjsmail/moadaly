@@ -1,5 +1,6 @@
 {
    "name":"L1Info",
+    "fullname": "Informatique",
    "domain":"Mathematiques et Informatique",
 "startdate":"2025",
 "expired":"",
@@ -8,7 +9,7 @@
 "branch":"informatique",
   "universities": [],
    "semestre1":{
-      "name":"S1",
+      "name":"S3",
       "unites":[
          {
             "name":"U1_S1",
@@ -173,7 +174,7 @@
       "credits":0
    },
    "semestre2":{
-      "name":"S2",
+      "name":"S4",
       "unites":[
          {
             "name":"U1_S2",
