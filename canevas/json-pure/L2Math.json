@@ -1,0 +1,83 @@
+ {
+ "name":"L2Math",
+    "fullname": "Mathematiques",
+   "domain":"Mathematiques et Informatique",
+"startdate":"2025",
+"expired":"",
+"cycle":"licence",
+"level":"2",
+"branch":"Mathematiques",
+     "universities": [],
+ "semestre1":{
+  "name":"S1",
+  "unites":[
+   {
+    "name":"U1_S3",
+    "title":"Fondamentales",
+    "modules":[
+     {"name":"Algebre3","title":"Algèbre 3","coef":3,"credit":5,"poids":[60,40,0],"moy":0},
+     {"name":"Analyse3","title":"Analyse 3","coef":4,"credit":7,"poids":[60,40,0],"moy":0},
+     {"name":"Topo","title":"Topologie","coef":3,"credit":6,"poids":[60,40,0],"moy":0}
+    ],
+    "coef":10,"credits_origine":18,"moy":0
+   },
+   {
+    "name":"U2_S3",
+    "title":"Méthodologie",
+    "modules":[
+     {"name":"Num1","title":"Analyse numérique 1","coef":3,"credit":4,"poids":[60,20,20],"moy":0},
+     {"name":"Logique","title":"Logique mathématique","coef":2,"credit":3,"poids":[60,40,0],"moy":0},
+     {"name":"SciPy","title":"Calcul scientifique Python","coef":2,"credit":3,"poids":[60,20,20],"moy":0}
+    ],
+    "coef":7,"credits_origine":10,"moy":0
+   },
+ {
+    "name":"U3_S3",
+    "title":"Découverte",
+    "modules":[
+     {"name":"Latex","title":"Introduction à Latex","coef":1,"credit":2,"poids":[100,0,0],"moy":0}
+    ],
+    "coef":1,"credits_origine":2,"moy":0
+   }
+  ],
+  "coef":18,"credits_origine":30,"moy":0
+ },
+
+ "semestre2":{
+  "name":"S2",
+  "unites":[
+   {
+    "name":"U1_S4",
+    "title":"Fondamentales",
+    "modules":[
+     {"name":"Analyse4","title":"Analyse 4","coef":4,"credit":7,"poids":[60,40,0],"moy":0},
+     {"name":"Algebre4","title":"Algèbre 4","coef":3,"credit":5,"poids":[60,40,0],"moy":0},
+     {"name":"Complexe","title":"Analyse complexe","coef":3,"credit":6,"poids":[60,40,0],"moy":0}
+    ],
+    "coef":10,"credits_origine":18,"moy":0
+   },
+   {
+    "name":"U2_S4",
+    "title":"Méthodologie",
+    "modules":[
+     {"name":"Num2","title":"Analyse numérique 2","coef":3,"credit":4,"poids":[60,20,20],"moy":0},
+     {"name":"Proba","title":"Probabilités","coef":2,"credit":3,"poids":[60,40,0],"moy":0},
+     {"name":"Geo","title":"Géométrie","coef":2,"credit":3,"poids":[60,40,0],"moy":0}
+    ],
+    "coef":7,"credits_origine":10,"moy":0
+   },
+ {
+    "name":"U3_S4",
+    "title":"Découverte",
+    "modules":[
+     {"name":"Entrepreneuriat","title":"Entrepreneuriat","coef":1,"credit":2,"poids":[100,0,0],"moy":0}
+    ],
+    "coef":1,"credits_origine":2,"moy":0
+   }
+  ],
+  "coef":18,"credits_origine":30,"moy":0
+ },
+
+ "moy":0
+}
+
