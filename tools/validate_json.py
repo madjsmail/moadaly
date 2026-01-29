@@ -80,7 +80,7 @@ def validate_module(mod, path):
 
 
 def validate_unite(unite, path):
-    for field in ["name", "title", "modules", 'coef','credits_origine']:
+    for field in ["name", "title", "modules", 'coef','credits_origine',"moy"]:
         if field not in unite:
             error(f"Missing {path}.{field}")
 
@@ -107,7 +107,7 @@ def validate_unite(unite, path):
         )
 
 def validate_semestre(sem, path):
-    for field in ["name", "unites", 'coef','credits_origine']:
+    for field in ["name", "unites", 'coef','credits_origine', "moy"]:
         if field not in sem:
             error(f"Missing {path}.{field}")
 
@@ -120,7 +120,7 @@ def validate_semestre(sem, path):
 def validate_level(data, filename):
     if "name" not in data:
         error(f"{filename}: missing name")
-    for field in ["name",    "domain", "startdate", "expired", "cycle", "level", "branch", "universities"]:
+    for field in ["name",    "domain", "startdate", "expired", "cycle", "level", "branch", "universities", "moy"]:
         if field not in data:
             error(f"Missing {field}")
     for sem in ["semestre1", "semestre2"]:

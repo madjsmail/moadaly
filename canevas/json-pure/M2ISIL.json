@@ -9,7 +9,7 @@
 "branch":"Informatique",
   "universities": ["Bouira university"],
    "semestre1":{
-      "name":"S1",
+      "name":"S3",
       "unites":[
          {
             "name":"U1_S1",
@@ -187,7 +187,7 @@
       "credits_origine":30
    },
    "semestre2":{
-      "name":"S2",
+      "name":"S4",
       "unites":[
          {
             "name":"U1_S2",

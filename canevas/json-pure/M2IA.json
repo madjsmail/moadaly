@@ -11,7 +11,7 @@
   "universities": [],
   
  "semestre1":{
-  "name":"S1",
+  "name":"S3",
   "unites":[
    {
     "name":"UEF1_S3",
@@ -61,7 +61,7 @@
  },
 
  "semestre2":{
-  "name":"S2",
+  "name":"S4",
   "unites":[
    {
     "name":"PFE",
