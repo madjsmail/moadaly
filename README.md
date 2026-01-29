@@ -55,7 +55,27 @@ For example a new level named "L3ML"
 5. Test if it works
 6. The menu must be updated automatically
 
+## Tools
+
+* 'tools/validate_json.py': check json file schema from [canevas/json-pure](canevas/json-pure)
+
+  ```sh
+  make validate
+  ```
+
+* 'tools/summary_md.py': generate details about available canevas: [docs/summary_canevas.md](docs/summary_canevas.md ) 
+
+  ```sh
+  make summary
+  ```
+
+* 'tools/convert_json.py': generate js data file to be used in offline html page: [canevas/canevas_data.js](canevas/canevas_data.js)
+
+  ```sh
+  make build_data
+  ```
+
+  
 
 
-## 
 
