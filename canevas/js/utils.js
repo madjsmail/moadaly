@@ -573,34 +573,65 @@ function create_menu(current_page="", item_list=[])
     var cpt = 0;
     for( let title of list)
     {
-    active = "";    
+        active = "";
 
-    if(title == current_page) active = "active";
-    
-    menu_item= `<li id="3em" class="nav-item ${active}">
+        if(title == current_page) active = "active";
+
+        menu_item= `<li id="3em" class="nav-item ${active}">
                             <a class="nav-link" href="./index.html?level=${title}">${title}</a>
                         </li> 
                     `;
-    //~ menu_item= `<li id="3em" class="nav-item ${active}">
-                            //~ <a class="nav-link" href="./index${title}.html?level=${title}">${title}</a>
-                        //~ </li> 
-                    //~ `;
-
-
-    if(cpt<=8)
-        $("#navbarTextList").append(menu_item);
-    else if(cpt<=16)
-        $("#navbarTextList2").append(menu_item);
-    else
-        $("#navbarTextList3").append(menu_item);
-    cpt +=1;
     }
+//    if(cpt<=8)
+//        $("#navbarTextList").append(menu_item);
+//    else if(cpt<=16)
+//        $("#navbarTextList2").append(menu_item);
+//    else
+//        $("#navbarTextList3").append(menu_item);
+//    cpt +=1;
+//    }
     // fix menu items
     menu_item= `<li id="3em" class="nav-item">
                             <a class="nav-link" href="canevas/about.html">About</a>
                         </li> 
                     `;
-    $("#navbarTextList").append(menu_item);                    
+    $("#navbarTextList").append(menu_item);
+const levels = item_list;
+
+const groups = ["L1", "L2", "L3", "M1", "M2"];
+const container = $("#navbarLevelsList");
+
+// إنشاء dropdown لكل نوع
+groups.forEach(prefix => {
+
+    const dropdown = $(`
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="drop${prefix}"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ${prefix}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="drop${prefix}"></div>
+      </li>
+    `);
+
+    const menu = dropdown.find(".dropdown-menu");
+
+    // إضافة كل Level يبدأ بنفس البادئة
+    levels
+      .filter(lvl => lvl.toUpperCase().startsWith(prefix))
+      .forEach(lvl => {
+          menu.append(`<a class="dropdown-item" href="./index.html?level=${lvl}">${lvl}</a>`);
+      });
+
+    // لا نضيف القائمة إذا كانت فارغة
+    if (menu.children().length > 0) {
+        container.append(dropdown);
+    }
+
+});
+
+container.append( menu_item);
+
 }
 
 function create_initial_checkpoint()

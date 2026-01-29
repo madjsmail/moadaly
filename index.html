@@ -17,42 +17,29 @@
 
 <body>
     <div id="main-container">
-        <div class="page-header">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto"  id="navbarTextList">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Math info <span class="sr-only">(current)</span></a>
-                        </li>
-                       
-                    </ul>
-                    <span class="navbar-text">
-                        <h3 id="nav-titre">Calculateur de Moyenne حساب المعّدل</h3>
-                    </span>
-              
-                </div>
-            </nav>
- 
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto"  id="navbarTextList2">
-                        <li class="nav-item active">
-                        </li>
-                    </ul>
-                </div>
-            </nav>
- 
-        </div>
+        <div class="page-header" id="navbars-container">
+    <!-- هنا سيتم إنشاء كل navbars تلقائياً -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+  <a class="navbar-brand" href="#">Levels</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLevels" aria-controls="navbarLevels" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 
+  <div class="collapse navbar-collapse" id="navbarLevels">
+    <ul class="navbar-nav mr-auto" id="navbarLevelsList">
+      <!-- Levels dropdowns will be added here -->
+    </ul>
+                        <span class="navbar-text">
+                    <h3 id="nav-titre">Calculateur de Moyenne حساب المعّدل</h3>
+                   </span>
+  </div>
+</nav>
+        </div>
         <div class="page-content">
+
             <div class="tables-container">
-                   <table class="tables-striped mx-auto mb-5">
+                <div class="tables"  id="tables"  style="overflow-x:auto;">
+                      <table class="tables-striped mb-5">
                         <tbody>
                             <tr>
                                 <td>
@@ -77,15 +64,10 @@
                                 </td>
                                 <td>
                                     <h5 class="text-white p-2">à <span id="expired"></span></h5>
-
                                 </td>
                             </tr>
-
                         </tbody>
                          </table>
-            </div>
-            <div class="tables-container">
-                <div class="tables"  id="tables"  style="overflow-x:auto;">
                     <table id="table1" class="table-striped  mb-5">
                         <thead>
                             <tr>
