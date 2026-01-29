@@ -3,7 +3,7 @@ import glob
 import os
 
 JSON_DIR = "canevas/json-pure"
-OUTPUT_FILE = "canevas/canevas_data.js"
+OUTPUT_FILE = "canevas/json/canevas_data.js"
 
 def main():
     files = glob.glob(f"{JSON_DIR}/*.json")

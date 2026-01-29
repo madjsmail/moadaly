@@ -333,10 +333,10 @@ canevas["L1MI"] ={
 
     // les modules
     if (typeof level === 'undefined') {
-    var level = "L1MI";
+    var level = "L1Info";
     }
     if(level==null)
-        level = "L1MI"
+        level = "L1Info"
     var annee = generate_canevas_from_json(canevas,level)
     
     annee.create_canevas();

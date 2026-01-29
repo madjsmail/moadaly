@@ -1,9 +1,5 @@
-if (typeof canevas === 'undefined') {
-    var canevas = {};
-}
-
-//// This file is auto-generated from JSON files
-//var canevas = {};
+// This file is auto-generated from JSON files
+var canevas = {};
 
 canevas["L1ST"] = {
   "name": "L1ST",
