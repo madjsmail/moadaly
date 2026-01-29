@@ -23,6 +23,8 @@ OPTIONAL_POIDS_FIELDS = {
     "poids_exam": 0
 }
 
+
+
 def error(msg):
     print("❌", msg)
     sys.exit(1)
@@ -133,7 +135,7 @@ def main():
 
     if not files:
         error("No JSON files found")
-
+    seen_level_names = set()  # لتخزين أسماء المستويات التي تم قراءتها
     for path in files:
         print(f"🔍 Checking {path}")
         with open(path, encoding="utf-8") as f:
@@ -150,7 +152,16 @@ def main():
                     print(" " * (e.colno + 2) + "^")
             else:
                 validate_level(data, path)
+                # تحقق من حقل name
+                level_name = data.get("name")
+                if not level_name:
+                    error(f"{path} missing 'name' field")
 
+                # تحقق من التكرار
+                if level_name in seen_level_names:
+                    error(f"Duplicate level name detected: '{level_name}' in file {path}")
+
+                seen_level_names.add(level_name)
     print("\n✅ All JSON files are valid!")
 
 
