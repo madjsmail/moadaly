@@ -23,5 +23,8 @@ validate:
 build_data:
 	# generate static js data from available json files
 	python tools/convert_json.py
+summary:
+	# generate summary of available canvas
+	python tools/summary_md.py
 
 
