@@ -64,12 +64,12 @@ Testing is much appreciated. Please post any issue you find in the [Issue tracke
 For example a new level named "L3ML"
 
 
-1. Make a copy of canevas/templates/L1MI.json  as L3ML.json
+1. Make a copy of canevas/templates/L1Info.json  as L3ML.json
 2. Modify the JSON file as you need.
-3. copy the file into : canevas/json/L3ML.json
-4. Add a line to index.html like this:
- ```html
-     <script type='text/javascript' src='canevas/json/L3ML.json'></script>
+3. copy the file into : canevas/json-pure/L3ML.json
+4. Re-build canevas_data.js using, requires pyhton:
+ ```sh
+     make build_data
  ```
 5. Test if it works
 6. The menu must be updated automatically
