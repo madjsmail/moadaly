@@ -14,7 +14,17 @@ all:
 publish:
 	git push origin master 
 
-md2html:
-	pandoc -s -r markdown -w html README.md -o README.html
-md2rst:
-	pandoc -s -r markdown -w rst README.md -o docs/README.rst
+server:
+	python3 -m http.server 8000
+validate:
+	# validate json files
+	python tools/validate_json.py
+
+build_data:
+	# generate static js data from available json files
+	python tools/convert_json.py
+summary:
+	# generate summary of available canvas
+	python tools/summary_md.py
+
+

@@ -1,0 +1,431 @@
+canevas['علوم إسلامية'] ={
+  "name": "علوم إسلامية",
+  "semestre1": {
+    "name": "S1",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس11",
+        "title": "أساسية",
+        "coef": 10,
+        "credit": 0,
+        "credits_origine": 19,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "ترتيل وحفظ القرآن 1",
+            "title": "ترتيل وحفظ القرآن 1",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "عقيدة",
+            "title": "عقيدة",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "فقه العبادات 1",
+            "title": "فقه العبادات 1",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى أصول الفقه",
+            "title": "مدخل إلى أصول الفقه",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "لغة عربية 1",
+            "title": "لغة عربية 1",
+            "coef": 1,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 1.1",
+        "title": "منهجية",
+        "coef": 3,
+        "credit": 0,
+        "credits_origine": 6,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "علوم القرآن",
+            "title": "علوم القرآن",
+            "coef": 1,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "منهج البحث في العلوم الإسلامية والإنسانية",
+            "title": "منهج البحث في العلوم الإسلامية والإنسانية",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          },
+          {
+            "name": "إعلام آلي",
+            "title": "إعلام آلي",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "اس 1.1",
+        "title": "استكشافية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 4,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "تاريخ إسلامي : السيرة النبوية",
+            "title": "تاريخ إسلامي : السيرة النبوية",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى علوم الإعلام والاتصال",
+            "title": "مدخل إلى علوم الإعلام والاتصال",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 1.1",
+        "title": "أفقية",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 1,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "لغة أجنبية 1",
+            "title": "لغة أجنبية 1",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  },
+  "semestre2": {
+    "name": "S2",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس21",
+        "title": "أساسية",
+        "coef": 8,
+        "credit": 0,
+        "credits_origine": 18,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "ترتيل وحفظ القرآن 2",
+            "title": "ترتيل وحفظ القرآن 2",
+            "coef": 1,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى علم الأديان المقارن",
+            "title": "مدخل إلى علم الأديان المقارن",
+            "coef": 1,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "فقه العبادات 2",
+            "title": "فقه العبادات 2",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "علوم الحديث",
+            "title": "علوم الحديث",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "لغة عربية 2",
+            "title": "لغة عربية 2",
+            "coef": 1,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 2.1",
+        "title": "منهجية",
+        "coef": 3,
+        "credit": 0,
+        "credits_origine": 7,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى علم الدعوة",
+            "title": "مدخل إلى علم الدعوة",
+            "coef": 1,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "إعلام آلي 2",
+            "title": "إعلام آلي 2",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          },
+          {
+            "name": "تاريخ إسلامي : تاريخ الخلفاء",
+            "title": "تاريخ إسلامي : تاريخ الخلفاء",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "اس 2.1",
+        "title": "استكشافية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 4,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى الاقتصاد",
+            "title": "مدخل إلى الاقتصاد",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى العلوم القانونية",
+            "title": "مدخل إلى العلوم القانونية",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 2.1",
+        "title": "أفقية",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 1,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "لغة أجنبية 2",
+            "title": "لغة أجنبية 2",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              0,
+              100,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 1.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  }
+}

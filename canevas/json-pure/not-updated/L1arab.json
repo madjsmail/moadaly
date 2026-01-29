@@ -1,0 +1,422 @@
+
+canevas['L1arab']={
+  "name": "لغة وأدب عربي",
+  "semestre1": {
+    "name": "S1",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس11",
+        "title": "أساسية",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "نص أدبي قديم (شعر)",
+            "title": "نص أدبي قديم (شعر)",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "نقد أدبي قديم 1",
+            "title": "نقد أدبي قديم 1",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أس12",
+        "title": "أساسية",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "علم الصرف",
+            "title": "علم الصرف",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "بلاغة عربية",
+            "title": "بلاغة عربية",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 1.1",
+        "title": "منهجية",
+        "coef": 6,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "تقنيات البحث 1",
+            "title": "تقنيات البحث 1",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "تقنيات التعبير الشفوي",
+            "title": "تقنيات التعبير الشفوي",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "عروض وموسيقى الشعر",
+            "title": "عروض وموسيقى الشعر",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "إس 1.1",
+        "title": "استكشافية",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 1,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "علوم القرآن",
+            "title": "علوم القرآن",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 1.1",
+        "title": "أفقية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "لغة أجنبية (تعبير شفهي)",
+            "title": "لغة أجنبية (تعبير شفهي)",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          },
+          {
+            "name": "إعلام آلي 1",
+            "title": "إعلام آلي 1",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              0,
+              0,
+              100
+            ],
+            "poids_tp": 1.0,
+            "poids_td": 0.0,
+            "poids_exam": 0.0,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  },
+  "semestre2": {
+    "name": "S2",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس21",
+        "title": "أساسية",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "نص أدبي قديم (نثر)",
+            "title": "نص أدبي قديم (نثر)",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "نقد أدبي قديم 2",
+            "title": "نقد أدبي قديم 2",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أس22",
+        "title": "أساسية",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "علم النحور",
+            "title": "علم النحور",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "فقه اللغة",
+            "title": "فقه اللغة",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 21",
+        "title": "منهجية",
+        "coef": 6,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "تقنيات البحث 2",
+            "title": "تقنيات البحث 2",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "تقنيات التعبير الكتابي",
+            "title": "تقنيات التعبير الكتابي",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مصادر اللغة، الأدب والنقد",
+            "title": "مصادر اللغة، الأدب والنقد",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "إس 21",
+        "title": "استكشافية",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 1,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "تاريخ الحضارة الإنسانية",
+            "title": "تاريخ الحضارة الإنسانية",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 21",
+        "title": "أفقية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "لغة أجنبية (تعبير كتابي وشفهي)",
+            "title": "لغة أجنبية (تعبير كتابي وشفهي)",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          },
+          {
+            "name": "إعلام آلي 2",
+            "title": "إعلام آلي 2",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  }
+}

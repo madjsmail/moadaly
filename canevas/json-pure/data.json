@@ -1,9 +1,13 @@
-if (typeof canevas === 'undefined') {
-    var canevas = {};
-
-
-canevas["L1MI"] ={
+{
    "name":"L1MI",
+  "fullname": "Mathématique/Informatique",
+  "domain":"Mathematiques et Informatique",
+"startdate":"2018",
+"expired":"2025",
+"cycle":"licence",
+"level":"1",
+"branch":"Tronc commun Math/Informatique",
+  "universities": [],
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -328,31 +332,5 @@ canevas["L1MI"] ={
       "credits":0
    },
    "moy":0
-}; 
-} // end defalut values for canevas as L1MI
-
-    // les modules
-    if (typeof level === 'undefined') {
-    var level = "L1Info";
-    }
-    if(level==null)
-        level = "L1Info"
-    var annee = generate_canevas_from_json(canevas,level)
-    
-    annee.create_canevas();
-    create_menu(level, Object.keys(canevas));
-
-function main() {     
-    // Calcul et traitement
-    // calcul unit moy and credits
-    annee.display_results();
-
 }
-$("document").ready(function() {
-    $('input').val(0);
-});
 
-$(document).click(main);
-$(document).keypress(function(e) {
-    if (e.keyCode == 13) { main() }
-});

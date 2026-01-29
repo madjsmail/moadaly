@@ -1,0 +1,312 @@
+
+canevas['L1SNV']={
+  "name": "Sciences de la Nature et de la Vie",
+  "semestre1": {
+    "name": "S1",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "UEF11",
+        "title": "Fondamentale",
+        "coef": 9,
+        "credit": 0,
+        "credits_origine": 18,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Chimie générale et organique",
+            "title": "Chimie générale et organique",
+            "coef": 3,
+            "credit": 6,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "poids_tp": 0.2,
+            "poids_td": 0.2,
+            "poids_exam": 0.6,
+            "moy": 0
+          },
+          {
+            "name": "Biologie cellulaire",
+            "title": "Biologie cellulaire",
+            "coef": 4,
+            "credit": 8,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "poids_tp": 0.2,
+            "poids_td": 0.2,
+            "poids_exam": 0.6,
+            "moy": 0
+          },
+          {
+            "name": "Mathématique Statistique",
+            "title": "Mathématique Statistique",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.4,
+            "poids_exam": 0.6,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UEM 1.1",
+        "title": "Méthodologique",
+        "coef": 5,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Géologie",
+            "title": "Géologie",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "poids_tp": 0.2,
+            "poids_td": 0.2,
+            "poids_exam": 0.6,
+            "moy": 0
+          },
+          {
+            "name": "Techniques de Communication et d’Expression 1 (en français)",
+            "title": "Techniques de Communication et d’Expression 1 (en français)",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.4,
+            "poids_exam": 0.6,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UED 1.1",
+        "title": "Découverte",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Méthode de Travail et Terminologie 1",
+            "title": "Méthode de Travail et Terminologie 1",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.4,
+            "poids_exam": 0.6,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UET 1.1",
+        "title": "Transversale",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 1,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Histoire Universelle des Sciences Biologiques",
+            "title": "Histoire Universelle des Sciences Biologiques",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  },
+  "semestre2": {
+    "name": "S2",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "UEF21",
+        "title": "Fondamentale",
+        "coef": 9,
+        "credit": 0,
+        "credits_origine": 18,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Thermodynamique et chimie des solutions",
+            "title": "Thermodynamique et chimie des solutions",
+            "coef": 3,
+            "credit": 6,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "poids_tp": 0.2,
+            "poids_td": 0.2,
+            "poids_exam": 0.6,
+            "moy": 0
+          },
+          {
+            "name": "Biologie Végétale",
+            "title": "Biologie Végétale",
+            "coef": 3,
+            "credit": 6,
+            "poids": [
+              60,
+              0,
+              40
+            ],
+            "poids_tp": 0.4,
+            "poids_td": 0.0,
+            "poids_exam": 0.6,
+            "moy": 0
+          },
+          {
+            "name": "Biologie Animale",
+            "title": "Biologie Animale",
+            "coef": 3,
+            "credit": 6,
+            "poids": [
+              60,
+              0,
+              40
+            ],
+            "poids_tp": 0.4,
+            "poids_td": 0.0,
+            "poids_exam": 0.6,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UEM 2.1",
+        "title": "Méthodologique",
+        "coef": 5,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Physique",
+            "title": "Physique",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "poids_tp": 0.2,
+            "poids_td": 0.2,
+            "poids_exam": 0.6,
+            "moy": 0
+          },
+          {
+            "name": "Techniques de Communication et d’Expression 2 (en anglais)",
+            "title": "Techniques de Communication et d’Expression 2 (en anglais)",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.4,
+            "poids_exam": 0.6,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UED 1.1",
+        "title": "Découverte",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Sciences de la vie et impacts socio- économiques",
+            "title": "Sciences de la vie et impacts socio- économiques",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.4,
+            "poids_exam": 0.6,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "UET 1.1",
+        "title": "Transversale",
+        "coef": 1,
+        "credit": 0,
+        "credits_origine": 1,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "Méthode        de        Travail        et Terminologie 2",
+            "title": "Méthode        de        Travail        et Terminologie 2",
+            "coef": 1,
+            "credit": 1,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  }
+}

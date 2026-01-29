@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- title -->
-    <title>Calculateur de Moyenne</title>
+    <title>Calculateur de Moyenne حساب المعدّل</title>
     <!-- css -->
     <link rel='stylesheet' type='text/css' media='all' href="assets/css/bootstrap.min.css" />
     <link rel='stylesheet' type='text/css' media='all' href="assets/css/shards.min.css" />
@@ -17,51 +17,62 @@
 
 <body>
     <div id="main-container">
-        <div class="page-header">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto"  id="navbarTextList">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Math info <span class="sr-only">(current)</span></a>
-                        </li>
-                       
-                    </ul>
-                    <span class="navbar-text">
-                        <h3 id="nav-titre">Calculateur de Moyenne</h3>
-                    </span>
-                </div>
-            </nav>
+        <div class="page-header" id="navbars-container">
+    <!-- هنا سيتم إنشاء كل navbars تلقائياً -->
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+  <a class="navbar-brand" href="#">Levels</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarLevels" aria-controls="navbarLevels" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarLevels">
+    <ul class="navbar-nav mr-auto" id="navbarLevelsList">
+      <!-- Levels dropdowns will be added here -->
+    </ul>
+                        <span class="navbar-text">
+                    <h3 id="nav-titre">Calculateur de Moyenne حساب المعّدل</h3>
+                   </span>
+  </div>
+</nav>
         </div>
-        <!-- in case adding new modules you must stick with syntax of the id's      -->
-        <!--                                                                         -->
-
-        <!--   tdModule =============> Note de td                                -->
-        <!--   tpModule =============> Note de tp                                -->
-        <!--   exModule =============  >Note d'exam                              -->
-        <!--   CoefModule =============> coefficient de module                   -->
-        <!--   CredModule =============>crédit de module                         -->
-        <!--   moModule =============> moyenne de module obtenu                  -->
-        <!--   crModule =============> crédit de module obtenu                   -->
-        <!--   MoynneU1/MoynneU1S2 =============> moyenne d'unité obtenu         -->
-        <!--   CU1/CU_S2  =============>    crédit d'unité obtenu                -->
-
-
-
-
-
-
-
         <div class="page-content">
+
             <div class="tables-container">
                 <div class="tables"  id="tables"  style="overflow-x:auto;">
+                      <table class="tables-striped mb-5">
+                        <tbody>
+                            <tr>
+                                <td>
+                                   <h4 class="text-white p-2"><span id="fullname"></span> </h4>
+                                </td>
+                                <td>
+                                    <h4 class="text-white p-2">Domaine: <span id="domain"></span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <h4 class="text-white p-2">Niveau: <span id="cycle"></span> <span id="level"></span> </h4>
+                                </td>
+                                <td>
+                                    <h5 class="text-white p-2">Universités: <span id="universities"></span></h5>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <h5 class="text-white p-2">Valable de <span id="startdate"></span></h5>
+                                </td>
+                                <td>
+                                    <h5 class="text-white p-2">à <span id="expired"></span></h5>
+                                </td>
+                            </tr>
+                        </tbody>
+                         </table>
                     <table id="table1" class="table-striped  mb-5">
                         <thead>
                             <tr>
                                 <th id="titre1" colspan="11">
-                                    <h2>Semestre 1</h2>
+                                    <h2>Semestre <span id="semestre1_num"></span>  السداسي</h2>
                                 </th>
 
                             </tr>
@@ -69,13 +80,13 @@
                         <tbody>
                             <tr>
                                 <th>
-                                    <h6>Modules</h6>
+                                    <h6>Modules المواد</h6>
                                 </th>
                                 <th class="noneed">
-                                    <h6>Coef</h6>
+                                    <h6>Coef معامل</h6>
                                 </th>
                                 <th class="noneed">
-                                    <h6>Créd</h6>
+                                    <h6>Créd رصيد</h6>
                                 </th>
                                 <th>
                                     <h6>Note TD</h6> |
@@ -84,10 +95,10 @@
                                 </th>
 
                                 <th>
-                                    <h6>Moyenne Module</h6>
+                                    <h6>Moyenne Module معدل المادة</h6>
                                 </th>
                                 <th>
-                                    <h6>Créd Mod</h6>
+                                    <h6>Créd Mod رصيد المادة</h6>
                                 </th>
 
                             </tr>
@@ -99,7 +110,7 @@
                         <thead>
                             <tr>
                                 <th id="titre2" colspan="11">
-                                    <h2>Semestre 2</h2>
+                                            <h2>Semestre <span id="semestre2_num"></span>  السداسي</h2>
                                 </th>
 
                             </tr>
@@ -107,13 +118,13 @@
                         <tbody>
                             <tr>
                                 <th>
-                                    <h6>Modules</h6>
+                                    <h6>Modules المواد</h6>
                                 </th>
                                 <th class="noneed">
-                                    <h6>Coef</h6>
+                                    <h6>Coef معامل</h6>
                                 </th>
                                 <th class="noneed">
-                                    <h6>Créd</h6>
+                                    <h6>Créd رصيد</h6>
                                 </th>                                
                                 <th>
                                     <h6>Note TD</h6> |
@@ -122,10 +133,10 @@
                                 </th>
 
                                 <th>
-                                    <h6>Moyenne Module</h6>
+                                    <h6>Moyenne Module معدّل المادة</h6>
                                 </th>
                                 <th>
-                                    <h6>Créd Mod</h6>
+                                    <h6>Créd Mod رصيد المادة</h6>
                                 </th>
 
                             </tr>
@@ -145,18 +156,18 @@
                     <tbody >
                        <tr>
                             <th>
-                                <h5>Semestre/année</h5>
+                                <h5>Semestre/année سداسي/سنوي</h5>
                             </th>
                             <th>
-                                <h5>Moyenne</h5>
+                                <h5>Moyenne معدّل</h5>
                             </th>
                             <th>
-                                <h5>Crédits</h5>
+                                <h5>Crédits أرصدة</h5>
                             </th>
                         </tr>
                         <tr>
                             <td>
-                                <h5>Semestre 1</h5>
+                                <h5>Semestre 1 سداسي </h5>
                             </td>
                             <td>
                                 <h5 id="moyenneS1_copy">0</h5>
@@ -167,7 +178,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <h5>Semestre 2</h5>
+                                <h5>Semestre 2 سداسي</h5>
                             </td>
                             <td>
                                 <h5 id="moyenneS2_copy">0</h5>
@@ -180,7 +191,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <h5>Année </h5>
+                                <h5>Année سنوي</h5>
                             </td>
                             <td>
                                 <h5 id="moyenneGen">0</h5>
@@ -201,22 +212,9 @@
     <script type='text/javascript' src='assets/js/shards.min.js'></script>
     <script type='text/javascript' src='assets/js/main.js'></script>
     <script type='text/javascript' src='canevas/js/utils.js'></script>
-    <script type='text/javascript' src='canevas/json/L1MI.json'></script>
-    <script type='text/javascript' src='canevas/json/L2Info.json'></script>
-    <script type='text/javascript' src='canevas/json/L3SI.json'></script>
-    <script type='text/javascript' src='canevas/json/L3ISIL.json'></script>
-    <script type='text/javascript' src='canevas/json/M1ISIL.json'></script>
-    <script type='text/javascript' src='canevas/json/M2ISIL.json'></script>
-    <script type='text/javascript' src='canevas/json/M1GSI.json'></script>
-    <script type='text/javascript' src='canevas/json/M2GSI.json'></script>
-    <script type='text/javascript' src='canevas/json/M1ISIL-new.json'></script>
-    <script type='text/javascript' src='canevas/json/M2ISIL-new.json'></script>
-    <script type='text/javascript' src='canevas/json/M1GSI-new.json'></script>
-    <script type='text/javascript' src='canevas/json/M2GSI-new.json'></script>
-    <script type='text/javascript' src='canevas/json/M1IA.json'></script>
-    <script type='text/javascript' src='canevas/json/M2IA.json'></script>
-    <script type='text/javascript' src='canevas/json/L1ST.json'></script>
-    <script type='text/javascript' src='canevas/json/L1SM.json'></script>
+<script type='text/javascript' src='canevas/json/canevas_data.js'></script>
+<!--    <script type='text/javascript' src='canevas/json/L1Info2025.json'></script>-->
+
     <script type='text/javascript'>
          var url_string =  window.location;
          //~ console.log(url_string);

@@ -1,12 +1,24 @@
 
-
+function is_odd_semester(name){
+    if (typeof name === 'undefined') return false;
+    const oddSemesters = ["S1", "S3", "S5"];
+    return oddSemesters.includes(name.toUpperCase());
+}
 class Year{
-  constructor(name, semestre1, semestre2)
+  constructor(name, semestre1, semestre2, data)
     {
         this.name = name;
         this.semestre1 = semestre1;
         this.semestre2 = semestre2;
         this.moy = 0;
+        console.log("Data" +data+data["fullname"])
+        this.fullname     = data["fullname"];
+        this.domain       = data["domain"];
+        this.cycle        = data["cycle"];
+        this.level        = data["level"];
+        this.universities = (data["universities"] && data["universities"].length > 0)  ? data["universities"] : ["national"];
+        this.startdate    = data["startdate"];
+        this.expired      = data["expired"];
     } 
 display_results()
 {
@@ -61,6 +73,14 @@ create_canevas(check_canvas=false)
     this.semestre1.create_canevas();
     this.semestre2.create_canevas();
     //~ console.log(JSON.stringify(this));
+
+    $("#fullname").html(this.fullname);
+    $("#domain").html(this.domain);
+    $("#cycle").html(this.cycle);
+    $("#level").html(this.level);
+    $("#universities").html(this.universities);
+    $("#startdate").html(this.startdate);
+    $("#expired").html(this.expired || "-");
 }
 }
 
@@ -68,6 +88,7 @@ class Semestre{
   constructor(name, unites)
     {
         this.name = name;
+
         this.unites = unites;
         this.moy = 0;
         this.coef = 0;
@@ -140,6 +161,10 @@ class Semestre{
 create_canevas()
 {
     // create dynamique canevas
+    if(is_odd_semester(this.name))
+        $("#semestre1_num").html(this.name);
+    else
+        $("#semestre2_num").html(this.name);
     for(let i=0; i< this.unites.length; i++)
     {
         // create first case
@@ -152,6 +177,7 @@ create_canevas()
 create_check_semestre()
 {
     // create dynamique canevas
+
     var row_name = `<td class="noneed"> <h6>Semestre ${this.name}</h6></td>`;
     var row_coef = `<td class="noneed"> <h6>${this.coef}</h6></td>`;
     var row_cred = `<td class="noneed"> <h6>${this.credits_origine}</h6></td>`;
@@ -160,7 +186,7 @@ create_check_semestre()
     var new_unite = document.createElement("tr");
     new_unite.innerHTML = row_name +  row_coef +  row_cred;
 
-    if(this.name == "S1")
+    if(is_odd_semester(this.name))
         $("#checkplace1").append(new_unite);
     else
         $("#checkplace2").append(new_unite);    
@@ -198,7 +224,7 @@ create_one_semestre_line()
     new_module.classList.add("text-white");
     new_module.innerHTML =new_module_name+module_coef+ module_cred+module_parts+  module_moy+ module_cr;
 
-    if(semestre_name == "S1")
+     if(is_odd_semester(semestre_name))
         $("#table1").append(new_module);
     else
         $("#table2").append(new_module);    
@@ -350,10 +376,13 @@ create_one_unite(semestre_x)
     //~ new_module.classList.add("bg-info","text-dark");
     new_module.innerHTML =new_module_name+module_coef+ module_cred+module_parts+  module_moy+ module_cr;
 
-    if(semestre_name == "S1")
+    if(is_odd_semester(semestre_name))
         $("#table1").append(new_module);
     else
-        $("#table2").append(new_module);    
+
+    {        $("#table2").append(new_module);
+        console.log("one unit_line "+semestre_name+" "+is_odd_semester(semestre_name));
+    }
 }
 }
 
@@ -522,7 +551,7 @@ create_one_module(first_case_boolean, unite_x, semestre_x)
     //~ new_module.innerHTML =new_module_name+module_coef+ module_cred+module_parts+  module_moy+ module_cr+ module_moy_unit+ module_cred_unit ;
     new_module.innerHTML =new_module_name+module_coef+ module_cred+module_parts+  module_moy+ module_cr;
 
-    if(semestre_name == "S1")
+    if(is_odd_semester(semestre_name))
         $("#table1").append(new_module);
     else
         $("#table2").append(new_module);    
@@ -541,32 +570,70 @@ function create_menu(current_page="", item_list=[])
     var link = "";
     var menu_item="";    
     var active = "";
+    var cpt = 0;
     for( let title of list)
     {
-    active = "";    
+        active = "";
 
-    if(title == current_page) active = "active";
-    
-    menu_item= `<li id="3em" class="nav-item ${active}">
+        if(title == current_page) active = "active";
+
+        menu_item= `<li id="3em" class="nav-item ${active}">
                             <a class="nav-link" href="./index.html?level=${title}">${title}</a>
                         </li> 
                     `;
-    //~ menu_item= `<li id="3em" class="nav-item ${active}">
-                            //~ <a class="nav-link" href="./index${title}.html?level=${title}">${title}</a>
-                        //~ </li> 
-                    //~ `;
-
-
-        
-    $("#navbarTextList").append(menu_item);
     }
+//    if(cpt<=8)
+//        $("#navbarTextList").append(menu_item);
+//    else if(cpt<=16)
+//        $("#navbarTextList2").append(menu_item);
+//    else
+//        $("#navbarTextList3").append(menu_item);
+//    cpt +=1;
+//    }
     // fix menu items
     menu_item= `<li id="3em" class="nav-item">
                             <a class="nav-link" href="canevas/about.html">About</a>
                         </li> 
                     `;
-    $("#navbarTextList").append(menu_item);                    
+    $("#navbarTextList").append(menu_item);
+const levels = item_list;
+
+const groups = ["L1", "L2", "L3", "M1", "M2"];
+const container = $("#navbarLevelsList");
+
+// إنشاء dropdown لكل نوع
+groups.forEach(prefix => {
+
+    const dropdown = $(`
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="drop${prefix}"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ${prefix}
+        </a>
+        <div class="dropdown-menu" aria-labelledby="drop${prefix}"></div>
+      </li>
+    `);
+
+    const menu = dropdown.find(".dropdown-menu");
+
+    // إضافة كل Level يبدأ بنفس البادئة
+    levels
+      .filter(lvl => lvl.toUpperCase().startsWith(prefix))
+      .forEach(lvl => {
+          menu.append(`<a class="dropdown-item" href="./index.html?level=${lvl}">${lvl}</a>`);
+      });
+
+    // لا نضيف القائمة إذا كانت فارغة
+    if (menu.children().length > 0) {
+        container.append(dropdown);
+    }
+
+});
+
+container.append( menu_item);
+
 }
+
 function create_initial_checkpoint()
 {
     var checkpoint = `            <div id="checkplaces">
@@ -627,7 +694,7 @@ function generate_canevas_from_json(canevas, level)
         var sem_obj = new Semestre(canevas[level][sems]["name"], unite_list);
         sems_list.push(sem_obj);
     }
-    annee2 = new Year(level, sems_list[0], sems_list[1])
+    annee2 = new Year(level, sems_list[0], sems_list[1], canevas[level])
     //~ console.log(JSON.stringify(annee2));
     return annee2;
 }

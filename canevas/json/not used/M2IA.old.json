@@ -2,8 +2,14 @@ if (typeof canevas === 'undefined') {
     var canevas = {};
 }
 
-canevas['M2IA']={
+canevas['M2IA old']={
    "name":"M2IA",
+   "domain":"Mathematiques et Informatique",
+"startdate":"2025",
+"expired":"",
+"cycle":"master",
+"level":"2",
+"branch":"Informatique",
    "semestre1":{
       "name":"S1",
       "unites":[

@@ -1,0 +1,312 @@
+
+canevas['L1droit'] ={
+  "name": "حقوق",
+  "semestre1": {
+    "name": "S1",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس11",
+        "title": "أساسية",
+        "coef": 9,
+        "credit": 0,
+        "credits_origine": 21,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى العلوم القانونية 1",
+            "title": "مدخل إلى العلوم القانونية 1",
+            "coef": 3,
+            "credit": 7,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "القانون الدستوري 1",
+            "title": "القانون الدستوري 1",
+            "coef": 3,
+            "credit": 7,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى القانون الإداري 1",
+            "title": "مدخل إلى القانون الإداري 1",
+            "coef": 3,
+            "credit": 7,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 1.1",
+        "title": "منهجية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 3,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "منهجية الحقوق 1",
+            "title": "منهجية الحقوق 1",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "إس 1.1",
+        "title": "استكشافية",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 4,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "تاريخ النظم",
+            "title": "تاريخ النظم",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى العلوم الإسلامية",
+            "title": "مدخل إلى العلوم الإسلامية",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 1.1",
+        "title": "أفقية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "لغة أجنبية 1",
+            "title": "لغة أجنبية 1",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  },
+  "semestre2": {
+    "name": "S2",
+    "moy": 0,
+    "coef": 0,
+    "credits_origine": 0,
+    "credits": 0,
+    "unites": [
+      {
+        "name": "أس21",
+        "title": "أساسية",
+        "coef": 9,
+        "credit": 0,
+        "credits_origine": 21,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مدخل إلى العلوم القانونية 2",
+            "title": "مدخل إلى العلوم القانونية 2",
+            "coef": 3,
+            "credit": 7,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "القانون الدستوري 2",
+            "title": "القانون الدستوري 2",
+            "coef": 3,
+            "credit": 7,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          },
+          {
+            "name": "مدخل إلى القانون الإداري 2",
+            "title": "مدخل إلى القانون الإداري 2",
+            "coef": 3,
+            "credit": 7,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "م 2.1",
+        "title": "منهجية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 3,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "منهجية الحقوق 2",
+            "title": "منهجية الحقوق 2",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "إس 2.1",
+        "title": "استكشافية",
+        "coef": 4,
+        "credit": 0,
+        "credits_origine": 4,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "مجتمع دولي",
+            "title": "مجتمع دولي",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          },
+          {
+            "name": "اقتصاد",
+            "title": "اقتصاد",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.0,
+            "poids_exam": 1.0,
+            "moy": 0
+          }
+        ]
+      },
+      {
+        "name": "أف 1.1",
+        "title": "أفقية",
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 2,
+        "moy": 0,
+        "modules": [
+          {
+            "name": "لغة أجنبية 2",
+            "title": "لغة أجنبية 2",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              67,
+              33,
+              0
+            ],
+            "poids_tp": 0.0,
+            "poids_td": 0.33,
+            "poids_exam": 0.67,
+            "moy": 0
+          }
+        ]
+      }
+    ]
+  }
+}
