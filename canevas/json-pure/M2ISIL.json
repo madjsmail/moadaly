@@ -1,9 +1,12 @@
-
-
-}
-
-canevas['M2ISIL']={
-   "name":"M2ISIL-new",
+{
+   "name":"M2ISIL",
+"domain":"Mathematiques et Informatique",
+"startdate":"2023",
+"expired":"",
+"cycle":"master",
+"level":"2",
+"branch":"Informatique",
+  "universities": ["Bouira university"],
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -216,4 +219,4 @@ canevas['M2ISIL']={
       "credits_origine":30
    },
    "moy":0
-};
+}

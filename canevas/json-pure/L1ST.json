@@ -1,5 +1,12 @@
 {
    "name":"L1ST",
+  "domain":"Science et Technologie",
+"startdate":"2025",
+"expired":"",
+"cycle":"licence",
+"level":"1",
+"branch":"Science et Technologie",
+  "universities": [],
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -36,7 +43,7 @@
                   "poids_td":0.4,
                   "poids_exam":0.6,
                   "moy":0
-               },
+               }
                ],
                            "coef":5,
             "credit":0,
@@ -178,7 +185,7 @@
             "credit":0,
             "credits_origine":2,
             "moy":0
-         },
+         }
       
       ],
       "moy":0,

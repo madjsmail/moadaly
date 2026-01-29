@@ -6,6 +6,7 @@
 "cycle":"master",
 "level":"2",
 "branch":"Informatique",
+"universities": ["Bouira university"],
    "semestre1":{
       "name":"S1",
       "unites":[

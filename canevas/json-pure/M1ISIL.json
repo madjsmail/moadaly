@@ -5,7 +5,8 @@
 "expired":"",
 "cycle":"master",
 "level":"1",
-"branch":"Informatique",   
+"branch":"Informatique",
+"universities": ["Bouira university"],
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -46,7 +47,7 @@
             ],
             "coef":5,
             "credit":0,
-            "credits_origine":10,
+            "credits_origine":11,
             "moy":0
          },
          {

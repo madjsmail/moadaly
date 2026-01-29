@@ -1,5 +1,12 @@
 {
    "name":"L2Info",
+"domain":"Mathematiques et Informatique",
+"startdate":"2018",
+"expired":"2025",
+"cycle":"licence",
+"level":"2",
+"branch":"Informatique",
+  "universities": [],
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -307,4 +314,4 @@
       "credits_origine":30
    },
    "moy":0
-};
+}

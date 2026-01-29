@@ -1,5 +1,12 @@
 {
    "name":"L1SM",
+      "domain":"Science de la matière",
+"startdate":"2025",
+"expired":"",
+"cycle":"licence",
+"level":"1",
+"branch":"Science de la matière",
+  "universities": [],
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -303,7 +310,7 @@
             ],
             "coef":1,
             "credit":0,
-            "credits_origine":2,
+            "credits_origine":1,
             "moy":0
          },
          {

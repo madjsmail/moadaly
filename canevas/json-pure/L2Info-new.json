@@ -1,11 +1,12 @@
 {
    "name":"L2Info2025",
-   "domain":"Mathematiques et Informatique",
+"domain":"Mathematiques et Informatique",
 "startdate":"2025",
 "expired":"",
 "cycle":"licence",
 "level":"2",
 "branch":"Informatique",
+  "universities": [],
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -75,7 +76,7 @@
                   "credit":5,
                   "poids":[
                      60,
-                     00,
+                     0,
                      40
                   ],
                   "poids_tp":0.4,

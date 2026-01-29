@@ -1,5 +1,12 @@
 {
    "name":"L3SI",
+"domain":"Mathematiques et Informatique",
+"startdate":"2018",
+"expired":"",
+"cycle":"licence",
+"level":"3",
+"branch":"Informatique",
+"universities": [],
    "semestre1":{
       "name":"S1",
       "unites":[

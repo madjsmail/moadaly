@@ -1,5 +1,12 @@
 {
    "name":"L1MI",
+  "domain":"Mathematiques et Informatique",
+"startdate":"2018",
+"expired":"2025",
+"cycle":"licence",
+"level":"1",
+"branch":"Tronc commun Math/Informatique",
+  "universities": [],
    "semestre1":{
       "name":"S1",
       "unites":[
