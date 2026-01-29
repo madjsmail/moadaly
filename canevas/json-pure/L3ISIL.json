@@ -133,7 +133,7 @@
          },
          {
             "name":"U4_S1",
-            "title":"Découverte",
+            "title":"Transversale",
             "modules":[
                {
                   "name":"Econum",
@@ -286,7 +286,7 @@
          },
          {
             "name":"U4_S2",
-            "title":"Découverte",
+            "title":"Transversale",
             "modules":[
                {
                   "name":"redaction",
