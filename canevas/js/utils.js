@@ -5,12 +5,20 @@ function is_odd_semester(name){
     return oddSemesters.includes(name.toUpperCase());
 }
 class Year{
-  constructor(name, semestre1, semestre2)
+  constructor(name, semestre1, semestre2, data)
     {
         this.name = name;
         this.semestre1 = semestre1;
         this.semestre2 = semestre2;
         this.moy = 0;
+        console.log("Data" +data+data["fullname"])
+        this.fullname     = data["fullname"];
+        this.domain       = data["domain"];
+        this.cycle        = data["cycle"];
+        this.level        = data["level"];
+        this.universities = (data["universities"] && data["universities"].length > 0)  ? data["universities"] : ["national"];
+        this.startdate    = data["startdate"];
+        this.expired      = data["expired"];
     } 
 display_results()
 {
@@ -65,6 +73,14 @@ create_canevas(check_canvas=false)
     this.semestre1.create_canevas();
     this.semestre2.create_canevas();
     //~ console.log(JSON.stringify(this));
+
+    $("#fullname").html(this.fullname);
+    $("#domain").html(this.domain);
+    $("#cycle").html(this.cycle);
+    $("#level").html(this.level);
+    $("#universities").html(this.universities);
+    $("#startdate").html(this.startdate);
+    $("#expired").html(this.expired || "-");
 }
 }
 
@@ -571,9 +587,9 @@ function create_menu(current_page="", item_list=[])
                     //~ `;
 
 
-    if(cpt<=15)
+    if(cpt<=8)
         $("#navbarTextList").append(menu_item);
-    else if(cpt<=30)
+    else if(cpt<=16)
         $("#navbarTextList2").append(menu_item);
     else
         $("#navbarTextList3").append(menu_item);
@@ -647,7 +663,7 @@ function generate_canevas_from_json(canevas, level)
         var sem_obj = new Semestre(canevas[level][sems]["name"], unite_list);
         sems_list.push(sem_obj);
     }
-    annee2 = new Year(level, sems_list[0], sems_list[1])
+    annee2 = new Year(level, sems_list[0], sems_list[1], canevas[level])
     //~ console.log(JSON.stringify(annee2));
     return annee2;
 }

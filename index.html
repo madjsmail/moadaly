@@ -49,26 +49,41 @@
             </nav>
  
         </div>
-        <!-- in case adding new modules you must stick with syntax of the id's      -->
-        <!--                                                                         -->
-
-        <!--   tdModule =============> Note de td                                -->
-        <!--   tpModule =============> Note de tp                                -->
-        <!--   exModule =============  >Note d'exam                              -->
-        <!--   CoefModule =============> coefficient de module                   -->
-        <!--   CredModule =============>crédit de module                         -->
-        <!--   moModule =============> moyenne de module obtenu                  -->
-        <!--   crModule =============> crédit de module obtenu                   -->
-        <!--   MoynneU1/MoynneU1S2 =============> moyenne d'unité obtenu         -->
-        <!--   CU1/CU_S2  =============>    crédit d'unité obtenu                -->
-
-
-
-
-
-
 
         <div class="page-content">
+            <div class="tables-container">
+                   <table class="tables-striped mx-auto mb-5">
+                        <tbody>
+                            <tr>
+                                <td>
+                                   <h4 class="text-white p-2"><span id="fullname"></span> </h4>
+                                </td>
+                                <td>
+                                    <h4 class="text-white p-2">Domaine: <span id="domain"></span></h4>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <h4 class="text-white p-2">Niveau: <span id="cycle"></span> <span id="level"></span> </h4>
+                                </td>
+                                <td>
+                                    <h5 class="text-white p-2">Universités: <span id="universities"></span></h5>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                   <h5 class="text-white p-2">Valable de <span id="startdate"></span></h5>
+                                </td>
+                                <td>
+                                    <h5 class="text-white p-2">à <span id="expired"></span></h5>
+
+                                </td>
+                            </tr>
+
+                        </tbody>
+                         </table>
+            </div>
             <div class="tables-container">
                 <div class="tables"  id="tables"  style="overflow-x:auto;">
                     <table id="table1" class="table-striped  mb-5">
@@ -217,47 +232,7 @@
     <script type='text/javascript' src='canevas/js/utils.js'></script>
 <script type='text/javascript' src='canevas/canevas_data.js'></script>
 <!--    <script type='text/javascript' src='canevas/json/L1Info2025.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/L2Info-new.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/L3SI-new.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/L2Info.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/L3SI.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/L3ISIL.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/M1GSI.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/M2GSI.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/M1IA.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/M2IA.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/M2IA.old.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/M1ISIL.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/M2ISIL.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/L1ST.json'></script>-->
-<!--    <script type='text/javascript' src='canevas/json/L1SM.json'></script>-->
-<!--   
- <script type='text/javascript' src='canevas/json/L1MI.json'></script>
-        <script type='text/javascript' src='canevas/json/L1Math2026.json'></script>
-    <script type='text/javascript' src='canevas/json/L2Info.json'></script>
-    <script type='text/javascript' src='canevas/json/L3SI.json'></script>
-    <script type='text/javascript' src='canevas/json/L3ISIL.json'></script>
 
-
-    <script type='text/javascript' src='canevas/json/M1ISIL-new.json'></script>
-    <script type='text/javascript' src='canevas/json/M2ISIL-new.json'></script>
-    <script type='text/javascript' src='canevas/json/M1GSI-new.json'></script>
-    <script type='text/javascript' src='canevas/json/M2GSI-new.json'></script>
-
-    <script type='text/javascript' src='canevas/json/L1ST.json'></script>
-    <script type='text/javascript' src='canevas/json/L1SM.json'></script>
--->
-<!--
-    <script type='text/javascript' src='canevas/json/L1francais.json'></script>
-    <script type='text/javascript' src='canevas/json/L1arab.json'></script>
-    <script type='text/javascript' src='canevas/json/L1economie.json'></script>
-    <script type='text/javascript' src='canevas/json/L1SNV.json'></script>
-    <script type='text/javascript' src='canevas/json/L1droit.json'></script>
-    <script type='text/javascript' src='canevas/json/L1humaines.json'></script>
-    <script type='text/javascript' src='canevas/json/L1islamic.json'></script>
-    <script type='text/javascript' src='canevas/json/L1sociales.json'></script>
-    <script type='text/javascript' src='canevas/json/L1politics.json'></script>
--->
     <script type='text/javascript'>
          var url_string =  window.location;
          //~ console.log(url_string);
