@@ -17,21 +17,6 @@ See Moadaly android app : [moadaly-App](https://github.com/tarek-berkane/moadaly
 * تطبيق ويب لحساب المعدل الفصلي و السنوي للسنة الأولى  رياضيات وإعلام آلي وسنوات إعلام آلى   نظام [LMD] الجزائر 
 * [التخصصات المدعومة حاليا](docs/canevas_summary.md)
 
-# Calcul 
-The calcul is based on :
-* License:
-    * [Canevas L1 MI](docs/L1MI.pdf)
-    * [Canevas L2 Info](docs/L2info.pdf)
-    * [Canevas L3 SI ](docs/L3SI.pdf)
-    * [Canevas L3 ISIL ](docs/L3ISIL.pdf)
-* Master:
-    * [Canevas M1 + M2 GSI](docs/MGSI.pdf)  (Update 2023-2024) [ updated Canevas M1 + M2 GSI](docs/MGSI-bouira-2023-2024.pdf)
-    * [Canevas M1 + M2 ISIL](docs/MISIL.pdf)    (Update 2023-2024) [Canevas M1 + M2 ISIL](docs/MISIL-bouira-2023-2024.pdf)    
-    * [Canvas M1+ M2 IA](docs/MIA-bouira-2023-2024.pdf) (Introduced on 2023-2024)
-* Domaine ST [Canevas L1 ST](docs/L1ST.pdf)
-* Domaine SM [Canevas L1 SM](docs/L1SM.pdf)
-* More details can be found  [here](http://dpinfo.univ-bouira.dz/?page_id=22) 
-
 ## Summary
 
 * **Issues** : Testing is much appreciated. Please post any issue you find in the [Issue tracker](https://github.com/Abdelmadjidsmail/moadaly/issues).
