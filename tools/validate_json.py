@@ -73,6 +73,13 @@ def validate_module(mod, path):
         if field in mod:
             if not isinstance(mod[field], (int, float)):
                 error(f"{path}.{field} must be number")
+            elif field =="poids_exam" and value != exam:
+                error(f"{path}.{field} must be same as poids['exam']")
+            elif field =="poids_tp" and value != tp:
+                error(f"{path}.{field} must be same as poids['tp']")
+            elif field =="poids_td" and value != td:
+                error(f"{path}.{field} must be same as poids['td']")
+
         else:
             mod[field] = value   # نضيفها تلقائيًا
 
