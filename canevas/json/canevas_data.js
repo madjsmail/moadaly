@@ -701,6 +701,242 @@ canevas["L1MI"] = {
   "moy": 0
 };
 
+canevas["L3Math"] = {
+  "name": "L3Math",
+  "fullname": "Mathematiques",
+  "domain": "Mathematiques et Informatique",
+  "startdate": "2025",
+  "expired": "",
+  "cycle": "licence",
+  "level": "3",
+  "branch": "Mathematiques",
+  "universities": [],
+  "semestre1": {
+    "name": "S1",
+    "unites": [
+      {
+        "name": "U1_S5",
+        "title": "Fondamentales",
+        "modules": [
+          {
+            "name": "Mesure",
+            "title": "Mesure et intégration",
+            "coef": 4,
+            "credit": 6,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Normes",
+            "title": "Espaces vectoriels normés",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "EDO",
+            "title": "Equations différentielles",
+            "coef": 4,
+            "credit": 6,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "PhysMath",
+            "title": "Equations de la physique mathématique",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 14,
+        "credits_origine": 22,
+        "moy": 0
+      },
+      {
+        "name": "U2_S6",
+        "title": "Méthodologie",
+        "modules": [
+          {
+            "name": "OSC",
+            "title": "Optimisation sans contrainte",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 3,
+        "credits_origine": 5,
+        "moy": 0
+      },
+      {
+        "name": "U3_S4",
+        "title": "Découverte",
+        "modules": [
+          {
+            "name": "didactique",
+            "title": "Initiation à la didactique des mathématiques",
+            "coef": 1,
+            "credit": 3,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 1,
+        "credits_origine": 3,
+        "moy": 0
+      }
+    ],
+    "coef": 18,
+    "credits_origine": 30,
+    "moy": 0
+  },
+  "semestre2": {
+    "name": "S2",
+    "unites": [
+      {
+        "name": "U1_S6",
+        "title": "Fondamentales",
+        "modules": [
+          {
+            "name": "X",
+            "title": "Matière X",
+            "coef": 5,
+            "credit": 8,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Y",
+            "title": "Matière Y",
+            "coef": 5,
+            "credit": 8,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 10,
+        "credits_origine": 16,
+        "moy": 0
+      },
+      {
+        "name": "U2_S6",
+        "title": "Méthodologie",
+        "modules": [
+          {
+            "name": "TransInt",
+            "title": "Transformations intégrales",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "GeoDiff",
+            "title": "Géométrie différentielle",
+            "coef": 2,
+            "credit": 5,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 4,
+        "credits_origine": 10,
+        "moy": 0
+      },
+      {
+        "name": "U3_S6",
+        "title": "Découverte",
+        "modules": [
+          {
+            "name": "MatZ",
+            "title": "Matière à choisir",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 2,
+        "credits_origine": 2,
+        "moy": 0
+      },
+      {
+        "name": "U4_S6",
+        "title": "Transversale",
+        "modules": [
+          {
+            "name": "Ethique",
+            "title": "Ethique et histoire des mathématiques",
+            "coef": 2,
+            "credit": 2,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 2,
+        "credits_origine": 2,
+        "moy": 0
+      }
+    ],
+    "coef": 18,
+    "credits_origine": 30,
+    "moy": 0
+  },
+  "moy": 0
+};
+
 canevas["M2IA"] = {
   "name": "M2IA",
   "fullname": "Intelligence artificielle",
@@ -1267,6 +1503,295 @@ canevas["L1ST-OLD"] = {
     "moy": 0,
     "coef": 17,
     "credits_origine": 30
+  },
+  "moy": 0
+};
+
+canevas["L1Math"] = {
+  "name": "L1Math",
+  "fullname": "Mathematiques",
+  "domain": "Mathematiques et Informatique",
+  "startdate": "2025",
+  "expired": "",
+  "cycle": "licence",
+  "level": "1",
+  "branch": "Mathematiques",
+  "universities": [],
+  "semestre1": {
+    "name": "S1",
+    "unites": [
+      {
+        "name": "U1_S1",
+        "title": "Fondamentales",
+        "modules": [
+          {
+            "name": "Analyse1",
+            "title": "Analyse 1",
+            "coef": 4,
+            "credit": 6,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Algebre1",
+            "title": "Algèbre 1",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 7,
+        "credits_origine": 11,
+        "moy": 0
+      },
+      {
+        "name": "U2_S1",
+        "title": "Fondamentales 2",
+        "modules": [
+          {
+            "name": "Algo1",
+            "title": "Algorithmique et structures de données 1",
+            "coef": 4,
+            "credit": 6,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 4,
+        "credits_origine": 6,
+        "moy": 0
+      },
+      {
+        "name": "U3_S1",
+        "title": "Méthodologie",
+        "modules": [
+          {
+            "name": "STRM1",
+            "title": "Structure machine",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "OpenSource",
+            "title": "Logiciels libres",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 5,
+        "credits_origine": 9,
+        "moy": 0
+      },
+      {
+        "name": "U4_S1",
+        "title": "Transversale",
+        "modules": [
+          {
+            "name": "Langue",
+            "title": "Langue étrangère",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 1,
+        "credits_origine": 2,
+        "moy": 0
+      },
+      {
+        "name": "U5_S1",
+        "title": "Découverte",
+        "modules": [
+          {
+            "name": "Physique1",
+            "title": "Physique 1",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 1,
+        "credits_origine": 2,
+        "moy": 0
+      }
+    ],
+    "coef": 18,
+    "credits_origine": 30,
+    "moy": 0
+  },
+  "semestre2": {
+    "name": "S2",
+    "unites": [
+      {
+        "name": "U1_S2",
+        "title": "Fondamentales",
+        "modules": [
+          {
+            "name": "Analyse2",
+            "title": "Analyse 2",
+            "coef": 4,
+            "credit": 6,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Algebre2",
+            "title": "Algèbre 2",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 6,
+        "credits_origine": 10,
+        "moy": 0
+      },
+      {
+        "name": "U2_S2",
+        "title": "Fondamentales 2",
+        "modules": [
+          {
+            "name": "Algo2",
+            "title": "Algorithmique et structures de données 2",
+            "coef": 3,
+            "credit": 4,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Proba",
+            "title": "Probabilités et statistique descriptive",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 5,
+        "credits_origine": 8,
+        "moy": 0
+      },
+      {
+        "name": "U3_S2",
+        "title": "Méthodologique",
+        "modules": [
+          {
+            "name": "IIA",
+            "title": "Introduction à l'Intelligence Artificielle",
+            "coef": 2,
+            "credit": 4,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "poids_tp": 0,
+            "poids_td": 0,
+            "poids_exam": 1,
+            "moy": 0
+          },
+          {
+            "name": "PCS",
+            "title": "Fondements de programmation et calcul scientifique avec Python",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              60,
+              0,
+              40
+            ],
+            "poids_tp": 0.4,
+            "poids_td": 0,
+            "poids_exam": 0.6,
+            "moy": 0
+          }
+        ],
+        "coef": 5,
+        "credit": 0,
+        "credits_origine": 9,
+        "moy": 0
+      },
+      {
+        "name": "U4_S2",
+        "title": "Découverte",
+        "modules": [
+          {
+            "name": "Phys2",
+            "title": "Physique 2",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "poids_tp": 0,
+            "poids_td": 0.4,
+            "poids_exam": 0.6,
+            "moy": 0
+          }
+        ],
+        "coef": 2,
+        "credit": 0,
+        "credits_origine": 3,
+        "moy": 0
+      }
+    ],
+    "coef": 18,
+    "credits_origine": 30,
+    "moy": 0
   },
   "moy": 0
 };
@@ -3971,6 +4496,257 @@ canevas["L1SM"] = {
     "moy": 0,
     "coef": 17,
     "credits_origine": 30
+  },
+  "moy": 0
+};
+
+canevas["L2Math"] = {
+  "name": "L2Math",
+  "fullname": "Mathematiques",
+  "domain": "Mathematiques et Informatique",
+  "startdate": "2025",
+  "expired": "",
+  "cycle": "licence",
+  "level": "2",
+  "branch": "Mathematiques",
+  "universities": [],
+  "semestre1": {
+    "name": "S1",
+    "unites": [
+      {
+        "name": "U1_S3",
+        "title": "Fondamentales",
+        "modules": [
+          {
+            "name": "Algebre3",
+            "title": "Algèbre 3",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Analyse3",
+            "title": "Analyse 3",
+            "coef": 4,
+            "credit": 7,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Topo",
+            "title": "Topologie",
+            "coef": 3,
+            "credit": 6,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 10,
+        "credits_origine": 18,
+        "moy": 0
+      },
+      {
+        "name": "U2_S3",
+        "title": "Méthodologie",
+        "modules": [
+          {
+            "name": "Num1",
+            "title": "Analyse numérique 1",
+            "coef": 3,
+            "credit": 4,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Logique",
+            "title": "Logique mathématique",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "SciPy",
+            "title": "Calcul scientifique Python",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 7,
+        "credits_origine": 10,
+        "moy": 0
+      },
+      {
+        "name": "U3_S3",
+        "title": "Découverte",
+        "modules": [
+          {
+            "name": "Latex",
+            "title": "Introduction à Latex",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 1,
+        "credits_origine": 2,
+        "moy": 0
+      }
+    ],
+    "coef": 18,
+    "credits_origine": 30,
+    "moy": 0
+  },
+  "semestre2": {
+    "name": "S2",
+    "unites": [
+      {
+        "name": "U1_S4",
+        "title": "Fondamentales",
+        "modules": [
+          {
+            "name": "Analyse4",
+            "title": "Analyse 4",
+            "coef": 4,
+            "credit": 7,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Algebre4",
+            "title": "Algèbre 4",
+            "coef": 3,
+            "credit": 5,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Complexe",
+            "title": "Analyse complexe",
+            "coef": 3,
+            "credit": 6,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 10,
+        "credits_origine": 18,
+        "moy": 0
+      },
+      {
+        "name": "U2_S4",
+        "title": "Méthodologie",
+        "modules": [
+          {
+            "name": "Num2",
+            "title": "Analyse numérique 2",
+            "coef": 3,
+            "credit": 4,
+            "poids": [
+              60,
+              20,
+              20
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Proba",
+            "title": "Probabilités",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          },
+          {
+            "name": "Geo",
+            "title": "Géométrie",
+            "coef": 2,
+            "credit": 3,
+            "poids": [
+              60,
+              40,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 7,
+        "credits_origine": 10,
+        "moy": 0
+      },
+      {
+        "name": "U3_S4",
+        "title": "Découverte",
+        "modules": [
+          {
+            "name": "Entrepreneuriat",
+            "title": "Entrepreneuriat",
+            "coef": 1,
+            "credit": 2,
+            "poids": [
+              100,
+              0,
+              0
+            ],
+            "moy": 0
+          }
+        ],
+        "coef": 1,
+        "credits_origine": 2,
+        "moy": 0
+      }
+    ],
+    "coef": 18,
+    "credits_origine": 30,
+    "moy": 0
   },
   "moy": 0
 };
