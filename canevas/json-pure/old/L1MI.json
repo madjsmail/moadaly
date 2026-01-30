@@ -1,15 +1,14 @@
-if (typeof canevas === 'undefined') {
-    var canevas = {};
-}
-
-canevas["L1MI"] ={
-"domain":"Mathematiques et Informatique",
-"startdate":"2025",
-"expired":"",
+{
+  "name":"L1MI",
+  "fullname":"Mathematiques et Informatique",
+  "domain":"Mathematiques et Informatique",
+"startdate":"2018",
+"expired":"2025",
 "cycle":"licence",
 "level":"1",
+  "universities": [],
 "branch":"Tronc commun",
-   "name":"L1MI",
+
    "semestre1":{
       "name":"S1",
       "unites":[
@@ -304,7 +303,7 @@ canevas["L1MI"] ={
          },
          {
             "name":"U4_S2",
-            "title":"Découverte",
+            "title":"Transversale",
             "modules":[
                {
                   "name":"Pḧys2",
@@ -334,4 +333,4 @@ canevas["L1MI"] ={
       "credits":0
    },
    "moy":0
-}; 
+}

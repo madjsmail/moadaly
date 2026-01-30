@@ -24,8 +24,8 @@
     "name":"UEF2_S1",
     "title":"Fondamentales IA",
     "modules":[
-     {"name":"ML","title":"Machine Learning","coef":3,"credit":4,"poids":[60,20,20],"moy":0},
-     {"name":"KR","title":"Représentation des connaissances et raisonnement","coef":3,"credit":4,"poids":[60,20,20],"moy":0}
+     {"name":"ML","title":"Machine Learning","coef":3,"credit":4,"poids":[60,0,40],"moy":0},
+     {"name":"KR","title":"Représentation des connaissances et raisonnement","coef":3,"credit":4,"poids":[60,0,40],"moy":0}
     ],
     "coef":6,"credits_origine":8,"moy":0
    },
@@ -33,8 +33,8 @@
     "name":"UEM_S1",
     "title":"Méthodologie",
     "modules":[
-     {"name":"DataAnalysis","title":"Analyse de données","coef":2,"credit":5,"poids":[60,20,20],"moy":0},
-     {"name":"Optim","title":"Méthodes d'optimisation","coef":2,"credit":4,"poids":[60,20,20],"moy":0}
+     {"name":"DataAnalysis","title":"Analyse de données","coef":2,"credit":5,"poids":[60,40,0],"moy":0},
+     {"name":"Optim","title":"Méthodes d'optimisation","coef":2,"credit":4,"poids":[60,40,0],"moy":0}
     ],
     "coef":4,"credits_origine":9,"moy":0
    },
@@ -42,7 +42,7 @@
     "name":"UET_S1",
     "title":"Transversale",
     "modules":[
-     {"name":"Networks","title":"Réseaux avancés","coef":1,"credit":2,"poids":[60,20,20],"moy":0}
+     {"name":"Networks","title":"Réseaux avancés","coef":1,"credit":2,"poids":[60,0,40],"moy":0}
     ],
     "coef":1,"credits_origine":2,"moy":0
    },
@@ -66,7 +66,7 @@
     "title":"Fondamentales",
     "modules":[
      {"name":"DL","title":"Deep Learning","coef":3,"credit":5,"poids":[60,20,20],"moy":0},
-     {"name":"MAS","title":"Systèmes Multi-Agents","coef":3,"credit":4,"poids":[60,20,20],"moy":0}
+     {"name":"MAS","title":"Systèmes Multi-Agents","coef":3,"credit":4,"poids":[60,0,40],"moy":0}
     ],
     "coef":6,"credits_origine":9,"moy":0
    },
@@ -75,7 +75,7 @@
     "title":"Fondamentales IA",
     "modules":[
      {"name":"Vision","title":"Vision par ordinateur","coef":3,"credit":5,"poids":[60,20,20],"moy":0},
-     {"name":"Uncertain","title":"Gestion de l'incertain","coef":3,"credit":4,"poids":[60,20,20],"moy":0}
+     {"name":"Uncertain","title":"Gestion de l'incertain","coef":3,"credit":4,"poids":[60,40,0],"moy":0}
     ],
     "coef":6,"credits_origine":9,"moy":0
    },
@@ -84,7 +84,7 @@
     "title":"Méthodologie",
     "modules":[
      {"name":"ModelSim","title":"Modélisation et simulation","coef":2,"credit":5,"poids":[60,20,20],"moy":0},
-     {"name":"Cloud","title":"Virtualisation et Cloud","coef":2,"credit":4,"poids":[60,20,20],"moy":0}
+     {"name":"Cloud","title":"Virtualisation et Cloud","coef":2,"credit":4,"poids":[60,0,40],"moy":0}
     ],
     "coef":4,"credits_origine":9,"moy":0
    },
@@ -92,7 +92,7 @@
     "name":"UET_S2",
     "title":"Transversale",
     "modules":[
-     {"name":"PM","title":"Gestion de projets informatiques","coef":1,"credit":2,"poids":[60,20,20],"moy":0}
+     {"name":"PM","title":"Gestion de projets informatiques","coef":1,"credit":2,"poids":[60,0,40],"moy":0}
     ],
     "coef":1,"credits_origine":2,"moy":0
    },

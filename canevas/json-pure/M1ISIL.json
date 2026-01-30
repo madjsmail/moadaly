@@ -243,8 +243,8 @@
                      0,
                      40
                   ],
-                  "poids_tp":0,
-                  "poids_td":0.40,
+                  "poids_tp":0.4,
+                  "poids_td":0,
                   "poids_exam":0.60,
                   "moy":0
                },

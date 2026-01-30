@@ -1006,8 +1006,8 @@ canevas["M2IA"] = {
             "credit": 3,
             "poids": [
               60,
-              20,
-              20
+              0,
+              40
             ],
             "moy": 0
           }
@@ -1039,8 +1039,8 @@ canevas["M2IA"] = {
             "credit": 4,
             "poids": [
               60,
-              20,
-              20
+              40,
+              0
             ],
             "moy": 0
           }
@@ -2157,7 +2157,7 @@ canevas["L2Info"] = {
       },
       {
         "name": "U4_S1",
-        "title": "Découverte",
+        "title": "Transversale",
         "modules": [
           {
             "name": "Ang2",
@@ -2310,7 +2310,7 @@ canevas["L2Info"] = {
       },
       {
         "name": "U4_S2",
-        "title": "Découverte",
+        "title": "Transversale",
         "modules": [
           {
             "name": "Ang3",
@@ -3967,7 +3967,7 @@ canevas["L3ISIL"] = {
       },
       {
         "name": "U4_S1",
-        "title": "Découverte",
+        "title": "Transversale",
         "modules": [
           {
             "name": "Econum",
@@ -4120,7 +4120,7 @@ canevas["L3ISIL"] = {
       },
       {
         "name": "U4_S2",
-        "title": "Découverte",
+        "title": "Transversale",
         "modules": [
           {
             "name": "redaction",
@@ -4416,7 +4416,7 @@ canevas["L1SM"] = {
               0,
               50
             ],
-            "poids_tp": 0.51,
+            "poids_tp": 0.5,
             "poids_td": 0,
             "poids_exam": 0.5,
             "moy": 0
@@ -4808,8 +4808,8 @@ canevas["M1IA"] = {
             "credit": 4,
             "poids": [
               60,
-              20,
-              20
+              0,
+              40
             ],
             "moy": 0
           },
@@ -4820,8 +4820,8 @@ canevas["M1IA"] = {
             "credit": 4,
             "poids": [
               60,
-              20,
-              20
+              0,
+              40
             ],
             "moy": 0
           }
@@ -4841,8 +4841,8 @@ canevas["M1IA"] = {
             "credit": 5,
             "poids": [
               60,
-              20,
-              20
+              40,
+              0
             ],
             "moy": 0
           },
@@ -4853,8 +4853,8 @@ canevas["M1IA"] = {
             "credit": 4,
             "poids": [
               60,
-              20,
-              20
+              40,
+              0
             ],
             "moy": 0
           }
@@ -4874,8 +4874,8 @@ canevas["M1IA"] = {
             "credit": 2,
             "poids": [
               60,
-              20,
-              20
+              0,
+              40
             ],
             "moy": 0
           }
@@ -4936,8 +4936,8 @@ canevas["M1IA"] = {
             "credit": 4,
             "poids": [
               60,
-              20,
-              20
+              0,
+              40
             ],
             "moy": 0
           }
@@ -4969,8 +4969,8 @@ canevas["M1IA"] = {
             "credit": 4,
             "poids": [
               60,
-              20,
-              20
+              40,
+              0
             ],
             "moy": 0
           }
@@ -5002,8 +5002,8 @@ canevas["M1IA"] = {
             "credit": 4,
             "poids": [
               60,
-              20,
-              20
+              0,
+              40
             ],
             "moy": 0
           }
@@ -5023,8 +5023,8 @@ canevas["M1IA"] = {
             "credit": 2,
             "poids": [
               60,
-              20,
-              20
+              0,
+              40
             ],
             "moy": 0
           }
@@ -5197,7 +5197,7 @@ canevas["L3SI"] = {
       },
       {
         "name": "U4_S1",
-        "title": "Découverte",
+        "title": "Transversale",
         "modules": [
           {
             "name": "Econum",
@@ -5350,7 +5350,7 @@ canevas["L3SI"] = {
       },
       {
         "name": "U4_S2",
-        "title": "Découverte",
+        "title": "Transversale",
         "modules": [
           {
             "name": "startup",
