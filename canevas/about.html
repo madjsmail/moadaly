@@ -1,210 +1,221 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
+  <head>
     <!-- meta data -->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!-- title -->
-    <title>Calculateur de Moyenne</title>
+    <title>About - Calculateur de Moyenne حساب المعدّل</title>
     <!-- css -->
-    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/bootstrap.min.css" />
-    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/shards.min.css" />
-    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/shards-extras.min.css" />
-    <link rel='stylesheet' type='text/css' media='all' href="../assets/css/style.css" />
-</head>
-<style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="../assets/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="../assets/css/shards.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="../assets/css/shards-extras.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="all"
+      href="../assets/css/style.css"
+    />
+  </head>
 
-body{
-    line-height:1.8;
-}
-
-.hero{
-    background:linear-gradient(135deg,#0d6efd,#6610f2);
-    color:white;
-    padding:4rem 1rem;
-    border-radius:0 0 40px 40px;
-}
-
-.section{
-    padding:3rem 0;
-}
-
-.ar{
-    direction:rtl;
-    text-align:right;
-    font-family: "Tahoma", "Arial", sans-serif;
-}
-
-.card{
-    border-radius:1rem;
-}
-
-.badge-soft{
-    background:#e7f1ff;
-    color:#0d6efd;
-    padding:.4rem .8rem;
-    border-radius:20px;
-}
-
-a{
-    font-weight:500;
-}
-    .card-content{
-        padding: 3em;
-    }
-    
-    .card-glass
-        {
-            width: 80vw;
-            margin: 0 auto;
-            color: #fff;
-            padding: 2em;
-    backdrop-filter: blur(22px) saturate(200%);
-    -webkit-backdrop-filter: blur(22px) saturate(200%);
-    background-color: rgba(17, 25, 40, 0.81);
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.125);
-}
-.card-glass > h2 {
-    color: #fff;
-}
-.rtl{
-    text-align: right;
-    direction: rtl;
-}
-    
-</style>
-
-<body>
+  <body>
     <div id="main-container">
-        <div class="page-header">
-            <nav class="navbar navbar-expand-lg navbar-dark">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto" id="navbarTextList">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="../index.html">Math info <span class="sr-only">(current)</span></a>
-                        </li>
+      <!-- Page Header with Navbar -->
+      <div class="page-header">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-3">
+          <a class="navbar-brand" href="../index.html">Moadaly</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Calculator حاسبة</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="about.html"
+                  >About <span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <h3 id="nav-titre">About معلومات</h3>
+            </span>
+          </div>
+        </nav>
+      </div>
 
-                    </ul>
-                    <span class="navbar-text">
-                        <h3 id="nav-titre">About:Calculateur de Moyenne</h3>
-                    </span>
+      <!-- Page Content -->
+      <div class="page-content">
+        <div class="tables-container">
+          <div class="tables">
+            <!-- Hero Section -->
+            <div class="text-center mb-5" style="padding: 2rem 0">
+              <h1 class="text-white display-4">
+                Moadaly <span style="font-weight: 300">معدلي</span>
+              </h1>
+              <p
+                class="text-white lead mt-3"
+                style="direction: rtl; text-align: center"
+              >
+                محاكي حساب المعدل لطلبة نظام ل.م.د تخصص رياضيات وإعلام آلي
+              </p>
+              <p class="text-white" style="direction: rtl; text-align: center">
+                يستعمل لكل الجامعات التي تتابع نفس المنهاج في الجزائر
+              </p>
+              <div class="mt-4">
+                <a
+                  class="btn btn-info btn-lg mr-2"
+                  href="https://moadaly.vercel.app"
+                  >Web App</a
+                >
+                <a
+                  class="btn btn-info btn-lg"
+                  href="https://github.com/tarek-berkane/moadaly_v2"
+                  >Android App</a
+                >
+              </div>
+            </div>
+
+            <!-- About Section -->
+            <div class="row mb-5">
+              <div class="col-md-6 mb-4">
+                <div class="bg-info p-4" style="border-radius: 0.625rem">
+                  <h2 class="text-white">Moadaly</h2>
+                  <ul class="text-white">
+                    <li>
+                      Web application for calculating LMD student averages
+                    </li>
+                    <li>Semester and yearly GPA calculator</li>
+                    <li>Computer Science & Math specialities</li>
+                    <li>
+                      <a href="docs/canevas_summary.md" class="text-white"
+                        ><u>Supported specialities</u></a
+                      >
+                    </li>
+                  </ul>
                 </div>
-            </nav>
+              </div>
 
+              <div class="col-md-6 mb-4">
+                <div
+                  class="bg-info p-4"
+                  style="
+                    border-radius: 0.625rem;
+                    direction: rtl;
+                    text-align: right;
+                  "
+                >
+                  <h2 class="text-white">عن التطبيق</h2>
+                  <ul class="text-white">
+                    <li>تطبيق ويب لحساب المعدل الفصلي والسنوي</li>
+                    <li>مخصص لطلبة رياضيات وإعلام آلي نظام LMD</li>
+                    <li>يدعم عدة تخصصات</li>
+                    <li>قسم خاص بالماستر</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cards Section -->
+            <div class="row mb-5">
+              <div class="col-md-4 mb-3">
+                <div
+                  class="bg-dark p-4 h-100"
+                  style="border-radius: 0.625rem; opacity: 0.9"
+                >
+                  <h5 class="text-white">Issues</h5>
+                  <p class="text-white">
+                    Testing is appreciated. Report bugs on the
+                    <a
+                      href="https://github.com/Abdelmadjidsmail/moadaly/issues"
+                      class="text-info"
+                      >Issue Tracker</a
+                    >
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div
+                  class="bg-dark text-white p-4 h-100"
+                  style="border-radius: 0.625rem; opacity: 0.9"
+                >
+                  <h5 class="text-white">Built With</h5>
+                  <span class="badge badge-primary mr-1">HTML</span>
+                  <span class="badge badge-primary mr-1">CSS</span>
+                  <span class="badge badge-primary mr-1">Bootstrap</span>
+                  <span class="badge badge-primary">jQuery</span>
+                </div>
+              </div>
+
+              <div class="col-md-4 mb-3">
+                <div
+                  class="bg-dark text-white p-4 h-100"
+                  style="border-radius: 0.625rem; opacity: 0.9"
+                >
+                  <h5 class="text-white">Resources</h5>
+                  <ul class="mb-0">
+                    <li>
+                      <a href="docs/authors.md" class="text-info">Authors</a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/Sho-Oter/dynamic-grade-average-calculator"
+                        class="text-info"
+                        >Design</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="https://github.com/madjsmail/moadaly"
+                        class="text-info"
+                        >Source Code</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Contribution Section -->
+            <div class="text-center text-white mb-5">
+              <h2 class="text-white">Contribution</h2>
+              <p>Help adapt Moadaly for more specialities: ST, SM, etc.</p>
+            </div>
+          </div>
         </div>
-
-
-
-
-
-<body>
-
-<!-- HERO -->
-<section class="hero text-center">
-    <h1 class="display-4">Moadaly <span class="font-weight-light">معدلي</span></h1>
-    <p class="lead mt-3 ar">
-        محاكي حساب المعدل لطلبة نظام ل.م.د تخصص رياضيات وإعلام آلي
-    </p>
-    <p class="ar">
-        يستعمل لكل الجامعات التي تتابع نفس المنهاج في الجزائر
-    </p>
-
-    <div class="mt-4">
-        <a class="btn btn-light btn-lg mr-2" href="https://moadaly.vercel.app">Web App</a>
-        <a class="btn btn-outline-light btn-lg" href="https://github.com/tarek-berkane/moadaly_v2">Android App</a>
+      </div>
     </div>
-</section>
 
-<!-- ABOUT -->
-<section class="section container">
-
-<div class="row">
-<div class="col-md-6 mb-4">
-
-<h2>Moadaly</h2>
-<ul>
-<li>Web application for calculating LMD student averages</li>
-<li>Semester and yearly GPA calculator</li>
-<li>Computer Science & Math specialities</li>
-<li><a href="docs/canevas_summary.md">Supported specialities</a></li>
-</ul>
-
-</div>
-
-<div class="col-md-6 ar mb-4">
-
-<h2>عن التطبيق</h2>
-<ul>
-<li>تطبيق ويب لحساب المعدل الفصلي والسنوي</li>
-<li>مخصص لطلبة رياضيات وإعلام آلي نظام LMD</li>
-<li>يدعم عدة تخصصات</li>
-<li>قسم خاص بالماستر</li>
-</ul>
-
-</div>
-</div>
-</section>
-
-<!-- SUMMARY CARDS -->
-<section class="section bg-light">
-<div class="container">
-
-<div class="row">
-
-<div class="col-md-4 mb-3">
-<div class="card p-4 h-100">
-<h5>Issues</h5>
-<p>
-Testing is appreciated.
-Report bugs on the
-<a href="https://github.com/Abdelmadjidsmail/moadaly/issues">Issue Tracker</a>
-</p>
-</div>
-</div>
-
-<div class="col-md-4 mb-3">
-<div class="card p-4 h-100">
-<h5>Built With</h5>
-<span class="badge-soft">HTML</span>
-<span class="badge-soft">CSS</span>
-<span class="badge-soft">Bootstrap</span>
-<span class="badge-soft">jQuery</span>
-</div>
-</div>
-
-<div class="col-md-4 mb-3">
-<div class="card p-4 h-100">
-<h5>Resources</h5>
-<ul class="mb-0">
-<li><a href="docs/authors.md">Authors</a></li>
-<li><a href="https://github.com/Sho-Oter/dynamic-grade-average-calculator">Design</a></li>
-<li><a href="https://github.com/madjsmail/moadaly">Source Code</a></li>
-</ul>
-</div>
-</div>
-
-</div>
-</div>
-</section>
-
-<!-- CONTRIBUTION -->
-<section class="section container text-center">
-<h2>Contribution</h2>
-<p>
-Help adapt Moadaly for more specialities: ST, SM, etc.
-</p>
-</section>
-
-
-
-
-</body>
-
+    <!-- js -->
+    <script type="text/javascript" src="../assets/js/jquery.js"></script>
+    <script type="text/javascript" src="../assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="../assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../assets/js/shards.min.js"></script>
+  </body>
 </html>
