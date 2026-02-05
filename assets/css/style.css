@@ -163,6 +163,12 @@
 }
 
 /* Mobile styles */
+@media (max-width: 768px) {
+  #main-container .page-header {
+    background-image: url(../img/tech1-mobile.jpg);
+  }
+}
+
 @media (max-width: 1100px) {
   #main-container .page-content .tables-container {
     padding: 0;
