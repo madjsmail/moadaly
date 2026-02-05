@@ -24,6 +24,7 @@
 
 #main-container .page-content {
   background:
+    linear-gradient(rgba(7, 13, 18, 0.85), rgba(7, 13, 18, 0.85)),
     url(../img/part1.jpg) right top no-repeat,
     url(../img/part2.jpg) left bottom no-repeat;
   width: 100%;
